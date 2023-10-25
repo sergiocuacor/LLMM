@@ -6,6 +6,7 @@ body {
     border: red 1px solid;
     float: center;
     width: 70%;
+    height: 300px;
     margin: 0 auto;
 }
 #menu {
@@ -34,5 +35,21 @@ body {
     background-color: #D6E9FE;
     float: center; 
     width: 100%;   
+    float: right;
+
+
+}
+#divIzq{
+    height: 100px;
+    width: 32%;
+    background-color: #a6ccf8;
+    float: left;
+   
+   
+}
+#divDer{
+    height: 100px;
+    width:32%;
+    background-color: #a6ccf8;
     float: right;
 }
