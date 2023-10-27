@@ -9,7 +9,6 @@ header{
     width:20%;
     background-color: purple;
     float: left;
-    
     text-align: center;
 }
 
@@ -79,31 +78,33 @@ nav{
 }
 main{
     background-color: yellow;
-    color: orange;
+    height: 400px;
+    width: 100%;
 }
 #mainLeft{
-    background-color: orange;
+    background-color: yellow;
     color: orangered;
+    height: 400px;
+    width: 50%;
+    float: left;
 }
+.elem{
+    background-color: orange;
+   
+}
+#mainRight{
+    background-color: yellow;
+    height: 400px;
+    width: 50%;
+    float: right;
+    color: orange;
+    }
 footer{
     background-color: green;
     color: lightgreen;
-}
-main{
-    height: 400px;
-    width: 100%;
-}
-#mainLeft{
-    height: 400px;
-width: 50%;
-float: left;
-}
-#mainRight{
-height: 400px;
-width: 50%;
-float: right;
-}
-footer{
     height: 100px;
     width: 100%;
 }
+
+
+
