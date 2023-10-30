@@ -24,10 +24,7 @@ nav{
     
     
 }
-#paddingtop{
-    height: 20px;
-    width: 100%;
-}
+
 #products{
     height: 40px;
     float: left;
@@ -85,19 +82,29 @@ main{
     background-color: yellow;
     color: orangered;
     height: 400px;
-    width: 50%;
+    width: 60%;
     float: left;
 }
 .elem{
     background-color: orange;
+    margin-bottom: 15px;
    
 }
 #mainRight{
     background-color: yellow;
     height: 400px;
-    width: 50%;
+    width: 40%;
     float: right;
     color: orange;
+    
+    }
+.pRight{
+        margin: 0px;
+        width: 50%;
+        float: left;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        
     }
 footer{
     background-color: green;
