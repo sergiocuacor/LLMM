@@ -1,0 +1,56 @@
+#bloquePrincipal{
+    width: 92%;
+    height: 784px;
+    border: 4px solid red;
+    margin: auto;
+    
+}
+
+#bloque1{
+    border: 3px dashed red;
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 150px;
+}
+
+#bloque2{
+    border: 3px dashed red;
+    width: 60%;
+    margin-bottom: auto;
+    float: right;
+}
+
+#bloque3{
+    border: 3px dashed red;
+    width: 72%;
+    height: auto;
+    margin: auto;
+    
+}
+
+#vela{
+   margin-left: 38%;
+}
+
+#tituloCal{
+    color: blueviolet;
+    text-align: center;
+}
+
+#calendario{
+    width: 75%;
+    height: auto;
+   background-color: burlywood;
+   margin: auto;
+   
+}
+
+#imgCalendario{
+    margin-left: 13%;
+}
+
+.verdeRojo{
+    border: 2px solid green;
+    color: red;
+}
