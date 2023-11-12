@@ -1,0 +1,26 @@
+h1 {
+    background-color: aquamarine;
+    width: 25%;
+}
+#divPrincipal{
+    background-color: yellow;
+    width: 65%;
+    margin: auto;
+    clear: left;
+}
+#div1{
+    background-color: blue;
+    width: 25%;
+    float: left;
+}
+#div2{
+    background-color: brown;
+    width: 25%;
+    float: left;
+}
+#div3{
+    background-color: palegreen;
+    width: 25%;
+    float: left;
+
+}

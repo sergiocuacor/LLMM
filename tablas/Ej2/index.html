@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1">
+      <h1>Tabla 1</h1>
+      <table class="tabla1Estilo">
+        <tr class="tabla1Estilo">
+          <td class="tabla1Estilo">A</td>
+          <td class="tabla1Estilo">B</td>
+          <td class="tabla1Estilo">C</td>
+          <td rowspan="3" class="tabla1Estilo">D,H,L</td>
+        </tr>
+
+        <tr class="tabla1Estilo">
+          <td rowspan="2" class="tabla1Estilo">E,I</td>
+          <td colspan="2" class="tabla1Estilo">F,G</td>
+        </tr>
+        <tr class="tabla1Estilo">
+          <td class="tabla1Estilo">J</td>
+          <td rowspan="2" class="tabla1Estilo">K,O</td>
+        </tr>
+        <tr class="tabla1Estilo">
+          <td colspan="2" class="tabla1Estilo">M, N</td>
+
+          <td class="tabla1Estilo">P</td>
+        </tr>
+      </table>
+    </div>
+    <div id="div2">
+      <h1>Tabla 2</h1>
+      <table class="tabla2Estilo">
+        <caption>
+          Este es el caption de la tabla
+        </caption>
+        <thead>
+          <tr>
+            <th class="tabla2Estilo">Alumno</th>
+            <th class="tabla2Estilo">Pendientes</th>
+            <th class="tabla2Estilo">Nº</th>
+            <th class="tabla2Estilo">Recuperación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tabla2Estilo">Elena</td>
+            <td class="tabla2Estilo">Si</td>
+            <td class="tabla2Estilo">1</td>
+            <td class="tabla2Estilo">Febrero</td>
+          </tr>
+          <tr>
+            <td class="tabla2Estilo">Juan</td>
+            <td class="tabla2Estilo">No</td>
+            <td class="tabla2Estilo">--</td>
+            <td class="tabla2Estilo">--</td>
+          </tr>
+          <tr>
+            <td class="tabla2Estilo">Luis</td>
+            <td class="tabla2Estilo">Si</td>
+            <td class="tabla2Estilo">3</td>
+            <td class="tabla2Estilo">Septiembre</td>
+          </tr>
+          <tr>
+            <td class="tabla2Estilo">Roberto</td>
+            <td class="tabla2Estilo">No</td>
+            <td class="tabla2Estilo">--</td>
+            <td class="tabla2Estilo">--</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="div3">
+      <h1>Tabla 3</h1>
+      <table class="tabla3Estilo">
+        <colgroup span="1"></colgroup>
+        <colgroup>
+          <col class="fondoNaranja" span="1" />
+        </colgroup>
+        <colgroup>
+          <col class="fondoAmarillo" span="1" />
+        </colgroup>
+        <colgroup>
+          <col class="fondoNaranja" span="1" />
+        </colgroup>
+        <colgroup>
+          <col class="fondoAmarillo" span="1" />
+        </colgroup>
+        <colgroup>
+          <col class="fondoNaranja" span="1" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tabla3Estilo" colspan="6">Notas de la 1º evaluación</th>
+          </tr>
+          <tr>
+            <th class="tabla3Estilo">Alumno</th>
+            <th class="tabla3Estilo">LLMM</th>
+            <th class="tabla3Estilo">EED</th>
+            <th class="tabla3Estilo">SSII</th>
+            <th class="tabla3Estilo">BBDD</th>
+            <th class="tabla3Estilo">PROGR.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tabla3Estilo">David</td>
+            <td class="tabla3Estilo">7</td>
+            <td class="tabla3Estilo">5</td>
+            <td class="tabla3Estilo">3</td>
+            <td class="tabla3Estilo">6</td>
+            <td class="tabla3Estilo">4</td>
+          </tr>
+          <tr>
+            <td class="tabla3Estilo">Ricardo</td>
+            <td class="tabla3Estilo">9</td>
+            <td class="tabla3Estilo">4</td>
+            <td class="tabla3Estilo">7</td>
+            <td class="tabla3Estilo">7</td>
+            <td class="tabla3Estilo">7</td>
+          </tr>
+          <tr>
+            <td class="tabla3Estilo">Juan</td>
+            <td class="tabla3Estilo">6</td>
+            <td class="tabla3Estilo">6</td>
+            <td class="tabla3Estilo">4</td>
+            <td class="tabla3Estilo">4</td>
+            <td class="tabla3Estilo">5</td>
+          </tr>
+          <tr>
+            <td class="tabla3Estilo">Antonio</td>
+            <td class="tabla3Estilo">4</td>
+            <td class="tabla3Estilo">6</td>
+            <td class="tabla3Estilo">7</td>
+            <td class="tabla3Estilo">2</td>
+            <td class="tabla3Estilo">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="div4">
+      <h1>Tabla 4</h1>
+      <table id="bordeTabla4">
+        <thead id="fondoTitulot4">
+          <tr>
+            <th>País</th>
+            <th>Capital</th>
+            <th>Idioma oficial</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="colorBody1">Argentina</td>
+            <td class="colorBody1">Buenos Aires</td>
+            <td class="colorBody1">Español</td>
+          </tr>
+          <tr>
+            <td>Bolivia</td>
+            <td>Sucre</td>
+            <td>Español, Quechua, Aymara</td>
+          </tr>
+          <tr>
+            <td class="colorBody1">Brasil</td>
+            <td class="colorBody1">Brasilia</td>
+            <td class="colorBody1">Portugués</td>
+          </tr>
+          <tr>
+            <td>Chile</td>
+            <td>Santiago</td>
+            <td>Español</td>
+          </tr>
+          <tr>
+            <td class="colorBody1">Colombia</td>
+            <td class="colorBody1">Bogotá</td>
+            <td class="colorBody1">Español</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+#contenedorGeneral{
+    border: red 1px solid;
+    float: center;
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+}
+#menu {
+    height: 50px;
+    background-color: #B2D6FF;
+}
+
+#barraLateral {
+    height: 150px;
+    background-color: #F09A9D;
+    width: 20%;
+    float: left;
+    margin: 0 auto;
+}
+
+#infoPrincipal {
+    height: 300px;
+    background-color: #F5CF8E;
+    width: 70%;
+    float: left;
+    margin: 0 auto;
+}
+
+#piePagina {
+    height: 120px;
+    background-color: #D6E9FE;
+    float: center; 
+    width: 100%;   
+    float: right;
+
+
+}
+#divIzq{
+    height: 100px;
+    width: 32%;
+    background-color: #a6ccf8;
+    float: left;
+   
+   
+}
+#divDer{
+    height: 100px;
+    width:32%;
+    background-color: #a6ccf8;
+    float: right;
+}

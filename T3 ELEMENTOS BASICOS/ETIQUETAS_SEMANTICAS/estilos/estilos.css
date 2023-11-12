@@ -1,0 +1,117 @@
+header{
+    height: 65px;
+    width: 100%;
+
+    
+}
+#logo{
+    height: 60px;
+    width:20%;
+    background-color: purple;
+    float: left;
+    text-align: center;
+}
+
+nav{
+    height: 60px;
+    width: 30%;
+    background-color: darkblue;
+    color: light;
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+    float: left;
+    padding-left: 30px;
+    
+    
+}
+
+#products{
+    height: 40px;
+    float: left;
+    text-align: center;
+    width: 30%;
+    border-left: 50px;
+    color: white;
+    padding-top: 10px;
+}
+#shops{
+    height: 40px;
+    float: left;
+    text-align: center;
+    width: 32%;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#blog{
+    width: 30%;
+    float: left;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+
+}
+#estrellas{
+    height: 60px;
+    width: 25%;
+    background-color: rgb(30, 143, 235);
+    float: left;
+    text-align: center;
+    
+}
+#numerotlf{
+    height: 60px;
+    width: 20%;
+    background-color: rgb(30, 143, 235);
+    float: left;
+    text-align: center;
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+    
+}
+main{
+    background-color: yellow;
+    height: 400px;
+    width: 100%;
+}
+#mainLeft{
+    background-color: yellow;
+    color: orangered;
+    height: 400px;
+    width: 60%;
+    float: left;
+}
+.elem{
+    background-color: orange;
+    margin-bottom: 15px;
+   
+}
+#mainRight{
+    background-color: yellow;
+    height: 400px;
+    width: 40%;
+    float: right;
+    color: orange;
+    
+    }
+.pRight{
+        margin: 0px;
+        width: 50%;
+        float: left;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        
+    }
+footer{
+    background-color: green;
+    color: lightgreen;
+    height: 100px;
+    width: 100%;
+}
+
+
+

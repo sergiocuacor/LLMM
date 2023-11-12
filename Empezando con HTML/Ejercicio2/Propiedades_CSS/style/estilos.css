@@ -1,0 +1,22 @@
+body{
+    background-color: magenta;
+    text-align: right;
+}
+#Fondo_oscuro{
+    background-color: black;
+    border: 10px solid red;
+    color: yellowgreen;
+}
+.Parr_raro{
+    
+    background-color: aqua;
+    width: 30%;
+    text-align: right;
+}
+#segparrafo{
+    float: right;
+    color: brown;
+    height: 100%;
+    width: 5%;
+    background-color: blue;
+}

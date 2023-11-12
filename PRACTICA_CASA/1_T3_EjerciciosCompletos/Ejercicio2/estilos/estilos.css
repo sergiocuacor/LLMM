@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(196, 193, 193);
+    margin-left: 30%;
+    margin-right: 20%;
+}
+#divBorde{
+    text-align: center;
+    width: 80%;
+    border: 3px  black;
+    border-style: double;
+}
+#divListas{
+    width: 80%;
+    height: 200px;
+    
+}
+#bloqueIzq{
+    width: 50%;
+
+    float: left;
+}
+#bloqueDer{
+    width: 50%;
+    float: left;
+}
+img{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+.titulo{
+    text-align: center;
+    width: 80%;
+}
+.rojo{
+    color: red;
+}
+.azul{
+    color: rgb(45, 202, 254);
+}
+.naranja{
+    color: rgb(255, 226, 6);
+}
+.morado{
+    color: purple;
+}
+.verde{
+    color: green;
+}
+.fondoRosa{
+    background-color: rgb(247, 99, 193);
+    
+}

@@ -1,0 +1,28 @@
+#div1{
+    background-color: #50b0c3;
+    text-align: center;
+}
+#div2{
+    border: 1px solid black;;
+    background-color: #3dd377;
+    width: 49%;
+    float: left;
+}
+#div3{
+    border: 1px solid black;;
+    background-color: #3dd377;
+    width: 49%;
+    float: right;
+}
+#div4{
+    border: 1px solid black;;
+    background-color: #3dd377;
+    width: 49%;
+    float: right;
+}
+#tiposecadero{
+    color: orange;
+}
+#condPago{
+    color: red;
+}
