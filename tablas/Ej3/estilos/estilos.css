@@ -1,0 +1,9 @@
+.bordeTabla{
+    border: 1px solid blue;
+}
+table{
+    text-align: center;
+    margin:auto;
+    height: 400px;
+    width: 60%;
+}
