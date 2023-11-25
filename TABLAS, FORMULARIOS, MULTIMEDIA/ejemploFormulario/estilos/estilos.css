@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    border-radius: 2em;
+}
+
+h1 {
+    color:brown;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+    background-color: lightsalmon;
+}
+label {
+    display: inline-block;
+    margin: 15px 0;
+    width: 35%;
+}
+
+input[type=text],
+input[type=password] {
+    display:inline-block;
+    width:60%;
+	margin: 15px 0;
+	border:1px solid #f6f6f6;
+}
+
+input[type=submit],
+input[type=reset] {
+    display:inline-block;
+    width:48%;
+	margin: 10px 0;
+	border:1px solid #f6f6f6;
+}

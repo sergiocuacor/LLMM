@@ -1,0 +1,22 @@
+form{
+    border:2px solid red;
+    border-style: dotted;
+    width: 25%;
+
+    height: auto;
+    margin: auto;
+    padding: 15px;
+}
+label{
+    margin-right: 20px;
+   
+}
+input[type=radio], input[type=text]{
+    margin-bottom: 30px;
+}
+input[type=submit], input[type=reset]{
+    margin-right: 25px;
+}
+input[type=radio]{
+    margin-right: 25px;
+}
