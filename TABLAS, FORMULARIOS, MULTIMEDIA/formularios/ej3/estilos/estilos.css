@@ -1,0 +1,25 @@
+#amarillo{
+    width: 30%;
+    height: auto;
+    border: 2px dotted yellow;
+    margin: auto;
+    text-align: center;
+    padding: 10px 35px 10px 35px;
+}
+#azul{
+    width: 22%;
+    height: auto;
+    border: 2px dashed blue;
+    margin: auto;
+    padding: 10px;
+}
+#enviar{
+    margin-top: 10px;
+    text-align: center;
+}
+label{
+    margin: 0px 0px;
+}
+#nombre,#telefono{
+    margin: 0px 10px 0px 10px;
+}
