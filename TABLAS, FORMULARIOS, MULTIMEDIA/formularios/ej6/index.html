@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./src/destino.html" method="POST" target="_blank">
+      <h1>Introducir datos de cliente</h1>
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre" maxlength="12" size="10" id="" /> 
+      <label for="apellidos">Apellidos: </label>
+      <input type="text" name="apellidos" maxlength="25" size="20" id="" /> <br />
+      <label for="user">Usuario: </label>
+      <input type="text" name="user" id="" /> <br>
+      <label for="pass">Contraseña: </label>
+      <input type="text" name="pass" maxlength="12" id="" /> <br>
+      <label for="socio">Socio: </label>
+      <input type="checkbox" name="socio"> <br>
+      <label for="sexo">SEXO: H</label>
+      <input type="radio" name="sexo" value="H"> M<input type="radio" name="sexo" value="M" checked> <br>
+      <label for="aficiones">Aficiones: </label><br>
+        <input type="checkbox"> Deportes   <br> 
+        <input type="checkbox"> Cine   <br>
+        <input type="checkbox"> Lectura <br>
+        <label for="subirfoto">Subir foto: </label>
+        <input type="file" name="subirfoto" id=""> <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <input type="button" value="Cerrar" onclick="window.close()" >
+
+        <button  onclick="alert('Hola');"></button>
+    </form>
+  </body>
+</html>
