@@ -1,6 +1,4 @@
 h1{
-    
-    
     text-align: center;
 }
 div{
@@ -18,4 +16,18 @@ text-align: center;
 
 input{
     margin: 2px 0;
+}
+input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+.textocom{
+    text-align: center;
+    
+}
+input[type="submit"]{
+    margin-top: 5px;
+    padding: 4px 25px;
+}
+textarea{
+    margin-top: 5px;
 }
