@@ -1,4 +1,6 @@
+
 form{
+    
     border:2px solid red;
     border-style: dotted;
     width: 25%;
@@ -12,9 +14,9 @@ label{
    
 }
 input[type=radio], input[type=text]{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-input[type=submit], input[type=reset]{
+input[type=submit]{
     margin-right: 25px;
 }
 input[type=radio]{
