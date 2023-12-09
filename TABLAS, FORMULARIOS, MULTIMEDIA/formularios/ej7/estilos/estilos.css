@@ -1,0 +1,21 @@
+#datosCliente{
+    width: 55%;
+    height: auto;
+    float: left;
+    margin-right: 60px;
+}
+#particular{
+    margin-top: 18px;
+}
+#datosProducto{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+}
+#datosEnvio{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+}

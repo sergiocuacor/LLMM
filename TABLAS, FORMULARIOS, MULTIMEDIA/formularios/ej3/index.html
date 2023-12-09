@@ -9,46 +9,55 @@
   <body>
     
     <h1>El señor de los anillos</h1>
-    <div id="amarillo">
-        <form action=""></form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" size="24"/>
-
-      <label for="telefono">Teléfono:</label>
-      <input type="text" name="telefono" id="telefono" size="24"/>
-    </form>
-    </div>
-    <br><br>
-    <div id="azul">
-      <form action="">
-        <b>Con cual de los personajes de la película te identificas:</b>
-      <br>
-      <label for="frodo">Frodo Bolsón</label>
-      <input type="checkbox" name="frodo" id="frodo" />
-
-      <label for="aragorn">Aragorn</label>
-      <input type="checkbox" name="aragorn" id="aragorn" />
-
-      <label for="samsagaz">Samsagaz</label>
-      <input type="checkbox" name="samsagaz" id="samsagaz" />
-
-      <label for="gollum">Gollum</label>
-      <input type="checkbox" name="gollum" id="gollum" />
-      <br>
-      <b>La película te ha parecido:</b> <br>
-
-      Excelente <input type="radio" name="opinion" id="">
-      Buena <input type="radio" name="opinion" id="">
-      Normalilla <input type="radio" name="opinion" id="">
-      Mala <input type="radio" name="opinion" id="">
-      Pésima <input type="radio" name="opinion" id="">
-      </form>
-    </div>
-    <div id="enviar">
-        <form action="">
-            <input type="submit" value="Enviar" id="enviar">
-        </form>
-    </div>
+    <fieldset id="exterior">
+      <legend>Información postvisionado de la película</legend>
+      <fieldset id="amarillo">
+        <legend>Datos Personales</legend>
+        
+          <form action=""></form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="24"/>
+  
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono" size="24"/>
+      
+      </div>
+      </fieldset>
+      <br><br>
+      <fieldset id="azul">
+        <legend>Información sobre la película</legend>
+        
+          <form action="">
+            <b>Con cual de los personajes de la película te identificas:</b>
+          <br>
+          <label for="frodo">Frodo Bolsón</label>
+          <input type="checkbox" name="frodo" id="frodo" />
+    
+          <label for="aragorn">Aragorn</label>
+          <input type="checkbox" name="aragorn" id="aragorn" />
+    
+          <label for="samsagaz">Samsagaz</label>
+          <input type="checkbox" name="samsagaz" id="samsagaz" />
+    
+          <label for="gollum">Gollum</label>
+          <input type="checkbox" name="gollum" id="gollum" />
+          <br>
+          <b>La película te ha parecido:</b> <br>
+    
+          Excelente <input type="radio" name="opinion" id="">
+          Buena <input type="radio" name="opinion" id="">
+          Normalilla <input type="radio" name="opinion" id="">
+          Mala <input type="radio" name="opinion" id="">
+          Pésima <input type="radio" name="" id="">
+          </form>
+        
+      </fieldset>
+      <div id="enviar">
+          <form action="">
+              <input type="submit" value="Enviar" id="enviar">
+          </form>
+      </div>
+    </fieldset>
     
     
   </body>
