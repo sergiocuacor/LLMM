@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario HTML5</h1>
+    <fieldset>
+        <legend>Datos</legend>
+    
+        <label for="email">Mail</label>
+        <input type="text" name="" id="email" placeholder="nombre@mail.com"> <br>
+
+        <label for="web">Web</label>
+        <input type="text" name="" id="web" placeholder="www.pagina.com"> <br>
+
+        <label for="numLicencias">Número de licencias</label>
+        <input type="text" name="" id="numLicencias" placeholder="1-10" pattern="[1,9] | 10"> 
+    </fieldset>
+    <fieldset id="DetalleTarjeta">
+        <legend>Detalle Tarjeta</legend>
+        <label for="numTarjeta">Número de tarjeta</label>
+        <input type="text" name="" id="numTarjeta" pattern="\d{16}"> <br>
+
+        <label for="CVV">CVV</label>
+        <input type="text" id="CVV" placeholder="3 dígitos" pattern="\d{3}"> <br>
+
+        <label for="fechaCad">Fecha de caducidad</label>
+        <input type="month" name="" id="fechaCad">
+    </fieldset>
+    <input type="submit" name="" id="" value="Enviar">
+    <input type="reset" name="" id="" value="Borrar">
+</body>
+</html>
