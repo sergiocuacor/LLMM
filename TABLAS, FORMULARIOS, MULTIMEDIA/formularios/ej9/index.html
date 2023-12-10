@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+   <form action="./exito.html" method="get">
+    <fieldset>
+        <legend>Venta de inmuebles</legend>
+        <select name="" id="">
+          <option label="" disabled selected></option>
+          <option value="Casa individual">Casa individual</option>
+          <option value="Piso">Piso</option>
+          <option value="Adosado">Adosado</option></select
+        ><br />
+        <label for="calle">Calle</label>
+        <input type="text" name="" id="calle" required />
+        <label for="numCalle">Nº</label>
+        <input
+          type="number"
+          minlength="1"
+          maxlength="250"
+          id="numCalle"
+          required
+        />
+        <br />
+        <label for="pisoYPuerta">Piso y puerta</label>
+        <input type="text" name="" id="pisoYPuerta" />
+        <br />
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          pattern="[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}"
+          required
+        />
+          <br>
+        <label for="contacto">Número de contacto</label>
+        <input type="number" name="" id="" pattern="[6]{1}[0-9]{8}" />
+  <br>
+        <label for="descripcion">Descripción</label> <br>
+        <textarea
+          name=""
+          id="descripcion"
+          maxlength=""
+          cols="30"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+  <br>
+        <label for="web">Página web del inmueble</label>
+        <input type="text" name="" id="web" />
+  <br>
+        <input type="submit" name="" id="" value="Enviar" />
+        <input type="reset" name="" id="" value="Limpiar" />
+      </fieldset>
+   </form>
+  </body>
+</html>

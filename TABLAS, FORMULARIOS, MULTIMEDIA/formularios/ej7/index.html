@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
     <title>Document</title>
-</head>
-<body>
-    <fieldset>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
         <legend>Formulario de pedido</legend>
         <h1>Paso 1. Identificación</h1>
         <fieldset id="datosCliente">
-            <legend>Datos del cliente</legend>
-            <label for="email">Correo electrónico</label>
-            <input type="text" name="" id="email"> <br>
-            <label for="pass">Contraseña</label>
-            <input type="text" id="pass" minlength="6m"> <br>
-            <span>&#40;Longitud mínima de 6 caracteres&#41;</span>
+          <legend>Datos del cliente</legend>
+          <label for="email">Correo electrónico</label>
+          <input type="text" name="" id="email" /> <br />
+          <label for="pass">Contraseña</label>
+          <input type="text" id="pass" minlength="6m" /> <br />
+          <span>&#40;Longitud mínima de 6 caracteres&#41;</span>
         </fieldset>
         <fieldset>
-            <legend>Tipo de cliente</legend>
-            <input type="radio" name="tipo" id="particular" ><label for="particular">Particular</label> <br> 
-            <input type="radio" name="tipo">Asociación <br>
-            <input type="radio" name="tipo">Empresa
+          <legend>Tipo de cliente</legend>
+          <input type="radio" name="tipo" id="particular" /><label
+            for="particular"
+            >Particular</label
+          >
+          <br />
+          <input type="radio" name="tipo" />Asociación <br />
+          <input type="radio" name="tipo" />Empresa
         </fieldset>
         <h2>Paso 2. Pedido</h2>
         <fieldset id="datosProducto">
-            <legend>Datos del producto</legend>
-            Producto <br>
-            <select name="" id="" multiple size="8" >
-                <optgroup label="Libros" >
-                    <option value="Recetas">Recetas</option>
-                    <option value="Historia">Historia</option>
-                    <option value="Tecnicos">Técnicos</option>
-                </optgroup>
-                <optgroup label="Calendarios">
-                    <option value="Escolares">Escolares</option>
-                    <option value="Anuales">Anuales</option>
-                </optgroup>
-                <optgroup label="Material Escolar">
-                    <option value="Pinturas">Pinturas</option>
-                    <option value="Rotuladores">Rotuladores</option>
-                    <option value="Cuadernos">Cuadernos</option>
-                    <option value="Gomas">Gomas</option>
-                </optgroup>
-            </select>
+          <legend>Datos del producto</legend>
+          Producto <br />
+          <select name="" id="" multiple size="8">
+            <optgroup label="Libros">
+              <option value="Recetas">Recetas</option>
+              <option value="Historia">Historia</option>
+              <option value="Tecnicos">Técnicos</option>
+            </optgroup>
+            <optgroup label="Calendarios">
+              <option value="Escolares">Escolares</option>
+              <option value="Anuales">Anuales</option>
+            </optgroup>
+            <optgroup label="Material Escolar">
+              <option value="Pinturas">Pinturas</option>
+              <option value="Rotuladores">Rotuladores</option>
+              <option value="Cuadernos">Cuadernos</option>
+              <option value="Gomas">Gomas</option>
+            </optgroup>
+          </select>
         </fieldset>
         <fieldset>
-            <legend>Información de interés</legend>
-            Comentarios <br>
-            <textarea name="" id="" cols="60" rows="6">Escriba aquí su comentario...</textarea> <br>
-            <input type="checkbox" name="" id=""> Acepto recibir información publicitaria
+          <legend>Información de interés</legend>
+          Comentarios <br />
+          <textarea name="" id="" cols="60" rows="6">
+Escriba aquí su comentario...</textarea
+          >
+          <br />
+          <input type="checkbox" name="" id="" /> Acepto recibir información
+          publicitaria
         </fieldset>
         <h1>Paso 3. Pago</h1>
         <fieldset id="datosEnvio">
-            <legend>Datos del envío</legend>
-            <label for="direccion">Dirección</label><input type="text" id="direccion"><br>
-            <label for="ciudad">Ciudad</label> 
-            <input type="text" id="ciudad">
-            <label for="cp">Código Postal</label>
-            <input type="text" id="cp">
+          <legend>Datos del envío</legend>
+          <label for="direccion">Dirección</label
+          ><input type="text" id="direccion" /><br />
+          <label for="ciudad">Ciudad</label>
+          <input type="text" id="ciudad" />
+          <label for="cp">Código Postal</label>
+          <input type="text" id="cp" />
         </fieldset>
         <fieldset>
-            <legend>Datos bancarios</legend>
-            <label for="nombreEntidad">Nombre de la entidad</label>
-            <input type="text" name="" id=""> <br>
-            <label for="numCuenta">Nº de cuenta</label>
-            <input type="text" name="" id="" size="40">
-        </fieldset> <br> <br>
-        <input type="submit" name="" id="" value="COMPRAR">
-        <input type="reset" name="" id="" value="LIMPIAR FORMULARIO">
-    </fieldset>
-</body>
+          <legend>Datos bancarios</legend>
+          <label for="nombreEntidad">Nombre de la entidad</label>
+          <input type="text" name="" id="" /> <br />
+          <label for="numCuenta">Nº de cuenta</label>
+          <input type="text" name="" id="" size="40" />
+        </fieldset>
+        <br />
+        <br />
+        <input type="submit" name="" id="" value="COMPRAR" />
+        <input type="reset" name="" id="" value="LIMPIAR FORMULARIO" />
+      </fieldset>
+    </form>
+  </body>
 </html>
