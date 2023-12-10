@@ -17,7 +17,7 @@
           <option value="Adosado">Adosado</option></select
         ><br />
         <label for="calle">Calle</label>
-        <input type="text" name="" id="calle" pattern="^(C\/|Vía\/)[a-zA-Z]+$" required />
+        <input type="text" name="" id="calle" pattern="^(\C/|\Vía/)[a-zA-Z]+$" required />
         <label for="numCalle" required>Nº</label>
         <input
           type="number"
@@ -35,8 +35,9 @@
           type="email"
           name=""
           id="email"
-          pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9_]\.es"
           required
+          pattern="^[a-zA-Z0-9._]+@[a-zA-Z0-9_]+\.[e][s]+$"
+          
         />
           <br>
         <label for="contacto">Número de contacto</label>
@@ -53,11 +54,12 @@
         ></textarea>
   <br>
         <label for="web">Página web del inmueble</label>
-        <input type="text" name="" id="web" />
+        <input type="text" name="" id="web" pattern="www\.[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}"/>
   <br>
         <input type="submit" name="" id="" value="Enviar" />
         <input type="reset" name="" id="" value="Limpiar" />
       </fieldset>
    </form>
+
   </body>
 </html>
