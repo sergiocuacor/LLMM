@@ -1,0 +1,30 @@
+table,td,th{
+    border:2px solid rgb(253, 253, 43);
+
+    border-collapse: collapse;
+    margin:50px auto;
+    text-align: center;
+    padding: 1px 20px;
+}
+#cifraTotal{
+    text-align: left;
+}
+caption{
+    color: red;
+}
+th{
+    background-color: rgb(183, 147, 205);
+}
+#col1{
+background-color: rgb(152, 182, 242);
+}
+#col2{
+background-color: white;
+}
+#cols34{
+background-color: rgb(227, 198, 143);
+}
+.foot{
+    background-color: rgb(249, 249, 172);
+}
+

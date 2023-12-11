@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="../css/ejercicio6.css">
+</head>
+<body>
+    <h1>Introducir datos de cliente</h1>
+    <form action="destino.html" method="get">
+        <label for="nombre" class="labelCajas">Nombre </label>
+        <input type="text" name="nombre" id="nombre" maxlength="12" size="10">
+        <br>
+        <label for="apellidos" class="labelCajas">Apellidos </label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="25" size="20">
+         <br>
+        <label for="usuario" class="labelCajas">Usuario </label>
+        <input type="text" name="usuario" id="usuario">
+        <br>
+        <label for="passwd" class="labelCajas">Contraseña</label>
+        <input type="text" name="passwd" id="passwd" maxlength="12">
+        <br>
+        <label for="socio" class="labelCajas">Socio </label><input type="checkbox" name="socio" id="socio"> 
+        <br>
+        <label class="labelCajas">Sexo</label>
+         M<input type="radio" name="sexo" id="M" value="M" checked>
+         H<input type="radio" name="sexo" id="H" value="H"> 
+        <br>
+        <label>Aficiones</label>
+        <br>
+        <label for="deporte"> <input type="checkbox" name="deporte" id="deporte"> Deportes</label>
+        <br>
+        <label for="cine"> <input type="checkbox" name="cine" id="cine"> Cine</label>
+        <br>
+        <label for="lectura"> <input type="checkbox" name="lectura" id="lectura"> Lectura</label>
+        <br>
+        <label for="subirFoto">Subir foto</label> <input type="file" name="foto" id="foto">
+        <br>
+        <input type="hidden" name="fecha" value="12/12/2020">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button" onclick="window.close()">Cerrar</button>
+        <br>
+        <button type="button"> 
+            <img src="../img/gatitoblanco.jfif" alt="Gatito blanco" onclick="alert('Hola');"> 
+        </button>
+    </form>
+</body>
+</html>
