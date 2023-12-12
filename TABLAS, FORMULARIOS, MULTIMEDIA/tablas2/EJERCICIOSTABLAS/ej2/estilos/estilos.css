@@ -40,6 +40,35 @@ caption{
     border: 2px solid rgb(230, 40, 233);
     border-collapse: collapse;
 }
-th{
+.thT2{
     padding: 10px;
+}
+.estilosTabla3{
+    border: 3px solid rgb(230, 40, 233);
+    border-collapse: collapse;
+    padding: 10px;
+}
+.naranja{
+    background-color: rgb(247, 119, 72);
+}
+.amarillo{
+    background-color: rgb(244, 221, 10);
+}
+
+.celdas4{
+    border: 1px solid black;
+    padding: 10px;
+}
+#tabla4{
+    border: 2px solid rgb(230, 40, 233);
+    
+}
+.fondorosa{
+    background-color: rgb(255, 6, 97);
+}
+.fondomorado{
+    background-color: rgb(250, 205, 250);
+}
+.fondoblanco{
+    background-color: rgb(245, 238, 230);
 }
