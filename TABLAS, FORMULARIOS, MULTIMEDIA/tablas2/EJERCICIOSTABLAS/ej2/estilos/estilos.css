@@ -1,0 +1,45 @@
+#div1{
+width: 50%;
+height: 500px;
+background-color: antiquewhite;
+float: left;
+}
+#div2{
+    width: 50%;
+    height: 500px;
+background-color: rgb(196, 234, 253);
+float: left;
+}
+
+#div3{
+    width: 50%;
+    height: 500px;
+background-color: rgb(196, 234, 253);
+float: left;
+}
+#div4{
+    width: 50%;
+    height: 500px;
+    background-color: antiquewhite;
+    float: left;
+}
+.estilosTabla1{
+    border: 3px solid rgb(230, 40, 233);
+    
+}
+table{
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+caption{
+    color: rgb(230, 40, 233);
+}
+.estilosTabla2{
+    border: 2px solid rgb(230, 40, 233);
+    border-collapse: collapse;
+}
+th{
+    padding: 10px;
+}
