@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <title>PLantillas mundial 2023</title>
+  </head>
+  <body>
+    <header>
+      <h1>MUNDIAL DE BALONMANO POLONIA-SUECIA 2023</h1>
+      <img
+        id="imagenLogo"
+        src="./img/logo_dark_bg_trans.webp"
+        alt="logoMundialBalonmano2023"
+      />
+      <nav>
+        <a href="./index.html">HOME</a>
+        <a href="./jugadores.html">JUGADORES</a>
+        <a href="./equipos.html">EQUIPOS</a>
+      </nav>
+    </header>
+    <section>
+        <form action="./src/alta.html">
+          <fieldset>
+            <legend>Nuevo jugador</legend>
+            <label for="nombre"> Nombre </label>
+            <input type="text" name="nombre" id="nombre" required pattern="[A-Z][a-z]+\s[A-Z][a-z]+"/>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" class="corto" min="16" max="45">
+            <label for="equipo">Equipo</label>
+            <select name="equipo" id="equipo" required>
+              <option value="DEN">Dinamarca</option>
+              <option value="ESP" selected>España</option>
+              <option value="FR">Francia</option>
+              <option value="NOR">Noruega</option>
+              <option value="POL">Polonia</option>
+            </select>
+            <label for="colorCamiseta">Color primera equipación</label>
+            <input type="color" name="colorCamiseta" id="colorCamiseta" class="corto"/>
+            <input type="submit" value="Dar de Alta" />
+          </fieldset>
+        </form>
+        <video src="./video/WCH-23-promo-.mp4" controls>
+          Vídeo promocional del mundial de balonmano Polonia-Suecia 2023
+        </video>
+        <article>
+          <p><span id="entradaUltimos">Últimos jugadores añadidos:</span>
+            <ul>
+              <li>Eric Johansson (22 años, Suecia)</li>
+              <li>Juri Knorr (22 años, Alemania)</li>
+              <li>Simon Pytlick (22 años, Dinamarca)</li>
+              <li> Kiko Costa (17 años, Portugal)</li>
+              <li> Domen Makuc (22 años, Eslovenia)</li>
+            </ul>
+          </p>
+        </article>
+    </section>
+    <footer>
+      <form action="#">
+        <label for="correo"> Introduce tu correo y nos pondremos en contacto contigo</label>
+        <input type="email" name="correo" id="correo" required>
+        <input type="submit" value="Enviar">
+      </form>
+    </footer>
+  </body>
+</html>
