@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Horario DAW</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="tituloPrincipal">
+        Técnico Superior en Desarrollo de Aplicaciones Web
+      </h1>
+      <span>-- Ciclo Superior --</span>
+    </header>
+    <section>
+      <div id="horario">
+        <h2>HORARIO 1º DAW</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:15-9:10</td>
+              <td>FOL</td>
+              <td>FOL</td>
+              <td>LLMM</td>
+              <td rowspan="3">Programación</td>
+              <td rowspan="2">LLMM</td>
+            </tr>
+            <tr>
+              <td>9:10-10:05</td>
+              <td rowspan="2">Programación</td>
+              <td>BBDD</td>
+              <td rowspan="2">BBDD</td>
+            </tr>
+            <tr>
+              <td>10:05-11:00</td>
+              <td>LLMM</td>
+              <td>EED</td>
+            </tr>
+            <tr>
+              <td>11:00-11:30</td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>11:30-12:25</td>
+              <td>SSII</td>
+              <td>Programación</td>
+              <td>Programación</td>
+              <td>FOL</td>
+              <td>EED</td>
+            </tr>
+            <tr>
+              <td>12:25-13:20</td>
+              <td>BBDD</td>
+              <td rowspan="2">SSII</td>
+              <td>SSII</td>
+              <td rowspan="2">BBDD</td>
+              <td rowspan="2">SSII</td>
+            </tr>
+            <tr>
+              <td>13:20-14:15</td>
+              <td>EED</td>
+              <td>Programación</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="masinfo">
+        <h2>MÁS INFORMACIÓN</h2>
+        <form action="https://www.calasanzsalamanca.es/
+        " method="get">
+          <span
+            >Solicita más información rellenando el siguiente
+            cuestionario:</span
+          ><br />
+
+          <label for="Nombre">Nombre:</label>
+          <input type="text" name="Nombre" id="Nombre" required pattern="[A-Z][a-z]+\s[A-Z][a-z]+"/> <br />
+
+          <label for="Email">Correo electrónico:</label>
+          <input type="text" name="Email" id="Email" pattern="[a-zA-Z0-9_.+-]+@[a-z]+\.(net|com|es)"/> <br />
+          <span id="spanPreg">Preguntas:</span> <br />
+          <textarea
+            name="Preguntas"
+            id="Preguntas"
+            cols="70"
+            rows="10" maxlength="450"
+          ></textarea>
+          <input type="submit" name="Enviar" id="Enviar" />
+        </form>
+      </div>
+      <hr />
+      <div id="planestudios">
+        <h2>PLAN DE ESTUDIOS</h2>
+
+        <iframe src="./pdf/planEstudios.pdf" frameborder="0"></iframe>
+      </div>
+      <hr />
+    </section>
+    <footer>
+      <div id="localizacion">
+        <h2 >LOCALIZACIÓN</h2>
+        <!--Earth no funcionaba así que utilicé Maps-->
+        <iframe
+          id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.9648516220695!2d-5.661896023443939!3d40.96034882237396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f266cd124909d%3A0x5cd302f38c14e616!2sColegio%20Calasanz%20de%20Salamanca!5e0!3m2!1ses!2ses!4v1702468739347!5m2!1ses!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
