@@ -1,0 +1,57 @@
+h1{
+    color: blueviolet;
+    margin-top: 50px;
+    text-align: center;
+}
+#logo{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+#div1{
+    width: 40%;
+    height: auto;
+    border: 1px solid blueviolet;
+    margin: auto;
+    text-align: center;
+}
+#JUGADORES{
+    margin: 0 30px;
+}
+#div2{
+    width: 30%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+}
+fieldset{
+    border: 2px solid blueviolet;
+}
+#nombre{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#div3{
+    border: 2px solid blueviolet;
+    float: left;
+    margin-top: 58px;
+    width: auto;
+    margin-left: 160px;
+    
+    margin-right: 300px;
+}
+#div4{
+    float: left;
+    margin-left: 160px;
+}
+span{
+    color: blueviolet;
+}
+
+
+
+
