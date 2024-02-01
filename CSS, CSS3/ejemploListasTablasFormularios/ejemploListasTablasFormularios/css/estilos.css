@@ -1,0 +1,112 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    border: 6px dotted darkturquoise;
+}
+
+#divGeneral {
+    overflow: hidden;
+    border: 4px dashed black;
+    margin: 25px;
+}
+
+#divContenedor {
+    width: 60%;
+    margin: auto;
+}
+
+#divLeft {
+    border: 3px solid pink;
+    float: left;
+    width: 45%;
+    margin: auto;
+}
+
+#divRight {
+    border: 3px solid pink;
+    float: right;
+    width: 45%;
+    margin: auto;
+}
+
+#ol1 {
+    list-style-type: georgian;
+}
+
+#ol2 {
+    list-style-type: georgian;
+    list-style-position: inside;
+}
+
+li:nth-child(even) {
+    background-color: bisque;
+}
+
+li:nth-child(odd) {
+    background-color: aqua;
+}
+
+ul {
+    list-style-image: url(../img/img1.jpg);
+}
+
+#divTablas {
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/** Estilos para el formulario **/
+
+#divForm {
+    border: 3px solid pink;
+    width: 60%;
+    margin: auto;
+    border-radius: 270px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 300px;
+    padding: 16px;
+    border-radius: 50px;
+    margin: auto;
+    background-color:salmon;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 180px;
+    border-radius: 6px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    background-color: thistle;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+}

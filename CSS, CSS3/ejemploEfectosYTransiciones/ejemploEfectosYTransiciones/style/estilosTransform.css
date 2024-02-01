@@ -1,0 +1,67 @@
+h2 {
+   text-align: center;
+}
+
+div {
+   overflow: hidden;
+   border: 2px black solid;
+}
+
+.divNormal {
+   width: 30%;
+   box-sizing: border-box;
+   float: left;
+}
+.divIzq {
+   width: 35%;
+   box-sizing: border-box;
+   float: left;
+}
+
+.divDer {
+   width: 35%;
+   box-sizing: border-box;
+   float: right;
+}
+
+.divOriginal {
+   width: 80px;
+   height: 80px;
+   margin: auto;
+   margin-bottom: 5px;
+   background-image: url("../img/imagen.jpg");
+   background-size: cover;
+   color: white;
+   text-align: center;
+}
+/* **** Desplazamientos **** */
+.divMov2D {
+   transform: translate(20px, 30px);
+}
+
+.divMov3D {
+   transform: translate3d(100px, 10px, 15px);
+}
+
+/* **** Rotaciones **** */
+.divRot2D {
+   transform: rotate(20deg);
+}
+
+.divRot3D {
+   transform: rotateZ(180deg);
+}
+
+/* **** Cambio de tamaño **** */
+.divScale2D {
+   transform: scaleX(2);
+}
+
+.divScale3D {
+   transform: scaleZ(5);
+}
+
+/* **** Deformaciones **** */
+.divSkew2D {
+   transform: skewX(20deg);
+}

@@ -1,0 +1,86 @@
+#divtransic {
+  margin-bottom: 55px;
+  overflow: hidden;
+}
+
+.principal {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.secundario {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.secundario1 {
+  background-color: yellow;
+  transition: background-color 2s linear 1s;
+}
+  
+.secundario1:hover {
+  background-color: red;
+}
+
+.secundario2 {
+  background-color: pink;
+  transition: background-color 2s linear 1s, transform 3s;
+}
+  
+.secundario2:hover {
+  background-color: purple;
+  transform: rotateY(180deg);
+}
+
+.secundario3 {
+  background-color: aquamarine;
+  transition: background-color 3s ease-out, transform 2s;
+}
+  
+.secundario3:hover {
+  background-color: red;
+  transform: skewX(65deg);
+}
+
+.secundario4 {
+  background-color: crimson;
+  transition: width 4s ease-in-out;
+}
+  
+.secundario4:hover {
+  background-color: purple;
+  width: 450px;
+}
+
+/* Estilos para el formulario */
+#divForm {
+  clear: both;
+  border: 2px red solid;
+  margin-top: 15px;
+  padding: 25px;
+}
+
+label, input {
+  margin: 10px;
+  padding: 5px;
+}
+
+#nombre {
+  background-color: brown;
+  color: white;
+}
+
+#nombre:invalid {
+  transform: scaleX(1.2);
+  background-color: darkblue;
+  border: 1px red solid;
+}
+
+#edad:invalid {
+  transform: rotate(45deg);
+}

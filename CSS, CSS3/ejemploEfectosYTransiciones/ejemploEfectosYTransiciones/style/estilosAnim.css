@@ -1,0 +1,57 @@
+@keyframes inicioParrafo {
+    from {
+        font-weight: bolder;
+        color: red;
+        margin-left: 55%;
+        background-color: black;
+    }
+    50% {
+        color: blue;
+        font-weight: lighter;
+        background-color: aquamarine;
+    }
+    to {
+        color: chartreuse;
+        margin-left: 0%;
+        font-weight: bolder;
+        background-color: pink;
+    }
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#p1 {
+    animation-name: inicioParrafo;
+    animation-duration: 10s;
+    animation-direction: reverse;
+}
+
+#p2 {
+    animation-name: inicioParrafo;
+    animation-duration: 8s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#p3 {
+    animation-name: inicioParrafo;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-fill-mode: backwards;
+    animation-delay: 6s;
+}
+#p4 {
+    animation-name: inicioParrafo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+#p5 {
+    animation-name: inicioParrafo;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: howarts;
+    src: url(./ParryHotter.ttf);
+}
+
+h1 {
+    /*En este ejemplo para las sombras se especifica respecto de la posición X, 
+    respecto de la posición Y y radio. No es obligatorio incluir los tres.
+    Es posible encadenar sompbras separadas por ,. Se aplicarán de la parte delantera hacia
+    atrás, según el orden en que se incluyan 
+    */
+    text-shadow: 7px 4px 2px lightblue;
+    box-shadow: 5px 7px green, 15px 17px 8px pink;
+    text-align: center;
+    margin-bottom: 55px;
+    font-family: serif, howarts;
+    font-size: 5em;
+ }
+
+h2 {
+    text-align: center;
+    padding: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#h21 {
+    /*Los posibles valores del primer parámetro son: to bottom, to rigth, ángulo en grados(50deg)*/
+    background: linear-gradient(to bottom, pink, blue); 
+}
+
+#h22 {
+    background: radial-gradient(farthest-corner at 30px 75px, green 5%, yellow, brown);
+}
+
+#h23 {
+    /* Es posible indicar porcentaje de espacio para cada color*/
+    background: linear-gradient(to bottom right, red 50%, black, white, purple);
+}

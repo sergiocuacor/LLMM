@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CSS Listas y Tablas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <h1>Propiedades para modificar Listas y Tablas</h1>
+    <!-- *******************************************************-->
+    <div id="divGeneral">
+        <h2>Listas</h2>
+        <div id="divContenedor">
+            <div id="divLeft">
+                <ol id="ol1">
+                    <li>Elemento 1</li>
+                    <li>Elemento 2
+                        <ul>
+                            <li>Elemento 3</li>
+                            <li>Elemento 4</li>
+                        </ul>
+                    </li>
+                    <li>Elemento 5</li>
+                </ol>
+            </div>
+            <div id="divRight">
+                <ol id="ol2">
+                    <li>Elemento 1</li>
+                    <li>Elemento 2
+                        <ul>
+                            <li>Elemento 3</li>
+                            <li>Elemento 4</li>
+                        </ul>
+                    </li>
+                    <li>Elemento 5</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- *******************************************************-->
+    <div id="divGeneral">
+        <h2>Tablas</h2>
+        <div id="divTablas">
+            <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Styling_tables">EJEMPLO TABLAS</a>
+        </div>
+    </div>
+    <!-- *******************************************************-->
+    <div id="divGeneral">
+        <div id="divForm">
+            <h2>Formularios</h2>
+            <form action="#" target="" method="get" name="formDatos">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"/>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos"/>
+                <label for="email"/>Email</label>
+                <input type="email" name="email" id="email" required />
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" for="mensaje" placeholder="Máximo 250 carácteres" maxlength="250"></textarea>
+                <input type="submit" name="enviar"/>
+            </form>
+        </div>
+    </div>
+    <!-- *******************************************************-->
+</body>
+
+</html>
