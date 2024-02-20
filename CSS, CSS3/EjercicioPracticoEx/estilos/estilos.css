@@ -1,0 +1,74 @@
+
+
+body{
+    background-image: url(../img/coronavirus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fondoDivs{
+    background-color: rgba(255, 255, 255, 0.513);
+    
+    text-align: center;
+    
+}
+header{
+    border-radius: 25px ;
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+header h1{
+    margin: 0;
+}
+h3{
+    font-style: italic;
+}
+#sectionLeft, #sectionRight{
+    border: 1px solid yellow;
+    float: left;
+    height: auto;
+    margin: 0px 90px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    width: 40%;
+}
+#sectionLeft:hover, #sectionRight:hover{
+    transform: rotate(1deg);
+}
+#sectionCuestionario{
+    width: 95%;
+    height: auto;
+    clear: both;
+    padding: 20px 0px;
+    margin: auto;
+    border: 2px solid black;
+}
+h3{
+    font-style: italic;
+    
+    overflow: hidden;
+}
+textarea{
+    border: 1px solid red;
+    
+}
+h3, textarea{
+    background-color: rgba(255, 255, 255, 0.69);
+}
+#divImagen{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+@keyframes rotarSections {
+    0%{
+        rotate: rotateX(20deg);
+    }
+    100%{
+        rotate: rotateX(0deg);
+    }
+}
