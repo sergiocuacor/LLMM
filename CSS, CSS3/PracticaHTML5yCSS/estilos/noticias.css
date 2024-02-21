@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/kieran-belshaw-redkeepgate-ruins-danyspeech-20ft-moredamage-v011copy\ \(1\).jpg);
+   
+
+}
+section{
+    overflow: hidden;
+    width: 95%;
+    height: auto;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #F6B17A, #E89560, #F6B17A);    border-radius: 15px;
+    box-shadow: 0 10px 14px rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #424769;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-left: 50px;
+    border: 1px solid transparent;
+    animation: efectoSectionPulso 3s ease-in-out 1;
+}
+.h1Noticias{
+    color: #2D3250;
+}
+h2{
+    font-size: 17px;
+    text-decoration: underline;
+}
+article {
+    height: fit-content;
+    width: 42%;
+    margin: 40px 60px 40px 60px;
+    text-align: justify;
+    float: left;
+}
+.articleLeft{
+    float: left;
+    clear: both;
+}
+.articleRight{
+    float: right;
+}
+.articleRight img{
+    float: right;
+    height: 200px;
+}
+article img{
+    height: 220px;
+    float: left;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #2D3250;
+    box-shadow: 0 4px 7px rgb(0, 0, 0);
+}
+.anunciosNoticias {
+    border: 2px solid #f5efef; 
+    box-shadow: 
+        0 0 7px 1px #f5efef,
+        0 0 10px 2px rgb(255, 255, 19), 
+        0 0 13px 3px rgb(255, 132, 0); 
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+.anunciosNoticias:hover {
+    box-shadow: 
+        0 0 10px 3px #f5efef, 
+        0 0 16px 4px #ff0, 
+        0 0 21px 6px rgb(255, 132, 0);
+}
+
+#noticiaCaminantes{
+    float: right;
+    margin: 20px 30px;
+}
+span{
+    font-weight: bold;
+    color: #293582;
+}
+.articleLeft{
+    animation: movimientoArticleLeft 1s ease-out backwards;
+}
+.articleRight{
+    animation: movimientoArticleRight 3s ease-out forwards;
+
+}
+ul{
+    list-style-type: lower-greek;
+}
+ul li, .h1Noticias, span, h2{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+@keyframes movimientoArticleLeft {
+    0% {
+      transform: translateX(-90px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .botonInicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+.botonPrincipal {
+    display: inline-block;
+    background-color: #293582;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+  @keyframes movimientoArticleRight {
+    0% {
+      transform: translateX(180px);
+      opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+@keyframes efectoSectionPulso{
+    0%{
+        box-shadow: 0 9px 15px rgb(0, 0, 0);
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.752);
+    }
+    100%{
+        box-shadow: 0 9px 15px rgb(0, 0, 0);
+        transform: scale(1);
+    }
+}

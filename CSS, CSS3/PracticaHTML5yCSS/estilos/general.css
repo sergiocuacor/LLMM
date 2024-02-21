@@ -1,0 +1,43 @@
+@font-face {
+    font-family: got;
+    src: url(../fonts/Game\ of\ Thrones.ttf); 
+}
+
+body{
+    margin: 0;
+    padding-top: 170px;
+    padding-bottom: 55px;
+}
+header, footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/backg_public.jpeg);
+    text-shadow: 0.5px 0.5px 2px #FFF;
+}
+header{
+    top:0;
+    height: 170px;
+    color: white;
+    background-color: black;
+    
+    font-family: got, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+footer{
+    bottom: 0;
+    height: 55px;
+    
+}
+.tituloCabecera{
+    margin-top: 40px;
+    
+}
+

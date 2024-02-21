@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/alta.css" />
+    <link rel="stylesheet" href="../estilos/general.css" />
+    <link rel="icon" type="image/x-icon" href="../img/stark-wolf.ico">
+    <title>Alta</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="tituloCabecera">MundoGOT</h1>
+    </header>
+    <section>
+      <form action="../src/principal.html" method="get">
+        <!-- Maquetar, estilizar formulario y pagina-->
+        <fieldset>
+          <legend>Información personal</legend>
+          <label for="Nombre"> Nombre:</label>
+          <input type="text" name="Nombre" id="Nombre" required /><br />
+
+          <label for="Apellidos"> Apellidos:</label>
+          <input type="text" name="Apellidos" id="Apellidos" required /><br />
+
+          <label for="DNI">DNI:</label>
+          <input
+            type="text"
+            name="DNI"
+            id="DNI"
+            required
+            pattern="\d{8}[A-Z]"
+          /><br />
+          <label for="Direccion">Dirección:</label>
+          <input
+            type="text"
+            name="Direccon"
+            id="Direccion"
+            required
+            pattern="C\/[^ ]+ Nº\d+ P[a-zA-Z]"
+          /><br />
+
+          <label for="Ciudad">Ciudad:</label>
+          <input type="text" name="Ciudad" id="Ciudad" required /><br />
+
+          <label for="CodigoPostal">Código Postal:</label>
+          <input
+            type="text"
+            name="CodigoPostal"
+            id="CodigoPostal"
+            required
+            pattern="\d{5}"
+            list="opcionesCodPostal"
+          /><br />
+          <datalist id="opcionesCodPostal">
+            <option value="37006"></option>
+            <option value="37007"></option>
+            <option value="38400"></option>
+            <option value="32001"></option>
+            <option value="32002"></option>
+          </datalist>
+
+          <label for="Pais">País:</label>
+          <input type="text" name="Pais" id="Pais" required /><br />
+
+          <label for="FechaNacimiento">Fecha de nacimiento:</label>
+          <input
+            type="date"
+            name="FechaNacimiento"
+            id="FechaNacimiento"
+          /><br />
+          <label for="Sexo">Sexo:</label>
+          <label for="sexo_hombre">Hombre</label>
+          <input
+            type="radio"
+            id="sexo_hombre"
+            value="Hombre"
+            name="sexo"
+            required
+          />&nbsp; &nbsp; &nbsp;
+          <label for="sexo_mujer">Mujer</label>
+          <input type="radio" id="sexo_mujer" value="Mujer" name="sexo" /><br />
+
+          <label for="Aficiones">Aficiones:</label>
+          <select name="aficiones" id="aficiones" required>
+            <option value="deporte">Deporte</option>
+            <option value="lectura">Lectura</option>
+            <option value="">Cine</option>
+            <option value="">Música</option>
+            <option value="Otra">Otra</option></select
+          ><br />
+          <label for="otra_aficion">Si eligió 'Otra', especifique:</label>
+          <input type="text" id="otra_aficion" name="otra_aficion" /><br />
+          <label for="fotoPerfil">Foto de perfil:</label>
+          <input type="file" id="fotoPerfil" name="fotoPerfil" /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Inicio de sesión</legend>
+          <label for="Email">E-mail:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="correo@correo.es"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]"
+          /><br />
+
+          <label for="password">Contraseña:</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            required
+            pattern="_([A-Za-z]{0,7})_([A-Za-z0-9]{5})&(\d{2})"
+            title="formato: _[De0a7Letras]_[5Letras/NumerosEXACTOS]&[2Numeros]"
+          /><br />
+          <button type="reset">
+            Borrar
+            </button>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="window.location.href='principal.html';">
+            Cancelar
+        </button>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <p>Contacto: mundogot@got.es</p>
+    </footer>
+  </body>
+</html>

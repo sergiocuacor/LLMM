@@ -1,0 +1,104 @@
+@font-face {
+    font-family: roboto;
+    src:    url(../fonts/Roboto-Regular.ttf);
+}
+@keyframes movimientoFormulario {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(160px);
+    }
+    80%{
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes rotacion {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #2D3250, #424769, #7077A1);
+}
+section{
+    margin-top: 40px;
+    width: 100%;
+    height: 2000px;
+
+}
+form{
+    position: relative;
+    width: 40%;
+    margin: auto;
+    font-family: roboto;
+    animation: movimientoFormulario 1.3s ease-in-out forwards;
+    filter: grayscale(100%);
+    transition: filter 4s;
+    
+}
+fieldset{
+    float: left;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+input{
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.616);
+}
+input:focus{
+background-color: rgb(77, 204, 155);
+border-color: #7077A1;
+}
+input:invalid{
+    background-color: rgb(174, 0, 0);
+}
+input:valid{
+    background-color: #009e00;
+}
+form:hover {
+    filter: grayscale(0%);
+  }
+input, button,select{
+    border-radius: 15px;
+    padding: 4px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+legend{
+    border-radius: 15px;
+    padding: 5px;
+}
+
+form,fieldset, legend{
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.616);
+    background-color: #F6B17A;
+    color: #2D3250; 
+}
+button:hover, select:hover,input[type=file]:hover{
+    opacity: 0.7;
+}
+button{
+    border: none;
+    padding: 8px;
+    margin-left: 12px;
+}
+@keyframes movimientoFondo {
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 45% 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
