@@ -63,12 +63,52 @@ h3, textarea{
     margin: auto;
     margin-top: 20px;
     border: 1px solid red;
+    height: 500px;
+    overflow: hidden;
 }
+.virus{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/avisoUnicef.png);
+    margin: auto;
+    height: 100%;
+    width: 25%;
+    animation: reboteImagen 1s forwards;
+    z-index: 1000;
+}
+
 @keyframes rotarSections {
     0%{
         rotate: rotateX(20deg);
     }
     100%{
         rotate: rotateX(0deg);
+    }
+}
+@keyframes reboteImagen {
+    0%{
+        transform: translateY(-100%);
+        animation-timing-function: ease-in;
+    }
+    20%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: translateY(-100%);
+        animation-timing-function: ease-in;
+    }
+    
+    60%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    85%{
+        transform: translateY(-50%);
+        animation-timing-function: ease-in;
+    }   
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
     }
 }
