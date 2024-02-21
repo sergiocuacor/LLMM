@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda</title>
+</head>
+<body>  
+   <h1>Conversor de Moneda</h1> 
+   <form action="">
+    <input type="number" id="cantidad" placeholder="Cantidad" required>
+    <select name="opcion" id="opcion">
+        <option value="EUROaDOLAR">Euros a dólares</option>
+        <option value="DOLARaEURO">Dólares a euros</option>
+    </select>
+    <button type="button" onclick="convertirMoneda()">Convertir</button>
+   </form>
+
+   <div id="resultadoDiv"></div>
+
+   <script src="js.js"></script>
+</body>
+</html>
