@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Componentes electrónicos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href=""> <strong>Inicio</strong></a>
+        <a href=""><strong>Comprar</strong></a>
+        <a href=""><strong>Descargas</strong></a>
+        <a href=""><strong>Blog</strong></a>
+      </nav>
+      <h1>Electronic devices</h1>
+      <div id="comentarioFlotante">
+        <p>
+          Adquiere tus componentes electrónicos <br />
+          <span id="segundaLinea"
+            >Cualquier componente que puedas imaginar, a tu disposición</span
+          >
+        </p>
+      </div>
+    </header>
+    <section>
+      <div id="masvendidos">
+        <h3>Más vendidos</h3>
+        <img src="./img/micro2.jpg" alt="" />
+        <img src="./img/graf1.jpg" alt="" />
+        <img src="./img/refrig3.jpg" alt="" />
+      </div>
+      <div id="portipo">
+        <h3>Por tipo</h3>
+        <span>Microprocesadores</span> <br> <br>
+        <img src="./img/micro1.jpg" alt="" />
+        <img src="./img/micro2.jpg" alt="" />
+        <img src="./img/micro3.jpg" alt="" /><br>
+        <span>Placas base</span> <br> <br>
+        <img src="./img/placa1.jpg" alt="" />
+        <img src="./img/placa2.jpg" alt="" />
+        <img src="./img/placa3.jpg" alt="" /><br>
+      
+      <span>Refrigeración</span> <br> <br>
+        <img src="./img/refrig1.jpg" alt="" />
+        <img src="./img/refrig2.jpg" alt="" />
+        <img src="./img/refrig3.jpg" alt="" /><br>
+      
+      <span>Tarjetas gráficas</span> <br> <br>
+        <img src="./img/graf1.jpg" alt="" />
+        <img src="./img/graf2.jpg" alt="" />
+        <img src="./img/graf3.jpg" alt="" />
+      </div>
+    </section>
+    <footer>
+      <form action="./src/solicitudEnviada.html" method="get">
+        <h3>Únete a nuestra newsletter</h3>
+      <label for="correo">Correo electrónico</label>
+      <input type="text" name="email"
+      id="email"
+      placeholder="introduce un correo válido"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]"
+    />
+      <button type="submit">Suscribirme</button>
+      </form>
+      <span> Nos encontrarás también en C/Cinco nº5 5A Salamanca</span>
+    </footer>
+  </body>
+</html>
