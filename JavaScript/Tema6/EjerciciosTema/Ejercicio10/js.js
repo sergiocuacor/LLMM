@@ -18,6 +18,26 @@ o Se mostrará al usuario el precio final mediante un alert().*/
 
 
 
-function calcularPrecioFinal(precioArticulo, IVA){
+function calcularPrecioFinal(precioArticulo, tipoIVA){
+    var importeFinal = 0;
+    if( tipoIVA == "G"){
+        importeFinal = precioArticulo *1.21;
+    } else if(tipoIVA == "R"){
+        importeFinal = precioArticulo * 1.10;
+    } else if(tipoIVA == "S"){
+        importeFinal = precioArticulo *1.04;
+    } else{
+        alert("Introduzca un tipo válido");
+    }
+    return importeFinal;
+}
+
+function pagar(){
+   var precioArticulo; 
+   var tipoIVA;
+   precioArticulo = parseFloat(prompt("Introduzca el precio del artículo: ")); // parseamos a float porque prompt devuelve Strings
+   tipoIVA = prompt("Dígame el tipo de IVA del artículo: ");
+   var importeFinal = calcularPrecioFinal(precioArticulo, tipoIVA);
+   alert("El importe final es: "+ importeFinal);
 
 }
