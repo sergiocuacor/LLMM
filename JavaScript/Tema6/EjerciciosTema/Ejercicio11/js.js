@@ -7,25 +7,63 @@ un elemento que muestre el valor Cuatro.
 de Cuatro”.
  Cambiar el contenido del título por “He creado una lista”*/
 
-var lista = document.createElement("ol");
+function crearLista(){
 
+let datos = ["Uno", "Dos", "Tres"];
+
+let lista = document.createElement("ol");
+
+for(var i = 0; i < datos.length; i++){
+   let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
+   elementoLista.innerText = datos[i];
+   lista.appendChild(elementoLista);
+}
 document.body.appendChild(lista);
 
-var elemento1 = document.createElement("li");
-
-elemento2.innerHTML = "Uno";
-lista.appendChild(elemento1);
-
-var elemento2 = document.createElement("li");
-
-elemento2.innerHTML = "Dos";
-
-lista.appendChild(elemento2);
-
-elemento3.innerHTML = "Tres";
-
-var elemento3 = document.createElement("li");
-
-lista.appendChild(elemento3);
+}
 
 
+
+function sustituirElementoTres(){
+
+    let lista = document.getElementsByTagName("ol")[0];
+
+    let nuevoElemento = document.createElement("li"); 
+		
+	nuevoElemento.innerText = "Cuatro";  
+
+    let elementoAntiguo=  document.getElementsByTagName("li")[2];
+
+    lista.replaceChild(nuevoElemento, elementoAntiguo);
+    
+}
+
+function añadirHijoACuatro(){
+
+    let lista = document.getElementsByTagName("ol")[0];
+
+    let parrafo = document.createElement("p");
+
+    parrafo.innerText = "Soy hijo de Cuatro";
+
+    let elementoCuatro = document.getElementsByTagName("li")[2];
+
+    elementoCuatro.appendChild(parrafo);
+
+}
+
+function cambiarTitulo(){
+ let titulo = document.getElementById("tituloPrincipal");
+
+ titulo.innerText = "He creado una lista";
+
+}
+
+function mostrarElementos(){
+    console.log(document);
+
+    let encabezado = document.getElementById("encabezado1");
+    console.log("encabezado");
+    let lista = document.getElementsByTagName("ol");
+    console.log("lista");
+}
