@@ -81,8 +81,30 @@ function mostrarElementos(){
     console.log("lista");
 }
 
-function accionarBotonUno(){
+function ejecutarBotonUno(){
 
-    
+    let parrafo = document.getElementsByTagName("p")[0];
+    parrafo.classList.add("efectosParrafo1");
 
+    let lista = document.getElementsByTagName("ol")[0];
+
+    let elementosLista = document.getElementsByTagName("li")[0]; 
+    elementosLista.classList.add("efectosLista1");
+
+    let titulo = document.getElementsByTagName("h1")[0];
+    titulo.setAttribute("class", "efectosTitulo1"); //esto es útil solo cuando no tiene otras clases todavía
+}
+
+function ejecutarBotonDos(){
+
+    let parrafo = document.getElementsByTagName("p")[0];
+    parrafo.classList.add("efectosParrafo2");
+
+    let lista = document.getElementsByTagName("ol")[0];
+
+    let elementosLista = document.getElementsByTagName("li")[0]; 
+    elementosLista.classList.add("efectosLista2");
+
+    let titulo = document.getElementsByTagName("h1")[0];
+    titulo.classList.add("efectosTitulo2");
 }
