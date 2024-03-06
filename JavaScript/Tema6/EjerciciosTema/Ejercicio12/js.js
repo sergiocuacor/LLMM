@@ -20,38 +20,38 @@ o El título será de color azul claro y cursiva.
 es decir, dejarán de tener estilo.
 */
 
-function crearLista(){
+function crearLista() {
 
-let datos = ["Uno", "Dos", "Tres"];
+    let datos = ["Uno", "Dos", "Tres"];
 
-let lista = document.createElement("ol");
+    let lista = document.createElement("ol");
 
-for(var i = 0; i < datos.length; i++){
-   let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
-   elementoLista.innerText = datos[i];
-   lista.appendChild(elementoLista);
+    for (var i = 0; i < datos.length; i++) {
+        let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
+        elementoLista.innerText = datos[i];
+        lista.appendChild(elementoLista);
+    }
+    document.body.appendChild(lista);
+
 }
-document.body.appendChild(lista);
-
-}
 
 
 
-function sustituirElementoTres(){
+function sustituirElementoTres() {
 
     let lista = document.getElementsByTagName("ol")[0];
 
-    let nuevoElemento = document.createElement("li"); 
-		
-	nuevoElemento.innerText = "Cuatro";  
+    let nuevoElemento = document.createElement("li");
 
-    let elementoAntiguo=  document.getElementsByTagName("li")[2];
+    nuevoElemento.innerText = "Cuatro";
+
+    let elementoAntiguo = document.getElementsByTagName("li")[2];
 
     lista.replaceChild(nuevoElemento, elementoAntiguo);
-    
+
 }
 
-function añadirHijoACuatro(){
+function añadirHijoACuatro() {
 
     let lista = document.getElementsByTagName("ol")[0];
 
@@ -65,14 +65,14 @@ function añadirHijoACuatro(){
 
 }
 
-function cambiarTitulo(){
- let titulo = document.getElementById("tituloPrincipal");
+function cambiarTitulo() {
+    let titulo = document.getElementById("tituloPrincipal");
 
- titulo.innerText = "He creado una lista";
+    titulo.innerText = "He creado una lista";
 
 }
 
-function mostrarElementos(){
+function mostrarElementos() {
     console.log(document);
 
     let encabezado = document.getElementById("encabezado1");
@@ -81,30 +81,47 @@ function mostrarElementos(){
     console.log("lista");
 }
 
-function ejecutarBotonUno(){
+function ejecutarBotonUno() {
 
     let parrafo = document.getElementsByTagName("p")[0];
     parrafo.classList.add("efectosParrafo1");
 
     let lista = document.getElementsByTagName("ol")[0];
-
-    let elementosLista = document.getElementsByTagName("li")[0]; 
-    elementosLista.classList.add("efectosLista1");
-
+    for (var i = 0; i < 3; i++) {
+        let elementosLista = document.getElementsByTagName("li")[i];
+        elementosLista.classList.add("efectosLista1");
+    }
     let titulo = document.getElementsByTagName("h1")[0];
     titulo.setAttribute("class", "efectosTitulo1"); //esto es útil solo cuando no tiene otras clases todavía
 }
 
-function ejecutarBotonDos(){
+function ejecutarBotonDos() {
 
     let parrafo = document.getElementsByTagName("p")[0];
     parrafo.classList.add("efectosParrafo2");
 
     let lista = document.getElementsByTagName("ol")[0];
 
-    let elementosLista = document.getElementsByTagName("li")[0]; 
-    elementosLista.classList.add("efectosLista2");
+    for (var i = 0; i < 3; i++) {
+        var elementosLista = document.getElementsByTagName("li")[i];
+        elementosLista.classList.add("efectosLista2");
+    }
 
     let titulo = document.getElementsByTagName("h1")[0];
     titulo.classList.add("efectosTitulo2");
+}
+
+function ejecutarBotonTres(){
+    let parrafo = document.getElementsByTagName("p")[0];
+    parrafo.classList.add("efectosPorDefecto");
+
+    let lista = document.getElementsByTagName("ol")[0];
+
+    for (var i = 0; i < 3; i++) {
+        var elementosLista = document.getElementsByTagName("li")[i];
+        elementosLista.classList.add("efectosPorDefecto");
+    }
+
+    let titulo = document.getElementsByTagName("h1")[0];
+    titulo.classList.add("efectosPorDefecto");
 }
