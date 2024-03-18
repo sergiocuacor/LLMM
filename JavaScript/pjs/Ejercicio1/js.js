@@ -34,10 +34,11 @@ function ejercicio1() {
 
     while (personas.length > 0) {
         let numP = Number(prompt("Introduzca un número entre 0 y " + numero - 1));
-        if (numP >= 0 && nump < personas.length) {
+        if (numP >= 0 && numP < personas.length) {
 
             personas.splice(numP, 1);
-
+            
+            
             console.warn("Quedan " + personas.length + " nombres");
 
         } else {
