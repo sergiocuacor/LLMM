@@ -15,10 +15,10 @@ let lista = document.createElement("ol");
 
 for(var i = 0; i < datos.length; i++){
    let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
-   elementoLista.innerText = datos[i];
-   lista.appendChild(elementoLista);
+   elementoLista.innerText = datos[i]; // Le damos los valores "Uno", "Dos", "Tres" a los elementos li
+   lista.appendChild(elementoLista); // Añadimos como hijos de lista("ol") a los elementos li
 }
-document.body.appendChild(lista);
+document.body.appendChild(lista); //Por último, ponemos a lista como hijo del body
 
 }
 
@@ -26,36 +26,32 @@ document.body.appendChild(lista);
 
 function sustituirElementoTres(){
 
-    let lista = document.getElementsByTagName("ol")[0];
+    let lista = document.getElementsByTagName("ol")[0];  //Obtenemos el ol, ya que las funciones no se leen entre sí. Como obtenemos colecciones, indicamos el índice.
 
-    let nuevoElemento = document.createElement("li"); 
-		
+    let nuevoElemento = document.createElement("li"); // Creamos un nuevo elemento y le añadimos el texto "Cuatro"
 	nuevoElemento.innerText = "Cuatro";  
 
-    let elementoAntiguo=  document.getElementsByTagName("li")[2];
+    let elementoAntiguo=  document.getElementsByTagName("li")[2]; //Obtenemos el elemento tres, que se encuentra en la posición 2
 
-    lista.replaceChild(nuevoElemento, elementoAntiguo);
+    lista.replaceChild(nuevoElemento, elementoAntiguo); //Sustituimos el elemento antiguo, que contiene "Tres", por el nuevo elemento "Cuatro".
     
 }
 
 function añadirHijoACuatro(){
 
-    let lista = document.getElementsByTagName("ol")[0];
+    let elementoCuatro = document.getElementsByTagName("li")[2]; //Obtenemos el elemento que se encuentra en la posición 2, que contiene el texto "Cuatro".
 
-    let parrafo = document.createElement("p");
+    let parrafo = document.createElement("p"); //Creamos un parrafo
+    parrafo.innerText = "Soy hijo de Cuatro"; //Le añadimos texto
 
-    parrafo.innerText = "Soy hijo de Cuatro";
-
-    let elementoCuatro = document.getElementsByTagName("li")[2];
-
-    elementoCuatro.appendChild(parrafo);
+    elementoCuatro.appendChild(parrafo); // Añadimos el párrafo como hijo de elementoCuatro
 
 }
 
 function cambiarTitulo(){
- let titulo = document.getElementById("tituloPrincipal");
+ let titulo = document.getElementById("tituloPrincipal"); // Obtenemos el título
 
- titulo.innerText = "He creado una lista";
+ titulo.innerText = "He creado una lista"; // Le cambiamos el texto
 
 }
 
