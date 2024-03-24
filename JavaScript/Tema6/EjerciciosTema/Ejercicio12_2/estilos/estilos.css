@@ -1,0 +1,35 @@
+.efectosParrafo1{
+    color: red;
+    font-weight: bold;
+}
+.efectosLi1{
+    color: blue;
+    background-color: yellow;
+}
+.efectosTitulo1{
+    text-shadow: 1px 1.5px 1px pink, 1.5px 2px 1.5px black;
+}
+.efectosParrafo2{
+    color: yellow;
+    background-color: black;
+    border: 2px dotted red;
+}
+.efectosLi2{
+    background-color: pink;
+    font-size: larger;
+}
+.efectosTitulo2{
+    color: aqua;
+    font-style: italic;
+}
+.resetearEfectos {
+    color: inherit; 
+    background-color: transparent; 
+    font-weight: normal; 
+    text-shadow: none; 
+    border: none;
+    font-size: medium; 
+    font-style: normal; 
+}
+
+
