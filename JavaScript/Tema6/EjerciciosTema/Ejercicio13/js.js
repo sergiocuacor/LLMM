@@ -9,38 +9,57 @@ añada como nuevo elemento en la tercera posición de la lista.
 o Si se trata de una iteración impar, que se cambie el elemento que se
 encuentre en primera posición a la segunda.*/
 
-function crearLista(){
+function crearLista() {
 
-let datos = ["Uno", "Dos", "Tres"];
+    let datos = ["Uno", "Dos", "Tres"];
+    let lista = document.createElement("ol");
 
-let lista = document.createElement("ol");
+    for (var i = 0; i < datos.length; i++) {
+        let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
+        elementoLista.innerText = datos[i];
+        lista.appendChild(elementoLista);
+    }
+    
+    document.body.appendChild(lista);
 
-for(var i = 0; i < datos.length; i++){
-   let elementoLista = document.createElement("li"); //creamos una coleccion (como un array) elementoLista. en este caso, tendrá tres elementos
-   elementoLista.innerText = datos[i];
-   lista.appendChild(elementoLista);
+    for (var i = 0; i < 10; i++) {
+        let texto = prompt("Introduzca un texto:");
+        let nuevoElemento = document.createElement("li");
+        nuevoElemento.innerText = texto;
+        if (i === 0) {
+
+            lista.insertBefore(nuevoElemento, lista.firstChild);
+        }
+        else if (i % 2 == 0) {
+
+            lista.insertBefore(nuevoElemento, lista.children[2]);
+        }
+        else {
+
+            lista.insertBefore(lista.firstChild, lista.children[1].nextSibling);
+        }
+        console.log(lista.children);
+    }
 }
-document.body.appendChild(lista);
-
-}
 
 
 
-function sustituirElementoTres(){
+
+function sustituirElementoTres() {
 
     let lista = document.getElementsByTagName("ol")[0];
 
-    let nuevoElemento = document.createElement("li"); 
-		
-	nuevoElemento.innerText = "Cuatro";  
+    let nuevoElemento = document.createElement("li");
 
-    let elementoAntiguo=  document.getElementsByTagName("li")[2];
+    nuevoElemento.innerText = "Cuatro";
+
+    let elementoAntiguo = document.getElementsByTagName("li")[2];
 
     lista.replaceChild(nuevoElemento, elementoAntiguo);
-    
+
 }
 
-function añadirHijoACuatro(){
+function añadirHijoACuatro() {
 
     let lista = document.getElementsByTagName("ol")[0];
 
@@ -54,14 +73,14 @@ function añadirHijoACuatro(){
 
 }
 
-function cambiarTitulo(){
- let titulo = document.getElementById("tituloPrincipal");
+function cambiarTitulo() {
+    let titulo = document.getElementById("tituloPrincipal");
 
- titulo.innerText = "He creado una lista";
+    titulo.innerText = "He creado una lista";
 
 }
 
-function mostrarElementos(){
+function mostrarElementos() {
     console.log(document);
 
     let encabezado = document.getElementById("encabezado1");

@@ -20,6 +20,8 @@ for(var i = 0; i < datos.length; i++){
 }
 document.body.appendChild(lista); //Por último, ponemos a lista como hijo del body
 
+
+
 }
 
 

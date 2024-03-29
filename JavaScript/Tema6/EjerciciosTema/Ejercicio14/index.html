@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+   <form method="get">
+    <label for="nombre" onmouseover="aumentarLetra()">Nombre de usuario:</label>
+    <input type="text" id="nombre"><br>
+    
+    <label for="contraseña"onmouseover="aumentarLetra()">Contraseña:</label>
+    <input type="text" onfocus="cambiarBorde()" id="contraseña"><br>
+
+    <label for="edad"onmouseover="aumentarLetra()">Edad:</label>    
+    <input type="number" id="edad"><br>
+
+    <p onmouseover="aumentarLetra()">Sexo:</p>
+    <label for="masculino"onmouseover="aumentarLetra()">Masculino:</label>
+    <input type="radio" id="masculino">
+    <label for="femenino"onmouseover="aumentarLetra()">Femenino:</label>
+    <input type="radio" id="femenino"><br>
+
+    <button type="reset">Limpiar</button>
+    <button type="submit">Enviar</button>
+   </form> 
+</body>
+</html>
