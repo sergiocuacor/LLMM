@@ -28,9 +28,12 @@ function incluirTituloEnDiv() {
     let titulo = document.createElement("h2");
 
     titulo.innerText = "a. ¿Cómo puedo protegerme?";
-    divParaTodos.appendChild(titulo);
+    
 
-    titulo.onmouseover = añadirAlH2;
+    titulo.setAttribute("onmouseover", "añadirAlH2");
+
+    
+    divParaTodos.appendChild(titulo);
 }
 
 function añadirAlH2() {
