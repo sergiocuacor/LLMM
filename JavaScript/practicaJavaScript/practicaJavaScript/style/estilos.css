@@ -71,3 +71,8 @@ h1 {
     color: blue;
     font-weight: bolder;
 }
+.estiloTituloH2{
+    color: turquoise;
+    font-weight: bold;
+    font-size: larger;
+}

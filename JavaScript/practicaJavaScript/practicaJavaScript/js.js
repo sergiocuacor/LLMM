@@ -9,11 +9,11 @@ function actualizarTextoComoActuar() {
 
     if ((checkFiebre || checkTos) && (checkRespirar || checkGrave)) {
 
-        divComoActuar.innerText = " Llama al tlf 112..";
+        divComoActuar.innerText = " Llama al teléfono 112. Se trata de un teléfono de URGENCIAS. Su buen uso depende de todos.     No llames si no es totalmente necesario";
 
     } else if (checkFiebre || checkTos) {
 
-        divComoActuar.innerText = "Quédate en casa..";
+        divComoActuar.innerText = "Quédate en casa y llama al teléfono habilitado en tu Comunidad Autónoma";
 
     } else {
         divComoActuar.innerText = "";
@@ -30,28 +30,27 @@ function incluirTituloEnDiv() {
     titulo.innerText = "a. ¿Cómo puedo protegerme?";
     
 
-    titulo.setAttribute("onmouseover", "añadirAlH2");
-
+    titulo.setAttribute("onmouseover", "anadirAlH2()");
     
     divParaTodos.appendChild(titulo);
 }
 
-function añadirAlH2() {
+function anadirAlH2() {
 
     let titulo = document.getElementsByTagName("h2")[0];
 
+    titulo.classList.add("estiloTituloH2");
+
     let parrafo1 = document.createElement("p");
     parrafo1.innerText = "i. Lávate las manos frecuentemente con agua y jabón.";
+    titulo.appendChild(parrafo1);
 
     let parrafo2 = document.createElement("p");
     parrafo2.innerText = "ii. Al toser o estornudar, cúbrete la boca y la nariz con el codo flexionado o con un pañuelo desechable y tíralo a la basura.";
+    titulo.appendChild(parrafo2);
 
     let parrafo3 = document.createElement("p");
     parrafo3.innerText = "iii. Evita tocarte los ojos, la nariz y la boca, y que las manos facilitan la transmisión.";
-
-    titulo.appendChild(parrafo1);
-    titulo.appendChild(parrafo2);
     titulo.appendChild(parrafo3);
-
 
 }
