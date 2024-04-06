@@ -31,26 +31,34 @@ function incluirTituloEnDiv() {
     
 
     titulo.setAttribute("onmouseover", "anadirAlH2()");
-    
+    titulo.setAttribute("onmouseout", "vaciarDiv()");
     divParaTodos.appendChild(titulo);
 }
 
 function anadirAlH2() {
 
+    let divParaTodos = document.getElementById("paraTodos");
     let titulo = document.getElementsByTagName("h2")[0];
 
     titulo.classList.add("estiloTituloH2");
 
     let parrafo1 = document.createElement("p");
     parrafo1.innerText = "i. Lávate las manos frecuentemente con agua y jabón.";
-    titulo.appendChild(parrafo1);
+    divParaTodos.appendChild(parrafo1);
 
     let parrafo2 = document.createElement("p");
     parrafo2.innerText = "ii. Al toser o estornudar, cúbrete la boca y la nariz con el codo flexionado o con un pañuelo desechable y tíralo a la basura.";
-    titulo.appendChild(parrafo2);
+    divParaTodos.appendChild(parrafo2);
 
     let parrafo3 = document.createElement("p");
     parrafo3.innerText = "iii. Evita tocarte los ojos, la nariz y la boca, y que las manos facilitan la transmisión.";
-    titulo.appendChild(parrafo3);
+    divParaTodos.appendChild(parrafo3);
+
+}
+
+function vaciarDiv(){
+
+let divParaTodos = document.getElementById("paraTodos")
+divParaTodos.innerText= "";
 
 }
