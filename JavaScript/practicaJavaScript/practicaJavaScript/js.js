@@ -30,12 +30,12 @@ function incluirTituloEnDiv() {
     titulo.innerText = "a. ¿Cómo puedo protegerme?";
     
 
-    titulo.setAttribute("onmouseover", "anadirAlH2()");
+    titulo.setAttribute("onmouseover", "anadirAlH2()"); //Como hago que la función anadirAlH2() solo se ejecute 1 vez
     titulo.setAttribute("onmouseout", "vaciarDiv()");
     divParaTodos.appendChild(titulo);
 }
 
-function anadirAlH2() {
+function anadirAlH2() { 
 
     let divParaTodos = document.getElementById("paraTodos");
     let titulo = document.getElementsByTagName("h2")[0];
@@ -56,9 +56,17 @@ function anadirAlH2() {
 
 }
 
-function vaciarDiv(){
+function vaciarDiv(){ //Esto no funciona bien
 
-let divParaTodos = document.getElementById("paraTodos")
-divParaTodos.innerText= "";
+let divParaTodos = document.getElementById("paraTodos");
+
+let titulo = document.getElementsByTagName("h2")[0];
+titulo.classList.remove("estiloTituloH2");
+
+
+for(var i = 0; i < 3; i++){
+    let parrafo = document.getElementsByTagName("p")[i];
+    parrafo.innerHTML = "";
+}
 
 }
