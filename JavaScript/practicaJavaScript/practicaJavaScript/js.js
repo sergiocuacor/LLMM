@@ -28,19 +28,21 @@ function incluirTituloEnDiv() {
     let titulo = document.createElement("h2");
 
     titulo.innerText = "a. ¿Cómo puedo protegerme?";
-    
+
 
     titulo.setAttribute("onmouseover", "anadirAlH2()"); //Como hago que la función anadirAlH2() solo se ejecute 1 vez
     titulo.setAttribute("onmouseout", "vaciarDiv()");
     divParaTodos.appendChild(titulo);
 }
 
-function anadirAlH2() { 
+function anadirAlH2() {
 
     let divParaTodos = document.getElementById("paraTodos");
     let titulo = document.getElementsByTagName("h2")[0];
 
     titulo.classList.add("estiloTituloH2");
+
+// o titulo.setAttribute("class", "estiloTituloH2");
 
     let parrafo1 = document.createElement("p");
     parrafo1.innerText = "i. Lávate las manos frecuentemente con agua y jabón.";
@@ -56,17 +58,30 @@ function anadirAlH2() {
 
 }
 
-function vaciarDiv(){ //Esto no funciona bien
+function vaciarDiv() { //Esto no funciona bien
 
-let divParaTodos = document.getElementById("paraTodos");
+    let divParaTodos = document.getElementById("paraTodos");
 
-let titulo = document.getElementsByTagName("h2")[0];
-titulo.classList.remove("estiloTituloH2");
+    let titulo = document.getElementsByTagName("h2")[0];
+
+    titulo.classList.remove("estiloTituloH2");
+// o titulo.removeAttribute("class", "estiloTituloH2");
 
 
-for(var i = 0; i < 3; i++){
-    let parrafo = document.getElementsByTagName("p")[i];
-    parrafo.innerHTML = "";
-}
+    
+        let parrafo = divParaTodos.getElementsByTagName("p");
+        
+        // divParaTodos.removeChild(parrafo[2]);
+        // divParaTodos.removeChild(parrafo[1]);
+        // divParaTodos.removeChild(parrafo[0]);
 
-}
+        
+
+        divParaTodos.removeChild(divParaTodos.lastChild);
+        divParaTodos.removeChild(divParaTodos.lastChild);
+        divParaTodos.removeChild(divParaTodos.lastChild);
+
+    }
+
+    
+
