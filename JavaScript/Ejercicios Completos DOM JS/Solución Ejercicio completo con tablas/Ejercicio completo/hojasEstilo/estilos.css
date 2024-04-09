@@ -1,0 +1,60 @@
+
+h1, h2, tfoot {
+    background-color: crimson;
+    color: white;
+    padding: 0px;
+    margin: 1px;
+}
+.centrarH1{
+    text-align: center;
+}
+.estilosH1Paris{
+    background-color: pink;
+    color: black;
+    font-style: italic;
+}
+.estilosH1LondonBerlin{
+    background-color: blue;
+    color: yellow;
+    font-weight: bold;
+}
+
+p {
+    background-color: lightblue;
+}
+.negrita {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 25px;
+}
+.titulo {
+    color: darkviolet
+}
+.horario {
+    font-weight: bold;
+}
+ol {
+    text-align: left;
+}
+#contenedor {
+    border: crimson 3px solid;
+    width: 90%;
+    background: #ddd;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+#cartelera {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+#condiciones {
+    float: left;
+}
+#contenedorMapa {
+    clear: both;
+}

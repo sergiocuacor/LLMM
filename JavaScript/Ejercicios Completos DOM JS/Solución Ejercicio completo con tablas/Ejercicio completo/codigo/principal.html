@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartelera: Van Dyck | Cinerama</title>
+    <meta name="title" content="Cartelera: Van Dyck | Cinerama">
+    <meta name="keywords" content="CARTELERA, CINE, HORARIOS, PRECIOS, PELICULAS">
+    <meta name="description" content="Cartelera para la semana del 18 al 24 de Noviembre de 2019">
+    <meta name="author" content="Sonia Gutiérrez">
+    <link rel="stylesheet" type="text/css" href="../hojasEstilo/estilos.css">
+    <script src="../js/js.js"></script>
+</head>
+
+<body onload="centrarTitulo();moverInfo();cambiarRedireccionPaginas()" >
+    <h1> Van Dyck Salamanca </h1>
+    <p>
+        Calle Torres Villaroel, 40. 37005 - Salamanca, Castilla y León
+        <br>
+        <span class="negrita">Teléfono:</span> 923 24 35 38 / 923 25 61 54
+    </p>
+
+    <div id="contenedor">
+        <div id="cartelera">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <h2>Películas en cartelera</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Semana del 18 al 24 de Noviembre</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><img src="../imagenes/abominable.jpg"></td>
+                        <td>
+                            <span class="titulo">Abominable</span>
+                            <br>
+                            Jill Culton, Tood Wilderman
+                            <br>
+                            Animación
+                            <span class="horario">17:00 20:00</span>
+                        </td>
+                        <td><img src="../imagenes/buenosPrincipios.jpg"></td>
+                        <td>
+                            <span class="titulo">Buenos principios</span>
+                            <br>
+                            Yvan Attal
+                            <br>
+                            Comedia
+                            <span class="horario">20:00 22:30</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imagenes/estafadoras.jpg"></td>
+                        <td>
+                            <span class="titulo">Estafadoras de Wall Street</span>
+                            <br>
+                            Lorene Scafaria
+                            <br>
+                            Biografía
+                            <span class="horario">20:00 22:30</span>
+                        </td>
+                        <td><img src="../imagenes/joker.jpg"></td>
+                        <td>
+                            <span class="titulo">Joker</span>
+                            <br>
+                            Todd Phillips
+                            <br>
+                            Acción
+                            <span class="horario">17:00 20:00 22:30</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../imagenes/familiaAdams.jpg"></td>
+                        <td>
+                            <span class="titulo">La familia Adams</span>
+                            <br>
+                            Conrad Vernon, Greg Tiernan
+                            <br>
+                            Animación
+                            <span class="horario">18:00</span>
+                        </td>
+                        <td><img src="../imagenes/mientrasDure.jpg"> </td>
+                        <td>
+                            <span class="titulo">Mientras dure la guerra</span>
+                            <br>
+                            Alejandro Amenábar
+                            <br>
+                            Drama
+                            <span class="horario">17:30 20:00 22:30</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="condiciones">
+            <h2>Mas información...</h2>
+            <h3>Día del espectador</h3><span> Miércoles</span>
+            <h3>Precios</h3>
+            <ol>
+                <li>Normal: 6€</li>
+                <li>Día del espectador: 5€</li>
+                <li>Fin de semana: 6,7€</li>
+                <li>Otros precios: 5,5€</li>
+            </ol>
+            <h3> Descuentos y promociones</h3>
+            <p>
+                Descuentos(lunes a viernes, no festivos): Carnet joven, mayores de 65 años
+            </p>
+            <h3> Salas disponibles</h3>
+            <ul>
+                <li>Sala 1: 183 asientos</li>
+                <li>Sala 2: 258 asientos</li>
+                <li>Sala 3: 267 asientos</li>
+                <li>Sala 4: 288 asientos</li>
+                <li>Sala 5: 233 asientos</li>
+                <li>Sala 6: 100 asientos</li>
+            </ul>
+            <h3> Otros servicios</h3>
+            <ul>
+                <li> Acceso discapacitados</li>
+                <li> Aire acondicionado</li>
+            </ul>
+        </div>
+    </div>
+    <div id="contenedorMapa">
+        <h3>Publicidad</h3>
+        <img src="../imagenes/publiViajes.jpg" usemap="#mapa1" alt="imágenes de destinos vacacionales">
+        <map name="mapa1">
+            <area onmouseover="realizarEfectosLondonYBerlin()" href="https://www.booking.com/searchresults.es.html?city=-2601889" alt="Reserva booking Londres" shape="rect"
+                coords="56,63,622,304" title="Reserva booking Londres" />
+            <area onclick="cambiarEstilosParis()" href="https://www.booking.com/searchresults.es.html?city=-1456928" alt="Reserva booking París" shape="rect"
+                coords="683,42,1230,304" title="Reserva booking París">
+            <area onclick="realizarEfectosNewYork()" href="https://www.booking.com/city/us/new-york.es.html" alt="Reserva booking Nueva York" shape="rect"
+                coords="56,314,622,509" title="Reserva booking New York">
+            <area ondblclick="realizarEfectosLondonYBerlin()" href="https://www.booking.com/city/de/berlin.es.html" alt="Reserva booking Berlín" shape="rect"
+                coords="683,314,1230,509" title="Reserva booking Berlín">
+        </map>
+    </div>
+</body>
+
+</html>
