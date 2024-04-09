@@ -42,7 +42,7 @@ function anadirAlH2() {
 
     titulo.classList.add("estiloTituloH2");
 
-// o titulo.setAttribute("class", "estiloTituloH2");
+    // o titulo.setAttribute("class", "estiloTituloH2");
 
     let parrafo1 = document.createElement("p");
     parrafo1.innerText = "i. Lávate las manos frecuentemente con agua y jabón.";
@@ -65,23 +65,27 @@ function vaciarDiv() { //Esto no funciona bien
     let titulo = document.getElementsByTagName("h2")[0];
 
     titulo.classList.remove("estiloTituloH2");
-// o titulo.removeAttribute("class", "estiloTituloH2");
+    // o titulo.removeAttribute("class", "estiloTituloH2");
 
 
-    
-        let parrafo = divParaTodos.getElementsByTagName("p");
-        
-        // divParaTodos.removeChild(parrafo[2]);
-        // divParaTodos.removeChild(parrafo[1]);
-        // divParaTodos.removeChild(parrafo[0]);
 
-        
+    let parrafo = divParaTodos.getElementsByTagName("p");
 
-        divParaTodos.removeChild(divParaTodos.lastChild);
-        divParaTodos.removeChild(divParaTodos.lastChild);
-        divParaTodos.removeChild(divParaTodos.lastChild);
+    // divParaTodos.removeChild(parrafo[2]);
+    // divParaTodos.removeChild(parrafo[1]);
+    // divParaTodos.removeChild(parrafo[0]);
 
-    }
 
-    
+
+    divParaTodos.removeChild(divParaTodos.lastChild);
+    divParaTodos.removeChild(divParaTodos.lastChild);
+    divParaTodos.removeChild(divParaTodos.lastChild);
+
+    /*   while (paraTodos.lastChild && paraTodos.lastChild.tagName === "P") {
+           paraTodos.removeChild(paraTodos.lastChild);
+       }
+       */
+}
+
+
 
