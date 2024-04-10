@@ -34,7 +34,7 @@
     <div id="principal" >
       <p id="pregunta" >¿Es para mi?</p>
       <form>
-        <input
+        <input onclick="ejChecks()"
           type="checkbox"
           name="naturaleza"
           value="naturaleza"
@@ -42,9 +42,9 @@
           onclick="alquila()"
         />
         <label for="naturaleza"> Naturaleza </label>
-        <input type="checkbox" name="ciudad" value="ciudad" id="ciudad" onclick="alquila()" />
-        <label for="ciudad" > Ciudad </label>
-        <input type="checkbox" name="espacio" value="espacio" id="espacio" onclick="alquila()" />
+        <input onclick="ejChecks()" type="checkbox" name="ciudad" value="ciudad" id="ciudad" onclick="alquila()" />
+        <label  for="ciudad" > Ciudad </label>
+        <input onclick="ejChecks()" type="checkbox" name="espacio" value="espacio" id="espacio" onclick="alquila()" />
         <label for="espacio" > Espacio </label>
       </form>
       <div id="resultado" ></div>

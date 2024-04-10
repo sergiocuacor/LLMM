@@ -57,7 +57,24 @@
  }
  
  
- 
+ function ejChecks(){
+
+  let naturaleza = document.getElementById("naturaleza").checked;
+  let ciudad = document.getElementById("ciudad").checked;
+  let espacio = document.getElementById("espacio").checked;
+  if((naturaleza) || (naturaleza && espacio)){
+    alert( "Alquila una autocaravana");
+  } else if((ciudad) || (ciudad && espacio)){
+
+  }
+
+ }
+
+let eventoH1Capturado = false;
+
+ function efectosInfo(){
+  let titulo = document.getElementsByTagName("h1")[0];
+ }
  
  
  
