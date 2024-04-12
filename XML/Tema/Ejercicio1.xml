@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<hoteles>
+
+    <hotel>
+        <ciudad centro="si">Madrid</ciudad>
+        <empresa>Melia 
+            <filial>Room Mate</filial>
+        </empresa>
+        <director>Jesus Álvarez</director>
+        <especialidad masDeUna="no">Viajes de trabajo</especialidad>
+        <piscina>si</piscina>
+        <gimnasio>si</gimnasio>
+        <salaConferencias equipadas="si">3</salaConferencias>
+        <capacidad>45 habitaciones dobles &amp; 30 individuales</capacidad>
+        <plazasLibres>36</plazasLibres>
+    </hotel>
+</hoteles>
