@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mensajeria>
+    <pedido>
+        <destinatario>
+            <nombre></nombre>
+            <direccion></direccion>
+        </destinatario>
+        <producto>
+            <tipoProducto></tipoProducto>
+            <importe></importe>
+        </producto>
+        <diaEntrega></diaEntrega>
+    </pedido>
+</mensajeria>
