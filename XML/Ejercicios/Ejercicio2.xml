@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correosElectronicos>
+    <correo>
+        <remitente>
+            <nombre></nombre>
+            <email></email>
+        </remitente>
+        <destinatario>
+            <nombre></nombre>
+            <email></email>
+        </destinatario>
+        <asunto></asunto>
+        <contenido></contenido>
+    </correo>
+</correosElectronicos>

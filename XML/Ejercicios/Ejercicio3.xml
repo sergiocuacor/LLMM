@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<datosEsperanzaDeVida>
+    <paises>
+        <pais nombre="España">
+            <region>
+                <nombre>Com. Madrid</nombre>
+                <esperanza_vida>85.2</esperanza_vida>
+            </region>
+            <region>
+                <nombre>La Rioja</nombre>
+                <esperanza_vida>84.3</esperanza_vida>
+            </region>
+            <region>
+                <nombre>Castilla y León</nombre>
+                <esperanza_vida>84.3</esperanza_vida>
+            </region>
+            <region>
+                <nombre>Navarra</nombre>
+                <esperanza_vida>84.1</esperanza_vida>
+            </region>
+        </pais>
+        <pais nombre="Suiza">
+            <region>
+                <nombre>Ticino (Tesino)</nombre>
+                <esperanza_vida>85.0</esperanza_vida>
+            </region>
+        </pais>
+        <pais nombre="Italia">
+            <region>
+                <nombre>Trento</nombre>
+                <esperanza_vida>84.3</esperanza_vida>
+            </region>
+            <region>
+                <nombre>Bolzano/Bozen</nombre>
+                <esperanza_vida>84.1</esperanza_vida>
+            </region>
+            <region>
+                <nombre>Umbria</nombre>
+                <esperanza_vida>84.1</esperanza_vida>
+            </region>
+        </pais>
+        <pais nombre="Francia">
+            <region>
+                <nombre>Ile de France</nombre>
+                <esperanza_vida>84.2</esperanza_vida>
+            </region>
+        </pais>
+        <pais nombre="Reino Unido">
+            <region>
+                <nombre>Londres - Oeste</nombre>
+                <esperanza_vida>84.1</esperanza_vida>
+            </region>
+        </pais>
+    </paises>
+</datosEsperanzaDeVida>
