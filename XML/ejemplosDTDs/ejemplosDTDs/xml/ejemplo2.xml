@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE biblioteca SYSTEM "../dtd/ejemplo2.dtd">
+<biblioteca>
+    <seccion id="I">
+        <libro id="I01">
+            <nombre>El pollo Pepe</nombre>
+            <autor>Nick Denchfield</autor>
+            <edad_recomendada>0-2</edad_recomendada>
+            <resumen>El pollo pepe come mucho</resumen>
+        </libro>
+    </seccion>
+    <seccion id="J">
+        <libro id="I02">
+            <nombre>Los juegos del hambre</nombre>
+            <autor>Suzanne Collins</autor>
+            <edad_recomendada>+16</edad_recomendada>
+            <resumen>En una oscura versión del futuro próximo, doce chicos y doce chicas se ven obligados a 
+            participar en un reality show llamado Los juegos del hambre. Solo hay una regla: matar o morir. 
+            Cuando Katniss Everdeen, una joven de dieciséis años se presenta voluntaria para ocupar el lugar 
+            de su hermana en los juegos, lo entiende como una condena a muerte. Sin embargo, Katniss ya ha visto 
+            la muerte de cerca y la supervivencia forma parte de su naturaleza.</resumen>
+        </libro>
+    </seccion>
+    <seccion id="A">
+        <libro id="I03">
+            <nombre nombreAlt="Cancion de hielo y fuego">Juego de tronos</nombre>
+            <autor>George R. R. Martin</autor>
+            <edad_recomendada>+18</edad_recomendada>
+            <resumen>Tras el largo verano, el invierno se acerca a los Siete Reinos. Lord Eddard Stark, señor de Invernalia,deja sus dominios para unirse a la corte de su amigo el rey Robert Baratheon, llamado el Usurpador, hombre díscolo y otrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrar bastardos. Eddard ocupará el cargo de Mano del Rey e intentará desentrañar una maraña de intrigas que pondrá en peligro su vida y la de los suyos. </resumen>
+        </libro>
+    </seccion>
+</biblioteca>

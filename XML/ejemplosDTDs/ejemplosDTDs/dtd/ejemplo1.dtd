@@ -1,0 +1,15 @@
+<!ELEMENT asignaturas (asignatura*)>
+<!ELEMENT asignatura (alumnos,profesores)>
+<!ATTLIST asignatura
+    codigo ID #REQUIRED>
+<!ELEMENT alumnos (alumno)+>
+<!ELEMENT profesores (profesor)+>
+<!ELEMENT alumno (nombre,apellido,numTelefono)>
+<!ELEMENT profesor (nombre,apellido,antiguedad)>
+<!ATTLIST profesor
+  codAsignaturas IDREFS #REQUIRED
+  numEmpleado ID #REQUIRED>
+<!ELEMENT numTelefono (#PCDATA)>
+<!ELEMENT antiguedad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>

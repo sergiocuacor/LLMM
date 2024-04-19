@@ -1,0 +1,8 @@
+<!ELEMENT email (para,cc?,cco?,asunto,cuerpo)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT cco (#PCDATA)>
+<!ELEMENT asunto (fecha,texto)>
+<!ELEMENT cuerpo (fecha,texto)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>

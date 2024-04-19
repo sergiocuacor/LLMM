@@ -1,0 +1,12 @@
+<!ELEMENT biblioteca (seccion+)>
+<!ELEMENT seccion (libro*)>
+<!ATTLIST seccion
+    id (I|J|A) #REQUIRED>
+<!ELEMENT libro (nombre,autor,edad_recomendada,resumen?)>
+<!ATTLIST libro
+    id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre nombreAlt CDATA #IMPLIED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT edad_recomendada (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>

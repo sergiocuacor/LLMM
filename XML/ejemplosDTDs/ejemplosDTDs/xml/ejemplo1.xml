@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE asignaturas SYSTEM "../dtd/ejemplo1.dtd">
+<asignaturas>
+<!-- El elemento asignatura(con sus descendentes) se repetiría tantas veces como asignaturas hubiera-->
+    <asignatura codigo="Asig1">
+        <alumnos>
+        <!-- Dentro de alumnos se incluirían tantos elementos alumno como alumnos tuviera la asignatura-->
+            <alumno>
+                <nombre>Elena</nombre>
+                <apellido>Marcos</apellido>
+                <numTelefono>456753247</numTelefono>
+            </alumno>
+        </alumnos>
+        <profesores>
+        <!-- Dentro de profesores se incluirían tantos elementos profesor como profesores tuviera la asignatura-->
+            <profesor numEmpleado="E23456" codAsignaturas="Asig1">
+                <nombre>Sonia</nombre>
+                <apellido>Gutiérrez</apellido>
+                <antiguedad>1</antiguedad>
+            </profesor>
+        </profesores>
+    </asignatura>
+</asignaturas>

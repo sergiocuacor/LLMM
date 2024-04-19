@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email SYSTEM "../dtd/ejemploEmail.dtd">
+<email>
+    <para> Elena Marcos </para>
+    <asunto>
+        <fecha></fecha>
+        <texto> </texto>
+    </asunto>
+    <cuerpo>
+        <fecha> </fecha>
+        <texto></texto>
+    </cuerpo>
+
+</email>
