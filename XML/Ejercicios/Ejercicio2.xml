@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE correosElectronicos SYSTEM "./dtd/ejercicio2.dtd">
 <correosElectronicos>
     <correo>
         <remitente>
             <nombre></nombre>
             <email></email>
         </remitente>
-        <destinatario>
+        <destinatario tipo="principal">
+            <nombre></nombre>
+            <email></email>
+        </destinatario>
+        <destinatario tipo="otro">
             <nombre></nombre>
             <email></email>
         </destinatario>

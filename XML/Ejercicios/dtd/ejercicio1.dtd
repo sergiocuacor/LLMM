@@ -1,0 +1,23 @@
+<!-- 1. Empresa de mensajería
+En una empresa de mensajería, la información de los pedidos que se almacena es la siguiente:
+ Destinatario. Del cual se almacenará el nombre y la dirección.
+ Producto. Del cual se almacenará el tipo de producto y el importe.
+ Día de entrega.
+Diseña el documento XML sin almacenar ninguna información.
+Añade información al documento XML de tal forma que sea validado por el DTD que desarrolles. Los
+requisitos a cumplir, además de lo ya especificado, son:
+ Cada mensaje tendrá un solo destinatario, un solo día de entrega y como mínimo un
+producto.
+ El destinatario podrá tener un código de cliente. De tenerlo será único.-->
+
+<!ELEMENT mensajeria (pedido)+>
+<!ELEMENT pedido (destinatario,  producto+, diaEntrega)>
+<!ELEMENT destinatario (nombre, direccion)>
+<!ATTLIST destinatario 
+            codCliente ID #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT producto (tipo, importe)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT diaEntrega (#PCDATA)>

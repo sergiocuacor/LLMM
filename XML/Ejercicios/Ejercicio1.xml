@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!DOCTYPE mensajeria SYSTEM "./dtd/ejercicio1.dtd">
 <mensajeria>
     <pedido>
         <destinatario>
             <nombre></nombre>
             <direccion></direccion>
         </destinatario>
+        
         <producto>
-            <tipoProducto></tipoProducto>
+            <tipo></tipo>
             <importe></importe>
         </producto>
         <diaEntrega></diaEntrega>

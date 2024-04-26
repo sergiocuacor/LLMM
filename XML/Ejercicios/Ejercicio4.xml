@@ -1,1 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<animales>
+    <gatos>
+        <gato>
+            <nombre>Neo</nombre>
+            <edad>3 años</edad>
+            <genero>Macho</genero>
+            <estadoReproductivo>Castrado</estadoReproductivo>
+            <adopcion>Disponible</adopcion>
+        </gato>
+        <gato>
+            <nombre>Firu</nombre>
+            <edad>2 años</edad>
+            <genero>Macho</genero>
+            <estadoReproductivo>Sin castrar</estadoReproductivo>
+            <adopcion>Disponible</adopcion>
+        </gato>
+        <gato>
+            <nombre>León</nombre>
+            <edad></edad>
+            <genero></genero>
+            <estadoReproductivo></estadoReproductivo>
+            <adopcion></adopcion>
+        </gato>
+        <gato>
+            <nombre></nombre>
+            <edad></edad>
+            <genero></genero>
+            <estadoReproductivo></estadoReproductivo>
+            <adopcion></adopcion>
+        </gato>
+    </gatos>
+    <perros>
+        <perro>
+            <nombre></nombre>
+            <edad></edad>
+            <genero></genero>
+            <estadoReproductivo></estadoReproductivo>
+            <adopcion></adopcion>
+        </perro>
+        <perro>
+            <nombre></nombre>
+            <edad></edad>
+            <genero></genero>
+            <estadoReproductivo></estadoReproductivo>
+            <adopcion></adopcion>
+        </perro>
+        <perro>
+            <nombre></nombre>
+            <edad></edad>
+            <genero></genero>
+            <estadoReproductivo></estadoReproductivo>
+            <adopcion></adopcion>
+        </perro>
+    </perros>
+
+
+</animales>

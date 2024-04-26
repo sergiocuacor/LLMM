@@ -1,0 +1,25 @@
+<!-- 2. Correos electrónicos
+El siguiente documento XML contendrá información acerca de correos electrónicos. La información
+que se almacenará de cada correo será:
+ Remitente. Indicando el nombre completo y la dirección de correo electrónico.
+ Destinatario. Incluyendo, también, nombre completo y dirección de correo electrónico.
+ Asunto.
+ Contenido.
+Diseña el documento XML sin almacenar ninguna información.
+Añade información al documento XML de tal forma que sea validado por el DTD que desarrolles. Los
+requisitos a cumplir, además de lo ya especificado, son:
+ Un correo podrá tener más de un destinatario.
+ El destinatario tendrá un atributo que indique si es el destinatario principal o no.
+ El asunto será un elemento vacío. -->
+
+
+<!ELEMENT correosElectronicos (correo)+>
+<!ELEMENT correo (remitente, destinatario+, asunto, contenido)>
+<!ELEMENT remitente (nombre, email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT destinatario (nombre, email)>
+<!ELEMENT asunto EMPTY>
+<!ELEMENT contenido (#PCDATA)>
+
+<!ATTLIST destinatario tipo (principal | otro) #REQUIRED>

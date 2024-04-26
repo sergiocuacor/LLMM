@@ -1,0 +1,32 @@
+
+<!-- Define las declaraciones de elementos que cumplan con los siguientes enunciados:
+o El elemento <clientes> podrá tener como descendientes 0 o 1 <personas>
+y 0 o 1 <empresas>. El elemento <personas> tendrá, como mínimo, un
+elemento <persona> y el elemento <empresas> podrá tener, o no,
+<empresa>.
+o El elemento <liga> tendrá al menos un elemento <jornada> y éste, a su
+vez, tendrá como descendientes un elemento <completa> o un elemento
+<parcial>
+o El elemento <película> tendrá contendrá un texto con su nombre y un
+elemento <local> o <extranjera>. El contenido del elemento <local> será
+un texto y el del elemento <extranjera> será el elemento <idioma> y el
+elemento opcional <país>. Estos dos últimos elementos contendrán texto-->
+<!ELEMENT clientes (personas?,empresas?)>
+<!ELEMENT personas (persona+)>
+<!ELEMENT empresas (empresa*)>
+<!ELEMENT persona (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+
+
+<!ELEMENT liga (jornada+)>
+<!ELEMENT jornada (completa | parcial)>
+<!ELEMENT completa (#PCDATA)>
+<!ELEMENT parcial (#PCDATA)>
+
+
+
+<!ELEMENT película ( local | extranjera)>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT extranjera (idioma, país?)>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT país (#PCDATA)>
