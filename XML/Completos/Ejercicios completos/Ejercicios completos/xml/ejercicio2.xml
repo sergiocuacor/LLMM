@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises SYSTEM "../dtd/ejercicio2.dtd">
+<paises>
+    <pais nombre="España" poblacion="47100396">
+        <idioma nacional="si">Castellano</idioma>
+        <idioma nacional="no">Euskera</idioma>
+        <idioma nacional="no">Gallego</idioma>
+        <capital>Madrid</capital>
+    </pais>
+    <pais nombre="Irlanda" poblacion="4857000">
+        <idioma nacional="no">Irlandés</idioma>
+        <idioma nacional="si">Inglés</idioma>
+        <capital>Dublín</capital>
+    </pais>
+    <pais nombre="Portugal"/>
+</paises>

@@ -1,0 +1,6 @@
+<!ELEMENT paises (pais*)>
+  <!ELEMENT pais ((idioma|capital)*)>
+  <!ATTLIST pais nombre CDATA #REQUIRED poblacion CDATA #IMPLIED>
+  <!ELEMENT idioma (#PCDATA)>
+  <!ATTLIST idioma nacional (si|no) #IMPLIED>
+  <!ELEMENT capital (#PCDATA)>

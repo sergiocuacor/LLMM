@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <motor modelo="Trio345">
+        <componente fabricante="Válvulas Dominguez">
+            <fragil/>
+            <peso unidad="g">12</peso>
+            <numserie>00A</numserie>
+            <vidaUtil unidad="usos">1500</vidaUtil>
+        </componente>
+        <componente fabricante="Componentes Riesgo">
+            <nofragil/>
+            <numserie>00D</numserie>
+            <vidaUtil unidad="años">3</vidaUtil>
+        </componente>
+    </motor>
+    <motor modelo="Riego X43A">
+        <componente fabricante="Hon Tin distribuciones">
+            <fragil/>
+            <peso unidad="g">770</peso>
+            <numserie>43Z</numserie>
+            <vidaUtil unidad="usos">2000</vidaUtil>
+        </componente>
+    </motor>
+</pedido>

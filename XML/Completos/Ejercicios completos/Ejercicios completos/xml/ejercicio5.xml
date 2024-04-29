@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "../dtd/ejercicio5.dtd">
+<libros>
+    <libro libroId="f1">
+        <autor>Marco Aurelio</autor>
+        <contenido>
+            <capitulo numero="2">Memento mori</capitulo>
+            <descripcion>Meditaciones es una obra que el emperador escribió a y para sí mismo, como
+                ejercicio y práctica para recordar y tener a mano los principios de la filosofía que
+                adoptó, el estoicismo, rasgo que lo convierten en un texto eminentemente moderno de
+                etica, uno de los mejores manuales o tratados que ha dado la historia. Además, el
+                texto ha sido ejemplo de distintas corrientes modernas y contemporáneas, bases de
+                pensamiento las del estoicismo que ya están presentes de alguna forma en otras
+                filosofías, las orientales, como el taoísmo o el budismo. </descripcion>
+        </contenido>
+        <nuevaEdicion capAñadido="no"></nuevaEdicion>
+    </libro>
+    <libro libroId="cf23">
+        <autor>Walter M. Miller</autor>
+        <imagen>Yermo</imagen>
+        <contenido>
+            <capitulo numero="14">"Fusión fría"</capitulo>
+            <descripcion>De la antigua civilización no quedan más vestigios que los conservados por
+                la Orden Albertina de Leibowitz, cuyos monjes dedican sus vidas a la interminable
+                tarea de iluminar e interpretar las obras del Venerable con la finalidad de
+                reconstruir sobre ellas el mundo tal como fue.</descripcion>
+        </contenido>
+    </libro>
+    <libro libroId="l231">
+        <autor>Dostoievsky</autor>
+        <imagen>"La sombra de un hombre"</imagen>
+        <contenido>
+
+        </contenido>   
+    </libro>
+</libros>

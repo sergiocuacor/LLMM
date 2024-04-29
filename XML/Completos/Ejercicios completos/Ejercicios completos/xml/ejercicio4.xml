@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listadosUniversitarios SYSTEM "../dtd/ejercicio4.dtd">
+<listadosUniversitarios>
+    <listado>
+        <descripcion>Número de alumnos matriculados en carreras de ciencias</descripcion>
+        <datos>
+            <numMatriculados>1389</numMatriculados>
+            <universidad>&usal;</universidad>
+        </datos>
+        <datos>
+            <numMatriculados>1230</numMatriculados>
+            <universidad>&uva;</universidad>
+        </datos>
+        <datos>
+            <numMatriculados>980</numMatriculados>
+            <universidad>&upo;</universidad>
+        </datos>
+    </listado>
+    <listado>
+        <descripcion>Número de alumnos matriculados en carreras de letras</descripcion>
+        <datos>
+            <numMatriculados>3587</numMatriculados>
+            <universidad>&ucam;</universidad>
+        </datos>
+        <datos>
+            <numMatriculados>3409</numMatriculados>
+            <universidad>&usal;</universidad>
+        </datos>
+    </listado>
+    <listado>
+        <descripcion>Número de alumnos matriculados en carreras de ciencias sociales</descripcion>
+        <datos>
+            <numMatriculados>340</numMatriculados>
+            <universidad>&uva;</universidad>
+        </datos>
+        <datos>
+            <numMatriculados>457</numMatriculados>
+            <universidad>&usal;</universidad>
+        </datos>
+    </listado>
+</listadosUniversitarios>
