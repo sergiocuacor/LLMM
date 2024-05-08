@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="tipoSueldo">
+		<!-- Declara el tipo de tal forma que un elemento de este tipo contenga
+        un valor entre 18000 y 90000, con dos decimales y con, exactamente, 7 dígitos
+		-->
+	</xsd:simpleType>
+	<xsd:simpleType name="categoria">
+		<!-- Declara el tipo de tal forma que un elemento de este tipo solo pueda contener una de los 
+			siguientes valores: analista, analista-programador, programador senior o programador junior.
+		-->
+	</xsd:simpleType>
+	<xsd:element name="salario">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- Elemento de nombre sueldo y del tipo construido tipoSueldo-->
+				<!-- Elemento de nombre puesto y del tipo construido categoria-->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

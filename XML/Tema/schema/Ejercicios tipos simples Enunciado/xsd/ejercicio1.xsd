@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="evento">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!--Elemento de nombre grup. Su contenido será una cadena de caracteres-->
+				<!-- Elemento de nombre fecha y que vaya a contener fecha y hora-->
+				<!-- Elemento de nombre ciudad. Su contenido será el nombre de una ciudad-->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

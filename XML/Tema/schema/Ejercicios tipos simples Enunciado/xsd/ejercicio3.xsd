@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="tipoPrecio">
+    <!-- Declara el tipo de tal forma que un elemento de este tipo contenga
+        6 dígitos exactamente de los cuales 2 serán decimales. El valor máximo que
+        podrá contener es 1500.00
+		-->    
+    </xsd:simpleType>
+
+    <xsd:element name="producto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Elemento de nombre tipo. Su contenido será una cadena de caracteres-->
+                <!-- Elemento de nombre precio. Su contenido será del tipo construido tipoPrecio-->
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

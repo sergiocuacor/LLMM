@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="tipoPass">
+		<!-- Declara el tipo de tal forma que un elemento de este tipo contenga:
+			2 dígitos seguidos de 4 letras y terminando con el signo +, el - o ninguno de ellos.
+			Por ejemplo: "54fboi-" ó "10aaaa"
+		-->
+	</xsd:simpleType>
+	<xsd:element name="usuario">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- Elemento de nombre password y del tipo construido tipoPass-->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

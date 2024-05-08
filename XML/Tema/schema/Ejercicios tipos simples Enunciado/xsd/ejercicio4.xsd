@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:simpleType name="tipoMayorEdad">
+        <!-- Declara el tipo de tal forma que el valor de un elemento de este tipo sea,como mínim, 18
+		-->
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoNombreUs">
+        <!-- Declara el tipo de tal forma que la cadena que contenga sea de, exactamente, 8 caracteres-->
+    </xsd:simpleType>
+    <xsd:element name="persona">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Elemento de nombre nombre y de tipo string-->
+                <!-- Elemento de nombre apellidos y de tipo string-->
+                <!-- Elemento de nombre edad y del tipo construido tipoMayorEdad-->
+                <!-- Elemento de nombre nombreUsuario y de tipo tipoNombreUs-->
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
