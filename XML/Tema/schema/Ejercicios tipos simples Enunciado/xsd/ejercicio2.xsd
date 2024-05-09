@@ -5,11 +5,17 @@
 			2 dígitos seguidos de 4 letras y terminando con el signo +, el - o ninguno de ellos.
 			Por ejemplo: "54fboi-" ó "10aaaa"
 		-->
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{2}[a-zA-Z]{4}[+-]?" />
+		</xsd:restriction>
+
+
 	</xsd:simpleType>
 	<xsd:element name="usuario">
 		<xsd:complexType>
 			<xsd:sequence>
 				<!-- Elemento de nombre password y del tipo construido tipoPass-->
+				<xsd:element name="password" type="tipoPass"></xsd:element>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>

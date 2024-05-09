@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio2.xsd">
+<password>00mklq+</password> 
+</usuario>
+
+
+<!-- Como hemos declarado en el schema, la contraseña
+tendrá 2 dígitos seguidos de 4 letras y terminará con un +, un - o ninguno de ellos.-->

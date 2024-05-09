@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio1.xsd">
+<grup.>GRUPO</grup.>
+<fecha>2024-05-08T20:06:00</fecha> <!--  formato: (año-mes-díaT hora:minutos:segundos)-->
+<ciudad>Salamanca</ciudad>
+</evento>

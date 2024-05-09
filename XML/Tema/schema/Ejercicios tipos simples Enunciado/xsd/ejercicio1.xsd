@@ -4,8 +4,12 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<!--Elemento de nombre grup. Su contenido será una cadena de caracteres-->
+				<xsd:element name="grup." type="xsd:string"></xsd:element>
 				<!-- Elemento de nombre fecha y que vaya a contener fecha y hora-->
+				<xsd:element name="fecha" type="xsd:dateTime"></xsd:element>
 				<!-- Elemento de nombre ciudad. Su contenido será el nombre de una ciudad-->
+				<xsd:element name="ciudad" type="xsd:string"></xsd:element>
+
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
