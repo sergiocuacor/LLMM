@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- En este ejemplo se va a ver un ejemplo de:
+    **Elemento vacío
+    **Elemento con contenido textual y atributos
+    **Elemento con solo atributos-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="ejemplos">
+        <xsd:complexType>
+            <!-- En un documento XML instancia de este esquema, el elemento raiz ejemplos contendrá una 
+                secuencia formada por,como máximo, 4 ocurrencias de cualquiera de los elementos
+                vacio, conTextoyAttr y conSoloAttr-->
+            <xsd:sequence maxOccurs="4">
+            <xsd:choice>
+                <xsd:element name="vacio">
+                  
+                </xsd:element>
+                <xsd:element name="conTextoyAttr">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <!-- Con la etiqueta extension indicamos que se va a extender el contenido simple para
+                            que incluya atributos. La base para el tipo, en este caso, indica el tipo que va a tener el
+                            contenido textual. El tipo del valor del atributo se indica en la declaración del atributo-->
+                            <xsd:extension base="xsd:string">
+                                <xsd:attribute name="atributo1" type="xsd:int"/>
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="conSoloAttr">
+                    <xsd:complexType>
+                        <xsd:attribute name="atributo2" type="xsd:boolean"/>
+                        <xsd:attribute name="atributo3" type="xsd:anyURI"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejemplos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/elementosComplejos1.xsd">
+
+    <conTextoyAttr atributo1="35">Soy un elemento con contenido textual y un atributo</conTextoyAttr>
+    <vacio />
+    <conSoloAttr atributo2="true" atributo3="www.google.es" />
+    <vacio />
+</ejemplos>

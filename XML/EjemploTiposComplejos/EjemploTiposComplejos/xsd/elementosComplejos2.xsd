@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- En este esquema se va a ver un ejemplo de:
+    **Elemento solo con elementos descendientes
+    **Elemento con atributos y elementos descendientes
+    **Elemento con contenido textual y elementos descendientes-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="fechaMatricula" type="xsd:date"/>
+    <xsd:element name="ciudadReg" type="xsd:string"/>
+    <xsd:element name="color" type="xsd:string"/>
+    <xsd:element name="gama" type="xsd:string"/>
+    <xsd:attribute name="numReg" type="xsd:int"/>
+
+    <xsd:element name="coches">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- El elemento coche solo tendrá elementos descendientes. Ni contenido textual ni atributos-->
+                <xsd:element name="coche" maxOccurs="unbounded">
+                    <xsd:complexType>
+                    <xsd:sequence>
+                        <!-- El elemento registro contiene atributo y elementos descendientes-->
+                        <xsd:element name="registro">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element ref="fechaMatricula"/>
+                                    <xsd:element ref="ciudadReg"/>
+                                </xsd:sequence>
+                                <xsd:attribute ref="numReg"/>
+                            </xsd:complexType>
+                        </xsd:element>
+                        <!-- El elemento características podrá tener contenido textual además de sus
+                dos elementos descendientes. El contenido textual se permite incluyendo el atributo mixed en el tipo-->
+                        <xsd:element name="caracteristicas">
+                            <xsd:complexType mixed="true">
+                                <xsd:sequence>
+                                    <xsd:element ref="color"/>
+                                    <xsd:element ref="gama"/>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

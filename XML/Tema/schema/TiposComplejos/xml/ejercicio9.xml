@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejercicio9 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/ejercicio9.xsd">
+    <libro ISBN="943045"></libro>
+    <semáforo>
+        <Rojo></Rojo>
+    </semáforo>
+    <figuras>
+        <Círculo></Círculo>
+        <Cuadrado></Cuadrado>
+        <Triángulo></Triángulo>
+    </figuras>
+    <temperatura escala="Fahrenheit">56</temperatura>
+    <sala>
+        <capacidad>130</capacidad>
+        <color>Negro</color>
+        <tomaInternet disponible="si"></tomaInternet>
+    </sala>
+</ejercicio9>

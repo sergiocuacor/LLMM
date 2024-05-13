@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<direcciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/tipoComplejo.xsd">
+    <direccion>
+        <calle>Bolivia</calle>
+        <numero>3</numero>
+        <piso>7A</piso>
+    </direccion>
+    <direccion>
+        <plaza>Madrid</plaza>
+        <numero>9</numero>
+        <piso>3B</piso>
+    </direccion>
+</direcciones>

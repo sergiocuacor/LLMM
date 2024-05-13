@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nominas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation="../xsd/elementosComplejos3.xsd">
+    <nomina>
+        <trabajador>Diego Sanchez</trabajador>
+        <salarioBase>1100</salarioBase>
+        <horasExtra retribuidas="true"> 35
+            <precioHora>12</precioHora>
+        </horasExtra>
+        <horasExtraFinSemana retribuidas="true"> 35
+            <precioHora>12</precioHora>
+        </horasExtraFinSemana>
+        <plusConvenio>235</plusConvenio>
+        <antigüedad>
+            <años>7</años>
+            <plusAntigüedad>45</plusAntigüedad>
+        </antigüedad>
+    </nomina>
+</nominas>

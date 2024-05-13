@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:complexType name="tipoCliente">
+        <xsd:choice>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="alias" type="xsd:string"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoSocio">
+        <xsd:complexContent>
+            <xsd:extension base="tipoCliente">
+                <xsd:sequence>
+                    <xsd:element name="contraseña" type="xsd:string"/>
+                    <xsd:element name="correo" type="xsd:string"/>
+                </xsd:sequence>
+                <xsd:attribute name="numSocio" type="xsd:int" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="contenidoClientes">
+        <xsd:sequence>
+            <xsd:element name="cliente" type="tipoCliente"/>
+            <xsd:element name="socio" type="tipoSocio"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="clientes" type="contenidoClientes"/>
+</xsd:schema>

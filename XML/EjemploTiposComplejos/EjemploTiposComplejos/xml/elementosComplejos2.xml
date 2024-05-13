@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/elementosComplejos2.xsd">
+    <coche>
+        <registro numReg="12345">
+            <fechaMatricula>2018-05-03</fechaMatricula>
+            <ciudadReg>Salamanca</ciudadReg>
+        </registro>
+        <caracteristicas> Modelo nuevo
+            <color>Verde</color>
+            <gama>Media</gama>
+        </caracteristicas>
+    </coche>
+    <coche>
+        <registro numReg="5398">
+            <fechaMatricula>2017-11-16</fechaMatricula>
+            <ciudadReg>Salamanca</ciudadReg>
+        </registro>
+        <caracteristicas> Kilómetro cero
+            <color>Gris</color>
+            <gama>Alta</gama>
+        </caracteristicas>
+    </coche>
+</coches>

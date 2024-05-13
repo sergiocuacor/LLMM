@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- En este esquema se va a ver un ejemplo de elementos con contenido textual, 
+  atributos y elementos descendientes -->
+  <xsd:element name="nominas">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="nomina">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element type="xsd:string" name="trabajador"/>
+              <xsd:element type="xsd:int" name="salarioBase"/>
+              <!-- el tipo del elemento horasExtra hay que indicarlo como mixto porque este elemento 
+              va a tener contenido textual además de elementos descendientes y atributos.
+              Si no se indicara que va a ser mixto, no se aceptaría contenido textual para el elemento-->
+              <xsd:element name="horasExtra">
+                <xsd:complexType mixed="true">
+                  <xsd:sequence>
+                    <xsd:element type="xsd:byte" name="precioHora"/>
+                  </xsd:sequence>
+                  <xsd:attribute type="xsd:string" name="retribuidas"/>
+                </xsd:complexType>
+              </xsd:element><!-- Fin de la declaración del elemento horasExtra-->
+              <xsd:element name="horasExtraFinSemana">
+                <xsd:complexType mixed="true">
+                  <xsd:sequence>
+                    <xsd:element type="xsd:byte" name="precioHora"/>
+                  </xsd:sequence>
+                  <xsd:attribute type="xsd:string" name="retribuidas"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element type="xsd:int" name="plusConvenio"/>
+              <xsd:element name="antigüedad">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element type="xsd:int" name="años"/>
+                    <xsd:element type="xsd:int" name="plusAntigüedad"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element><!-- Fin de la declaración del elemento antigüedad-->
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

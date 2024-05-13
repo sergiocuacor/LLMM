@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Definición del elemento raíz del xml-->
+    <xsd:element name="direcciones">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Definición de un elemento llamado dirección que tendrá como primer descendiente un elemento 
+                calle o un elemento plaza, como segundo descendiente un elemento numero y como tercero un
+                elemento piso.
+                Además, tendrá un atributo de tipo booleano que indicará si se trata de la primera residencia o no.
+                El elemento dirección porá aparecer entre 0 y 5 veces-->
+                <xsd:element name="direccion" minOccurs="0" maxOccurs="5">
+                    <xsd:complexType mixed="true">
+                        <xsd:sequence>
+                            <xsd:choice>
+                                <xsd:element name="calle" type="xsd:string"/>
+                                <xsd:element name="plaza" type="xsd:string"/>
+                            </xsd:choice>
+                            <xsd:element name="numero" type="xsd:string"/>
+                            <xsd:element name="piso" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="primeraResi" type="xsd:boolean"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

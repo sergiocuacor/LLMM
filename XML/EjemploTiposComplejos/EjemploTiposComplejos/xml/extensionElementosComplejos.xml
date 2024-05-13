@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="../xsd/extensionElementosComplejos.xsd">
+<cliente>
+    <nombre>Diego</nombre>
+</cliente>
+<socio numSocio="98">
+    <alias>R2D2</alias>
+    <contraseña>12345</contraseña>
+    <correo>r2d2@gmail.com</correo>
+</socio>
+</clientes>

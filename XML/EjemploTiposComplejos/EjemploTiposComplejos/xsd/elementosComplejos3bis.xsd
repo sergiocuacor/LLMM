@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Este documento define prácticamente la misma estructura que el documento tipoComplejo1.xsd
+La diferencia radica en que:
+  ** hay tipo que se han declarado fuera del los elementos para que puedan ser referenciados como tipo de elementos diferentes
+  ** se pueden incluir mas de un elemento nomina-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Elemento raiz -->
+<xsd:element name="nominas">
+    <xsd:complexType>
+      <!-- En la siguiente secuencia el atributo maxOccurs permite que hay mas de un elemento nomina-->
+        <xsd:sequence maxOccurs="unbounded">
+            <xsd:element name="nomina">
+                <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element type="xsd:string" name="trabajador"/>
+                      <xsd:element type="xsd:int" name="salarioBase"/>
+                      <xsd:element name="horasExtra" type="tipoHorasExtra"/>
+                      <xsd:element name="horasExtraFinSemana" type="tipoHorasExtra"/>
+                      <xsd:element type="xsd:int" name="plusConvenio"/>
+                      <xsd:element name="antigüedad">
+                          <xsd:complexType>
+                              <xsd:sequence>
+                                  <xsd:element type="xsd:int" name="años"/>
+                                  <xsd:element type="xsd:int" name="plusAntigüedad"/>
+                              </xsd:sequence>
+                          </xsd:complexType>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+
+<!-- el tipo del elemento horasExtra hay que indicarlo como mixto porque este elemento 
+va a tener contenido textual además de elementos descendientes-->
+<!-- Este tipo, al ser declarado fuera de cualquier elemento, podría ser referenciado desde mas de uno-->
+<xsd:complexType name="tipoHorasExtra" mixed="true">
+    <xsd:sequence>
+        <!-- El tipo de retribuidas también tiene que ser complejo porque va a contener un atributo.
+      Además, en este caso, se trata de un elemento vacío-->
+      <xsd:element name="retribuidas">
+        <xsd:complexType>
+          <xsd:simpleContent> <!-- Es de contenido simple para así indicar que va a ser un elemento vacío-->
+            <xsd:extension base="xsd:string"> <!-- Se extiende el contenido simple para poder añadir un atributo-->
+              <xsd:attribute type="xsd:string" name="ret"/>
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element> <!-- Fin de la declaración del elemento retribuidas-->
+      <xsd:element type="xsd:byte" name="precioHora"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+                
+</xsd:schema>
