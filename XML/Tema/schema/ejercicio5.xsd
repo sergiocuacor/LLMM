@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:element name="ejercicio5">
-        
-    </xsd:element>
-    <!-- Elemento de nombre hotel cuyo contenido será de tipo texto y habrá entre 5 y 300 elementos de este tipo. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root-element">
+   <!-- Elemento de nombre hotel cuyo contenido será de tipo texto y habrá entre 5 y 300 elementos de este tipo. -->
     <xs:element name="hotel" type="xs:string" minOccurs="5" maxOccurs="300"></xs:element>
 
     <!--Elemento de nombre edad, de tipo entero y que tendrá que aparecer, como mínimo, 1 vez. -->
     <xs:element name="edad" type="xs:int" maxOccurs="unbounded"></xs:element>
     
     <!--Elemento de nombre color cuyo valor por defecto será verde-->
-</xsd:schema>
+
+
+
+
+
+
+
+
+
+</xs:element>
+</xs:schema>

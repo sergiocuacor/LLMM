@@ -3,6 +3,7 @@
 	<xsd:element name="evento">
 		<xsd:complexType>
 			<xsd:sequence>
+				
 				<!--Elemento de nombre grup. Su contenido será una cadena de caracteres-->
 				<xsd:element name="grup." type="xsd:string"></xsd:element>
 				<!-- Elemento de nombre fecha y que vaya a contener fecha y hora-->

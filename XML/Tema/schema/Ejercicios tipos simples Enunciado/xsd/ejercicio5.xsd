@@ -4,17 +4,31 @@
 		<!-- Declara el tipo de tal forma que un elemento de este tipo contenga
         un valor entre 18000 y 90000, con dos decimales y con, exactamente, 7 dígitos
 		-->
+		<xsd:restriction base="xsd:decimal">
+			<xsd:fractionDigits value="2"></xsd:fractionDigits>
+			<xsd:maxInclusive value="90000"></xsd:maxInclusive>
+			<xsd:minInclusive value="18000"></xsd:minInclusive>
+			<xsd:totalDigits value="7"></xsd:totalDigits>
+		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="categoria">
 		<!-- Declara el tipo de tal forma que un elemento de este tipo solo pueda contener una de los 
 			siguientes valores: analista, analista-programador, programador senior o programador junior.
 		-->
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="analista"></xsd:enumeration>
+			<xsd:enumeration value="analista-programador"></xsd:enumeration>
+			<xsd:enumeration value="programador senior"></xsd:enumeration>
+			<xsd:enumeration value="programador junior"></xsd:enumeration>
+		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:element name="salario">
 		<xsd:complexType>
 			<xsd:sequence>
 				<!-- Elemento de nombre sueldo y del tipo construido tipoSueldo-->
+				<xsd:element name="sueldo" type="tipoSueldo"></xsd:element>
 				<!-- Elemento de nombre puesto y del tipo construido categoria-->
+				<xsd:element name="puesto" type="categoria"></xsd:element>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>

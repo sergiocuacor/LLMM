@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<salario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio5.xsd">
+<sueldo>35000</sueldo>
+<puesto>analista</puesto>
+</salario>

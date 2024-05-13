@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="ejercicio7"></xsd:element>
+
     <xsd:simpleType name="tipoCantidad">
         <xsd:restriction base="xsd:decimal">
             <xsd:fractionDigits value="3"></xsd:fractionDigits>
             <xsd:totalDigits value="11"></xsd:totalDigits>
         </xsd:restriction>
-        
+    </xsd:simpleType>
+
+    <xsd:simpleType name="direcciones">
+        <xsd:restriction base="xsd:string">
+            <xsd:whiteSpace value="collapse"></xsd:whiteSpace>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="estaciones">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="Primavera"></xsd:enumeration>
+            <xsd:enumeration value="Verano"></xsd:enumeration>
+            <xsd:enumeration value="Otoño"></xsd:enumeration>
+            <xsd:enumeration value="Invierno"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="codigoEmpleado">
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="7"></xsd:length>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoFecha">
+        <xsd:restriction base="xsd:date">
+            <xsd:minInclusive value="1900-01-01"></xsd:minInclusive>
+            <xsd:maxInclusive value="2019-12-01"></xsd:maxInclusive>
+        </xsd:restriction>
     </xsd:simpleType>
 </xsd:schema>
