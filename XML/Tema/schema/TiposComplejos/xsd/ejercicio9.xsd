@@ -1,52 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:element name="ejercicio9"></xsd:element>
 
-    <xsd:element name="libro">
-        <xsd:complexType>
-            <xsd:attribute name="ISBN" type="xsd:string"></xsd:attribute>
-        </xsd:complexType>
-    </xsd:element>
+<xsd:complexType name="tipoISBN">
+    
+</xsd:complexType>
 
-    <xsd:element name="semáforo">
-        <xsd:complexType>
-            <xsd:choice>
-                <xsd:element name="Rojo" ></xsd:element>
-                <xsd:element name="Verde" ></xsd:element>
-                <xsd:element name="Amarillo" ></xsd:element>
-            </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
 
-    <xsd:element name="figuras">
+
+
+
+    <xsd:element name="ejercicio9">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="Círculo"></xsd:element>
-                <xsd:element name="Cuadrado"></xsd:element>
-                <xsd:element name="Triángulo"></xsd:element>
+
+                
+
+
+
+                <xsd:element name="libro">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:string">
+                                <xsd:attribute name="ISBN" type="xsd:string"></xsd:attribute>
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="semáforo">
+                    <xsd:complexType>
+                        <xsd:choice>
+                            <xsd:element name="Rojo"></xsd:element>
+                            <xsd:element name="Verde"></xsd:element>
+                            <xsd:element name="Amarillo"></xsd:element>
+                        </xsd:choice>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="figuras">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Círculo"></xsd:element>
+                            <xsd:element name="Cuadrado"></xsd:element>
+                            <xsd:element name="Triángulo"></xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+
+                <xsd:element name="temperatura">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:integer">
+                                <xsd:attribute name="escala">
+                                    <xsd:simpleType>
+                                        <xsd:restriction base="xsd:string">
+                                            <xsd:enumeration value="Celsius"></xsd:enumeration>
+                                            <xsd:enumeration value="Kelvin"></xsd:enumeration>
+                                            <xsd:enumeration value="Fahrenheit"></xsd:enumeration>
+                                        </xsd:restriction>
+                                    </xsd:simpleType>
+                                </xsd:attribute>
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+
+
+                <xsd:element name="sala">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="capacidad" type="xsd:integer"></xsd:element>
+                            <xsd:element name="color" type="xsd:string"></xsd:element>
+                            <xsd:element name="tomaInternet">
+                                <xsd:complexType>
+                                    <xsd:attribute name="disponible" use="required">
+                                        <xsd:simpleType>
+                                            <xsd:restriction base="xsd:string">
+                                                <xsd:enumeration value="si"></xsd:enumeration>
+                                                <xsd:enumeration value="no"></xsd:enumeration>
+                                            </xsd:restriction>
+                                        </xsd:simpleType>
+                                    </xsd:attribute>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+    <!-- Complex type con secuencia o xsd:all libro, semaforo... -->
 
-    <xsd:element name="temperatura">
-        <xsd:complexType>
-            <xsd:simpleContent>
-                <xsd:extension base="xsd:integer">
-                    <xsd:attribute name="escala">
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:string">
-                                <xsd:enumeration value="Celsius"></xsd:enumeration>
-                                <xsd:enumeration value="Kelvin"></xsd:enumeration>
-                                <xsd:enumeration value="Fahrenheit"></xsd:enumeration>
-                            </xsd:restriction>
-                        </xsd:simpleType>
-                    </xsd:attribute>
-                </xsd:extension>
-            </xsd:simpleContent>
-        </xsd:complexType>
-    </xsd:element>
 
-    <!-- Alternativa a temperatura: definir un tipo EscalaTemperatura y crear posteriormente un atributo de este tipo
+    <!-- Alternativa a temperatura: definir un tipo EscalaTemperatura y crear posteriormente un
+    atributo de este tipo
     
         <xs:simpleType name="EscalaTemperatura">
             <xs:restriction base="xs:string">
@@ -69,24 +118,5 @@
         
     -->
 
-    <xsd:element name="sala">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="capacidad" type="xsd:integer"></xsd:element>
-                <xsd:element name="color" type="xsd:string"></xsd:element>
-                <xsd:element name="tomaInternet">
-                    <xsd:complexType>
-                        <xsd:attribute name="disponible" use="required">
-                            <xsd:simpleType>
-                                <xsd:restriction base="xsd:string">
-                                    <xsd:enumeration value="si"></xsd:enumeration>
-                                    <xsd:enumeration value="no"></xsd:enumeration>
-                                </xsd:restriction>
-                            </xsd:simpleType>
-                        </xsd:attribute>
-                    </xsd:complexType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
+
 </xsd:schema>

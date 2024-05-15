@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- TIPOS SIMPLES-->
+    <xsd:simpleType name="tipoCodAlumno">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="[A-Za-z]{3}\d{2}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoGraduado">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="si"></xsd:enumeration>
+            <xsd:enumeration value="no"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- TIPOS COMPLEJOS -->
+    <xsd:complexType name="tipoAlumno">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"></xsd:element>
+            <xsd:element name="apellidos" type="xsd:string"></xsd:element>
+            <xsd:element name="modulo" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="codAlumno" type="tipoCodAlumno"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoAntiguoAlumno">
+        <xsd:complexContent>
+            <xsd:extension base="tipoAlumno">
+                <xsd:sequence>
+                    <xsd:element name="fechaFin" type="xsd:date"></xsd:element>
+                </xsd:sequence>
+                <xsd:attribute name="graduado" type="tipoGraduado" use="required"></xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+
+
+
+<!-- ====================================================================================================================================================-->
+    
+    <xsd:element name="alumnos">
+
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="alumno" type="tipoAlumno" maxOccurs="unbounded"></xsd:element>
+                <xsd:element name="antiguoAlumno" type="tipoAntiguoAlumno"
+                    maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    
+    </xsd:element>
+</xsd:schema>

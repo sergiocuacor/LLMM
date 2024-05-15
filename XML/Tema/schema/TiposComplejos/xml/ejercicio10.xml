@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/ejercicio10.xsd">
+
+    <alumno>
+        <nombre>Sergio</nombre>
+        <apellidos>Cuadrado</apellidos>
+        <modulo>DAW</modulo>
+    </alumno>
+    <alumno>
+        <nombre>Sergio</nombre>
+        <apellidos>Cuadrado</apellidos>
+        <modulo>DAW</modulo>
+    </alumno>
+    <alumno>
+        <nombre>Sergio</nombre>
+        <apellidos>Cuadrado</apellidos>
+        <modulo>DAW</modulo>
+    </alumno>
+    <antiguoAlumno codAlumno="LLA33" graduado="si">
+        <nombre>djkfs</nombre>
+        <apellidos>fsjfhsjd</apellidos>
+        <modulo>fjskf</modulo>
+        <fechaFin>2024-05-13</fechaFin>
+    </antiguoAlumno>
+
+</alumnos>
