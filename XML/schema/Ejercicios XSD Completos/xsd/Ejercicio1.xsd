@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+    <!-- TIPOS SIMPLES-->
+    <xsd:simpleType name="tipoISBN">
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="13"></xsd:length>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- TIPOS COMPLEJOS -->
+    <xsd:complexType name="tipoLibro">
+
+        <xsd:sequence>
+            <xsd:element name="Titulo" type="xsd:string"></xsd:element>
+            <xsd:element name="Autor" type="xsd:string"></xsd:element>
+            <xsd:element name="Personaje" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Nombre" type="xsd:string"></xsd:element>
+                        <xsd:element name="amigoDe" minOccurs="0"
+                            maxOccurs="unbounded" type="xsd:string"></xsd:element>
+                        <xsd:element name="Desde" type="xsd:date"></xsd:element>
+                        <xsd:element name="Calificación" type="xsd:decimal"></xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="ISBN" type="tipoISBN" use="required"></xsd:attribute>
+
+    </xsd:complexType>
+
+    <!--  ======================================-->
+   
+    <xsd:element name="libros">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="libro" type="tipoLibro" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>

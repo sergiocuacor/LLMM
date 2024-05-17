@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/Ejercicio1.xsd">
+
+    <libro ISBN="1111111111111">
+        <Titulo>Crimen y castigo</Titulo>
+        <Autor>Dostoievski</Autor>
+        <Personaje>
+            <Nombre>Rodion</Nombre>
+            <amigoDe> Arkadi</amigoDe>
+            <Desde>2023-01-23</Desde>
+            <Calificación>8.3</Calificación>
+        </Personaje>
+        <Personaje>
+            <Nombre>Sofía</Nombre>
+            <amigoDe> Arkadi</amigoDe>
+            <Desde>2023-01-23</Desde>
+            <Calificación>8.3</Calificación>
+        </Personaje>
+    </libro>
+
+    <libro ISBN="ooooooooooooo">
+        <Titulo>La metamorfosis</Titulo>
+        <Autor>Kafka</Autor>
+    </libro>
+        
+
+</libros>
