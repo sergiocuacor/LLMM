@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/Ejercicio2.xsd">
+
+<persona >
+    <Nombre>
+
+    </Nombre>
+    <Apellido>
+
+    </Apellido>
+    <estadoCivil>Viudo</estadoCivil>
+
+</persona>
+
+
+</Personas>
