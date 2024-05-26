@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/Ejercicio2.xsd">
 
-<persona >
-    <Nombre>
-
-    </Nombre>
-    <Apellido>
-
-    </Apellido>
-    <estadoCivil>Viudo</estadoCivil>
+<persona DNI="33333333L">
+    <Nombre></Nombre>
+    <Apellido></Apellido>
+    <estadoCivil>Soltero</estadoCivil>
+    <Edad>17</Edad>
+    <EnActivo>true</EnActivo>
 
 </persona>
 

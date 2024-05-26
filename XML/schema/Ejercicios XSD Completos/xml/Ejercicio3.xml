@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/Ejercicio3.xsd">
+
+    <ticket CodTicket="L12">
+        <FechaHoraExp>2024-03-01T13:49:00</FechaHoraExp>
+        <PrecioTotal tipoMoneda="EURO">
+            <PrecioSinIVA>10</PrecioSinIVA>
+            <IVA_Aplicable>10%</IVA_Aplicable>
+            <PrecioConIVA>1.10</PrecioConIVA>
+            
+        </PrecioTotal>
+        <FormaPago>
+            <tarjeta numeroTarjeta="************1234">
+                <NombreCliente>Calvin</NombreCliente>
+            </tarjeta>
+        </FormaPago>
+        <DatosTienda>
+            <NombreTienda>Zalando</NombreTienda>
+            <CIF>L12345678</CIF>
+            <Telefono>123456789</Telefono>
+        </DatosTienda>
+    </ticket>
+
+    <ticket CodTicket="ñ12">
+        <FechaHoraExp>2024-03-01T13:49:00</FechaHoraExp>
+        <PrecioTotal tipoMoneda="EURO">
+            <PrecioSinIVA>10</PrecioSinIVA>
+            <IVA_Aplicable>10%</IVA_Aplicable>
+            <PrecioConIVA>1.10</PrecioConIVA>
+            
+        </PrecioTotal>
+        <FormaPago>
+            <tarjeta numeroTarjeta="************1234">
+                <NombreCliente>Calvin</NombreCliente>
+            </tarjeta>
+        </FormaPago>
+        <DatosTienda>
+            <NombreTienda>Zalando</NombreTienda>
+            <CIF>L12345678</CIF>
+            <Telefono>123456789</Telefono>
+        </DatosTienda>
+    </ticket>
+
+</tickets>

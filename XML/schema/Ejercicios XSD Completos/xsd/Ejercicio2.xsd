@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+    <!-- TIPOS COMPLEJOS-->
+    <xsd:complexType name="tipoPersona">
+        <xsd:sequence>
+            <xsd:element name="Nombre" type="xsd:string"></xsd:element>
+            <xsd:element name="Apellido" type="xsd:string"></xsd:element>
+            <xsd:element name="estadoCivil" type="tipoEstadoCivil" default="Soltero"></xsd:element>
+            <xsd:element name="Edad" type="tipoEdad"></xsd:element>
+            <xsd:element name="EnActivo" type="xsd:boolean" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="DNI" use="required" type="tipoDNI"></xsd:attribute>
+    </xsd:complexType>
+
+    <!-- TIPOS SIMPLES-->
+    <xsd:simpleType name="tipoEstadoCivil">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Soltero"></xsd:enumeration>
+            <xsd:enumeration value="Casado"></xsd:enumeration>
+            <xsd:enumeration value="Viudo"></xsd:enumeration>
+            <xsd:enumeration value="Divorciado"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoDNI">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{8}[A-Za-z]"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoEdad">
+        <xsd:restriction base="xsd:nonNegativeInteger">
+            <xsd:minInclusive value="16"></xsd:minInclusive>
+            <xsd:maxInclusive value="70"></xsd:maxInclusive>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- *************************************************************************-->
     <xsd:element name="Personas">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="persona" maxOccurs="unbounded">
-                    <xsd:complexType>
-                        
-                        <xsd:sequence>
-                            <xsd:element name="Nombre" type="xsd:string"></xsd:element>
-                            <xsd:element name="Apellido" type="xsd:string"></xsd:element>
-                            <xsd:element name="estadoCivil">
-                                <xsd:simpleType>
-                                    <xsd:restriction base="xsd:string">
-                                        <xsd:enumeration value="Casado"></xsd:enumeration>
-                                        <xsd:enumeration value="Viudo"></xsd:enumeration>
-                                        <xsd:enumeration value="Divorciado"></xsd:enumeration>
-                                    </xsd:restriction>
-                                </xsd:simpleType>
-                            </xsd:element>
-                            
-                        </xsd:sequence>
-                        <xsd:attribute name="DNI" use="required">
-                            <xsd:simpleType>
-                                <xsd:restriction base="xsd:string" >
-                                    <xsd:pattern value="\d{8}[A-Za-z]" ></xsd:pattern>
-                                </xsd:restriction>
-                            </xsd:simpleType>
-                        </xsd:attribute>
-                    </xsd:complexType>
-                </xsd:element>
+                <xsd:element name="persona" maxOccurs="unbounded" type="tipoPersona"></xsd:element>
             </xsd:sequence>
-
-
         </xsd:complexType>
-
-
     </xsd:element>
 </xsd:schema>
