@@ -1,2 +1,3 @@
 8 dígitos y 1 letra: \d{8}[A-Za-z]
 
+T seguido de un año, - y otro año (T2018-2019, T2021-T2024):  T\d{4}-\d{4}

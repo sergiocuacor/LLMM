@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webinars>
+    <categorias>
+        <categoria id="c001" abreviatura="ComMarketing">Comunicación y Marketing</categoria>
+        <categoria id="c002" >Ciencias de la Salud</categoria>
+        <categoria id="c003" >Educación</categoria>
+        <categoria id="c004" abreviatura="ADEE">Administración de Empresas y Economía</categoria>
+        <categoria id="c005" abreviatura="HistHumanidades">Historia y Humanidades</categoria>
+    </categorias>
+    <webinar codigo="w001">
+        <titulo>Posicionamiento, SEO y Gestión de Contenidos Web</titulo>
+        <tema categoria="c001" subcategoria="c004"/>
+        <profesor>
+            <nombre>Juan Pedro</nombre>
+            <apellidos>Dominguez</apellidos>
+        </profesor>
+    </webinar>
+    <webinar codigo="w002">
+        <titulo>Taller: Cómo manejar el malestar en la crisis (Mindfulness)</titulo>
+        <tema categoria="c002" subcategoria="c006"/>
+        <profesor>
+            <nombre>Margarita</nombre>
+            <apellidos>Romero</apellidos>
+        </profesor>
+        <ponente>
+            <nombre>José</nombre>
+            <apellidos>Del Arco</apellidos>
+        </ponente>
+    </webinar>
+    <webinar codigo="w003">
+        <titulo>Invertir en tiempos del Coronavirus</titulo>
+        <tema categoria="c004" categoria="c002"/>
+        <ponente>
+            <nombre>Rosana</nombre>
+            <apellidos>Jimenez</apellidos>
+        </ponente>
+    </webinar>
+</webinars>

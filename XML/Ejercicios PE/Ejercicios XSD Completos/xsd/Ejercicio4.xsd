@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- TIPOS COMPLEJOS -->
+
+    <xsd:complexType name="tipoTemporada">
+        <xsd:sequence>
+            <xsd:element name="jornada" maxOccurs="25"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="IDTemporada" use="required" type="tipoIDTemporada"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoJornada">
+        <xsd:sequence>
+            <xsd:element name="partido" maxOccurs="9" type="tipoPartido"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="IDJornada" use="required" type="tipoIDJornada"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPartido">
+        <xsd:sequence>
+            <xsd:element name="Fecha" type="xsd:date"></xsd:element>
+            <xsd:element name="Hora" type="xsd:time"></xsd:element>
+            <xsd:element name="Campo" type="tipoCampo"></xsd:element>
+            <xsd:element name="Equipo_Local"
+                type="xsd:string"></xsd:element>
+            <xsd:element name="Equipo_Visitante"
+                type="xsd:string"></xsd:element>
+            <xsd:choice>
+                <xsd:element name="Jugado" type="tipoPartidoJugado"></xsd:element>
+                <xsd:element name="Aplazado"
+                    type="xsd:string"></xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute name="IDPartido" type="tipoIDPartido" use="required">
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCampo" mixed="true">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string"> <!-- ESTE VALOR ES PARA EL TEXTO EN SIMPLECONTENT-->
+                <xsd:attribute name="capacidadCampo">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int"> <!-- ESTE VALOR ES PARA EL ATTR-->
+                            <xsd:minInclusive value="0"></xsd:minInclusive>
+                            <xsd:maxInclusive value="16000"></xsd:maxInclusive>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPartidoJugado">
+        <xsd:attribute name="local" type="xsd:nonNegativeInteger" use="required"></xsd:attribute>
+        <xsd:attribute name="visitante" type="xsd:nonNegativeInteger"  use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <!-- TIPOS SIMPLES -->
+
+    <xsd:simpleType name="tipoIDTemporada">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="T\d{4}-\d{4}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoIDJornada">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="J\d"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoIDPartido">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="P\d{2}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- ********************************************************* -->
+
+    <xsd:element name="temporadas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="temporada" type="tipoTemporada" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

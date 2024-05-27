@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<temporadas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/Ejercicio4.xsd">
+
+<temporada IDTemporada="T2014-2015">
+    <jornada IDJornada="J3">
+        <partido IDPartido="P12">
+            <Fecha>2024-02-03</Fecha>
+            <Hora>13:00:00</Hora>
+            <Campo capacidadCampo="16000">Camp Nou </Campo>
+            <Equipo_Local>FC Barcelona</Equipo_Local>
+            <Equipo_Visitante>Celta Vigo</Equipo_Visitante>
+            <Jugado local="3" visitante="-13"></Jugado>
+            <Aplazado></Aplazado>
+        </partido>
+    </jornada>
+</temporada>
+</temporadas>

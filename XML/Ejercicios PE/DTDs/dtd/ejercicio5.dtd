@@ -1,0 +1,12 @@
+<!ENTITY % cap "(capitulo, descripcion)*">
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (autor+, imagen*, contenido+, nuevaEdicion*)>
+<!ATTLIST libro libroId ID #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT contenido %cap;>
+<!ELEMENT nuevaEdicion %cap;>
+<!ATTLIST nuevaEdicion capAñadido (si|no) "no">
+<!ELEMENT capitulo (#PCDATA)>
+<!ATTLIST capitulo numero CDATA #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>

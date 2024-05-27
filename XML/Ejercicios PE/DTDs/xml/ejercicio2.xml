@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+    <pais poblacion="47100396">
+        <idioma nacional="si">Castellano</idioma>
+        <idioma nacional="false">Euskera</idioma>
+        <idioma nacional="no">Gallego</idioma>
+        <capital>Madrid</capital>
+    </pais>
+    <pais nombre="Irlanda" poblacion="4857000">
+        <idioma nacional="true">Irlandés</idioma>
+        <idioma nacional="si">Inglés</idioma>
+        <capital>Dublín</capital>
+    </pais>
+    <pais nombre="Portugal"/>
+</paises>
