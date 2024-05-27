@@ -5,7 +5,7 @@
 
     <xsd:complexType name="tipoTemporada">
         <xsd:sequence>
-            <xsd:element name="jornada" maxOccurs="25"></xsd:element>
+            <xsd:element name="jornada" maxOccurs="25" type="tipoJornada"></xsd:element>
         </xsd:sequence>
         <xsd:attribute name="IDTemporada" use="required" type="tipoIDTemporada"></xsd:attribute>
     </xsd:complexType>
@@ -28,8 +28,7 @@
                 type="xsd:string"></xsd:element>
             <xsd:choice>
                 <xsd:element name="Jugado" type="tipoPartidoJugado"></xsd:element>
-                <xsd:element name="Aplazado"
-                    type="xsd:string"></xsd:element>
+                <xsd:element name="Aplazado" type="xsd:string"></xsd:element>
             </xsd:choice>
         </xsd:sequence>
         <xsd:attribute name="IDPartido" type="tipoIDPartido" use="required">
