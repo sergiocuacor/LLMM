@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="tipoAttrCuenta">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Ahorro"/>
+            <xsd:enumeration value="Corriente"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="tipoCuentas">
+        <xsd:sequence>
+            <xsd:element name="balance" type="xsd:short"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="tipoIdCuenta" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoClientes">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="direccion" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute type="tipoIdCliente" name="id"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoRelacion">
+        <xsd:attribute type="xsd:IDREF" name="cliente" use="required"/>
+        <xsd:attribute type="xsd:IDREF" name="cuenta" use="required"/>
+    </xsd:complexType>
+
+    <xsd:element name="banco">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="cuentas">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="cuenta" type="tipoCuentas" minOccurs="0" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="cuentasClientes">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="cuentaCliente" type="tipoRelacion" minOccurs="0" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

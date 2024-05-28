@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/examen.xsd">
+    <cuentas>
+        <cuenta id="ca00001" tipo="Ahorro">
+            <balance>2500</balance>
+        </cuenta>
+        <cuenta id="cc00002" tipo="Corriente">
+            <balance>4025</balance>
+        </cuenta>
+        <cuenta id="ca00003" tipo="Ahorro">
+            <balance>1500</balance>
+        </cuenta>
+        <cuenta id="ca00004" tipo="Ahorro">
+            <balance>3100</balance>
+        </cuenta>
+        <cuenta id="ca00005" tipo="Ahorro">
+            <balance>5289</balance>
+        </cuenta>
+        <cuenta id="cc00006" tipo="Corriente">
+            <balance>1740</balance>
+        </cuenta>
+        <cuenta id="cc00007" tipo="Corriente">
+            <balance>900</balance>
+        </cuenta>
+        <cuenta id="cc00008" tipo="Corriente">
+            <balance>18100</balance>
+        </cuenta>
+    </cuentas>
+    <clientes>
+        <cliente id="c00001">
+            <nombre>Jesus Leal</nombre>
+            <direccion>Bolivia 4, Salamanca</direccion>
+        </cliente>
+        <cliente id="c00002">
+            <nombre>Maria Campos</nombre>
+            <direccion>Arcos 25, Villamayor</direccion>
+        </cliente>
+        <cliente id="c00003">
+            <nombre>Raquel Hernandez</nombre>
+            <direccion>Rio Tormes 8, Santa Marta</direccion>
+        </cliente>
+    </clientes>
+    <cuentasClientes>
+        <cuentaCliente cliente="c00001" cuenta="ca00001"/>
+        <cuentaCliente cliente="c00004" cuenta="ca00008"/>
+        <cuentaCliente cliente="c00002" cuenta="cc00002"/>
+        <cuentaCliente cliente="c00002" cuenta="ca00003"/>
+        <cuentaCliente cliente="c00003" cuenta="cc00006"/>
+        <cuentaCliente cliente="c00003" cuenta="cc00004"/>
+    </cuentasClientes>
+</banco>

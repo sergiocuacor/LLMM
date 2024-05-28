@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliografia>
+    <articulo>
+        <idioma idiomaCode="eng">English</idioma>
+        <autor>
+            <nombre>Peter</nombre>
+            <apellidos>Burke</apellidos>
+        </autor>
+        <titulo>Social History of the Media, from Gutenberg to the Internet</titulo>
+        <publicacion>
+            <lugar>London</lugar>
+            <fecha>2005</fecha>
+        </publicacion>
+    </articulo>
+    <articulo>
+        <idioma idiomaCode="eng">English</idioma>
+        <autor>
+            <nombre>Elizabeth Lewisohn</nombre>
+            <apellidos>Eisenstein</apellidos>
+        </autor>
+        <titulo>printing revolution in early modern Europe</titulo>
+        <datosFisicos>
+            <extension>XIX, 384 p.</extension>
+            <dimensiones>24 cm.</dimensiones>
+        </datosFisicos>
+        <publicacion>
+            <editorial>Cambridge University Press</editorial>
+            <fecha>1983</fecha>
+        </publicacion>
+    </articulo>
+</bibliografia>

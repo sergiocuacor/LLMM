@@ -37,7 +37,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="libro" type="tipoLibro" maxOccurs="unbounded"></xsd:element>
-            </xsd:sequence>
+            </xsd:sequence>  
         </xsd:complexType>
     </xsd:element>
 
