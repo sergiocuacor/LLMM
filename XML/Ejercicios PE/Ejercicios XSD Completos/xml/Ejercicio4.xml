@@ -10,8 +10,8 @@
             <Campo capacidadCampo="16000">Camp Nou </Campo>
             <Equipo_Local>FC Barcelona</Equipo_Local>
             <Equipo_Visitante>Celta Vigo</Equipo_Visitante>
-            <Jugado local="3" visitante="-13"></Jugado>
-            <Aplazado></Aplazado>
+           <Jugado ></Jugado>
+           <Aplazado></Aplazado>
         </partido>
     </jornada>
 </temporada>

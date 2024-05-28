@@ -1,0 +1,10 @@
+<!ELEMENT bibliografia (articulo+)>
+<!ELEMENT articulo (idioma,autor,titulo,publicacion)>
+<!ATTLIST articulo id ID #REQUIRED>
+<!ELEMENT idioma (#PCDATA)>
+<!ATTLIST idioma idiomaCode CDATA #IMPLIED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT publicacion (editorial?, fecha)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>

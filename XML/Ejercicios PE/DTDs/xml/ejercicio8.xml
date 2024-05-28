@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fábrica SYSTEM "../dtd/ejercicio8.dtd">
+<fábrica>
+    <pabellon id="s3" numEmpleados="6">
+        <nombre>Manuel</nombre>
+        <responsable>
+            <nombre>Sergio</nombre>
+            <apellidos>Torreznillos Garcia</apellidos>
+            <email>sergioterra23@gmail.com</email>
+        </responsable>
+        <trabajadores>
+            <trabajador dni="M8392894">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+            <trabajador dni="L89428492">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+            <trabajador dni="N9234892m" extension="23">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+        </trabajadores>
+    </pabellon>
+
+    <pabellon id="s45">
+        <nombre>Manuel</nombre>
+        <responsable>
+            <nombre>Sergio</nombre>
+            <apellidos>Torreznillos Garcia</apellidos>
+            <email>sergioterra23@gmail.com</email>
+        </responsable>
+        <trabajadores>
+            <trabajador dni="M8392896">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+            <trabajador dni="L89428490">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+            <trabajador dni="N92434892m" extension="23">
+                <nombre>Sergio</nombre>
+                <apellidos>Torreznillos Garcia</apellidos>
+                <email>sergioterra23@gmail.com</email>
+            </trabajador>
+        </trabajadores>
+    </pabellon>
+</fábrica>

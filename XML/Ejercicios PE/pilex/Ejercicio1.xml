@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliografia SYSTEM "../dtd/Ejercicio1.dtd">
+<bibliografia>
+    <articulo id="a1">
+        <idioma idiomaCode="eng">English</idioma>
+        <autor>Peter Burke</autor>
+        <titulo>Social History of the Media, from Gutenberg to the Internet</titulo>
+        <publicacion>
+            <fecha>2005</fecha>
+        </publicacion>
+    </articulo>
+    <articulo  id="a2">
+        <idioma idiomaCode="eng">English</idioma>
+        <autor>Elizabeth Lewisohn Eisenstein</autor>
+        <titulo>printing revolution in early modern Europe</titulo>
+        <publicacion>
+            <editorial>Cambridge University Press</editorial>
+            <fecha>1983</fecha>
+        </publicacion>
+    </articulo>
+</bibliografia>

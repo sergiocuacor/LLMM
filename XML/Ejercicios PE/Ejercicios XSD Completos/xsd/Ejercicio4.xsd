@@ -28,8 +28,7 @@
                 type="xsd:string"></xsd:element>
             <xsd:choice>
                 <xsd:element name="Jugado" type="tipoPartidoJugado"></xsd:element>
-                <xsd:element name="Aplazado"
-                    type="xsd:string"></xsd:element>
+                <xsd:element name="Aplazado" type="xsd:string"></xsd:element>
             </xsd:choice>
         </xsd:sequence>
         <xsd:attribute name="IDPartido" type="tipoIDPartido" use="required">

@@ -1,0 +1,15 @@
+<!ENTITY % datosPersona "(nombre, apellidos, email)">
+<!ELEMENT fábrica (pabellon+)>
+<!ELEMENT pabellon (nombre, responsable, trabajadores)>
+<!ATTLIST pabellon
+ id ID #REQUIRED
+ numEmpleados CDATA #IMPLIED>
+<!ELEMENT responsable %datosPersona;>
+<!ELEMENT trabajadores (trabajador+)>
+<!ELEMENT trabajador %datosPersona;>
+<!ATTLIST trabajador
+ dni ID #REQUIRED
+ extension CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
