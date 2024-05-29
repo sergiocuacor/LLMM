@@ -1,0 +1,114 @@
+ANY: Indica que el contenido será cualquier cosa, que será válido en cualquier
+caso:
+ <!ELEMENT coche ANY> Y en el XML coche podrá ser, por ejemplo:
+ <coche /> ó
+<coche> Nissan </coche> ó
+ <coche><matricula> 45677</matricula></coche>
+
+
+
+
+ EMPTY: indica que el elemento será vacío, por lo que no tendrá datos ni
+descendientes:
+<!ELEMENT coche EMPTY> Y coche, en el XML, será:
+<coche /> ó <coche></coche>
+
+
+
+#PCDATA: indica que el contenido serán datos textuales, numéricos o cualquier
+otro formato que no contenga etiquetas. No podrá contener elementos. Deberá
+aparecer entre paréntesis:
+<!ELEMENT coche (#PCDATA)> Y en el XML, coche podrá ser:
+ <coche> Nissan </coche> pero no podrá ser
+<coche><matricula> 45677</matricula></coche>
+
+
+
+
+?: El elemento o secuencia de elementos puede aparecer 0 o 1
+veces.
+
+
+*: El elemento o secuencia de elementos puede aparecer de 0 a N
+veces.
+
+
++: El elemento o secuencia de elementos puede aparecer de 1 a N
+veces.
+
+
+
+A,B: El elemento B aparecerá a continuación del elemento A.
+
+A|B: Aparecerá uno de los dos elementos, pero no los dos.
+
+
+Ejemplos:
+ Un email tendrá el elemento raíz <email> y la secuencia de elementos
+<para>,<cc>(que será optativo),<cco>(optativo), <asunto> y <cuerpo>:
+<!ELEMENT email (para,cc?,cco?,asunto,cuerpo)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT cco (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+
+ Un contrato tendrá una lista de cláusulas, cada una de las cuales está compuesta
+por varios epígrafes y sus desarrollos asociados, y un único epílogo:
+<!ELEMENT contrato (clausula+)>
+<!ELEMENT clausula ((epigrafe,desarrollo)+,epilogo)>
+<!ELEMENT epigrafe (#PCDATA)>
+<!ELEMENT desarrollo (#PCDATA)>
+<!ELEMENT epilogo (#PCDATA)
+
+
+
+
+<!ATTLIST nombreElemento
+nombreAtributo1 tipoAtributo carácter
+nombreAtributo1 tipoAtributo carácter
+…
+nombreAtributoN tipoAtributo carácter
+>
+Dónde:
+ nombreAtributo es el nombre que tendrá el atributo en el documento XML.
+ carácter: podrá ser:
+o “valor”: valor por defecto para el atributo.
+<!ATTLIST coche marca CDATA “Nissan”>
+
+o #IMPLIED: indica que el atributo es opcional.
+<!ATTLIST coche modelo CDATA #IMPLIED>
+
+o #REQUIRED: indica que el atributo es obligatorio.
+<!ATTLIST coche matricula CDATA #REQUIRED>
+
+o #FIXED “valor”: indica atributo obligatorio y con un valor que no podrá
+cambiar.
+<!ATTLIST coche vendido CDATA #FIXED “si”>
+
+
+
+
+tipoAtributo: Los tipos mas comunes que puede tomar un atributo son:
+
+o CDATA: El valor será una cadena de caracteres sin etiquetas.
+
+o (valor1|valor2|…|valorN): El valor del atributo tendrá que ser uno de los
+propuestos en la lista.
+<!ATTLIST coche marca (Nissan | Seat | Ford) #REQUIRED>
+
+o ID: El valor tendrá que ser un identificador único. Es decir, dos elementos
+del mismo tipo no podrán tener el mismo valor en un atributo de tipo ID.
+
+
+Además, el valor de un atributo de tipo ID tiene que cumplir con las
+normas de nombres de XML.
+o IDREF: el valor será el de un atributo de tipo ID de otro elemento.
+
+o IDREFS: El valor será una lista de valores de otros atributos de tipo ID
+separados por espacios.
+
+o NMTOKEN: El valor cumplirá las normas de XML para nombres.
+
+o NMTOKENS: El valor es una lista de nombres válidos según las reglas de
+XML separados por espacios.

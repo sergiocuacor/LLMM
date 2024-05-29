@@ -1,0 +1,6 @@
+<!ELEMENT socios (socio+)>
+<!ELEMENT socio (nombre, dni?,telefono,direccion+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE socios SYSTEM "./ej1.dtd">
+<socios>
+    <socio>
+        <nombre>Manue</nombre>
+        <dni>849284M</dni>
+        <telefono>7847284</telefono>
+        <direccion>Calle medina 3</direccion>
+        <direccion>Calle azulejo76</direccion>
+
+    </socio>
+    <socio>
+        <nombre>alfred</nombre>
+        <telefono>8439842</telefono>
+        <direccion>calle karma 6</direccion>
+    </socio>
+</socios>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido SYSTEM "../dtd/ejercicio10.dtd">
 <pedido>
     <motor modelo="Trio345">
         <componente fabricante="Válvulas Dominguez">

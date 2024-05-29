@@ -8,11 +8,24 @@
         </xsd:restriction>
     </xsd:simpleType>
     
+    <xsd:simpleType name="tipoIdCuenta">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="c[ac]\d{5}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoIdCliente">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="c\d{5}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
     <xsd:complexType name="tipoCuentas">
         <xsd:sequence>
             <xsd:element name="balance" type="xsd:short"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="tipoIdCuenta" use="required"/>
+        <xsd:attribute name="tipo" type="tipoAttrCuenta" use="required"></xsd:attribute>
     </xsd:complexType>
 
     <xsd:complexType name="tipoClientes">
@@ -20,7 +33,7 @@
             <xsd:element name="nombre" type="xsd:string"/>
             <xsd:element name="direccion" type="xsd:string"/>
         </xsd:sequence>
-        <xsd:attribute type="tipoIdCliente" name="id"/>
+        <xsd:attribute name="id" type="tipoIdCliente" />
     </xsd:complexType>
 
     <xsd:complexType name="tipoRelacion">
@@ -31,10 +44,19 @@
     <xsd:element name="banco">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="cuentas">
+                <xsd:element name="cuentas" >
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="cuenta" type="tipoCuentas" minOccurs="0" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="clientes">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="cliente" type="tipoClientes" maxOccurs="unbounded">
+                                
+                            </xsd:element>
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
@@ -45,6 +67,7 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
+                
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

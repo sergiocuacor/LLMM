@@ -42,10 +42,10 @@
     </clientes>
     <cuentasClientes>
         <cuentaCliente cliente="c00001" cuenta="ca00001"/>
-        <cuentaCliente cliente="c00004" cuenta="ca00008"/>
+        <cuentaCliente cliente="c00003" cuenta="cc00008"/>
         <cuentaCliente cliente="c00002" cuenta="cc00002"/>
         <cuentaCliente cliente="c00002" cuenta="ca00003"/>
         <cuentaCliente cliente="c00003" cuenta="cc00006"/>
-        <cuentaCliente cliente="c00003" cuenta="cc00004"/>
+        <cuentaCliente cliente="c00003" cuenta="ca00004"/>
     </cuentasClientes>
 </banco>

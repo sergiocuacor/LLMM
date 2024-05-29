@@ -1,0 +1,15 @@
+<!ELEMENT pedido (motor+)>
+<!ELEMENT motor (componente+)>
+<!ATTLIST motor modelo CDATA #REQUIRED>
+
+<!ELEMENT componente ((fragil?|nofragil?), peso?,numserie?,vidaUtil?)>
+<!ATTLIST componente fabricante CDATA #REQUIRED>
+
+<!ELEMENT fragil EMPTY>
+<!ELEMENT nofragil EMPTY>
+
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST peso unidad (kg | g) #REQUIRED>
+<!ELEMENT numserie (#PCDATA)>
+<!ELEMENT vidaUtil (#PCDATA)>
+<!ATTLIST vidaUtil unidad (años | usos) #REQUIRED>

@@ -1,0 +1,26 @@
+<!ELEMENT operaciones (operacion+)>
+    <!ELEMENT operacion (venta| compra | (compra | venta)+ )>
+    
+    <!ELEMENT venta (producto+, cantidadtotal, entregado?, importe)>
+    <!ELEMENT compra (producto+, proveedor, fechacompra)>
+    
+    <!ELEMENT producto (#PCDATA)>
+    <!ATTLIST producto refModelo NMTOKEN #REQUIRED>
+    
+    <!ELEMENT cantidadtotal (#PCDATA)>
+    
+    <!ELEMENT entregado EMPTY>
+    <!ATTLIST entregado valor (si|no) #IMPLIED>
+    
+    <!ELEMENT importe (#PCDATA)>
+    <!ATTLIST importe moneda CDATA #REQUIRED>
+    
+    <!ELEMENT proveedor (#PCDATA)>
+    
+    <!ELEMENT fechacompra (dia, mes, anio)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    
+    <!ENTITY euros "euros">
+    <!ENTITY libras "libras">

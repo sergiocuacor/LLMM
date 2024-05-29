@@ -1,0 +1,14 @@
+<!--  2. Explica la siguiente declaración:
+-->
+<!ATTLIST alumno
+matricula ID #REQUIRED
+curso (“1”|”2”|”3”|”4”|”5”|”Doc”) #IMPLIED
+becado (“Sí”|”No”) “No”>
+
+
+La declaración define una lista de atributos para el elemento alumno:
+- El primero, matrícula, es de tipo ID, es decir, será único en todo el documento XML, y es obligatorio
+- El segundo, curso, permite elegir una y solo una de las opciones entre paréntesis, 
+que serán cadenas de texto. Es opcional.
+- Por último, el tercero, becado, nos permite elegir entre "Si" o "No", teniendo
+por defecto la opción "No" (fuera de paréntesis).
