@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pacientes SYSTEM "../dtd/ejercicio11.dtd">
+<pacientes>
+    <paciente>
+        <menor dniTutor="M89453">
+            <nombre>Manuel</nombre>
+            <apellidos>Sanz García</apellidos>
+            <nombreTutor>Fran Sanz</nombreTutor>
+            <fechaNacimiento>2015-03-02</fechaNacimiento>
+            <vacunas>
+                <vacuna>
+                    <enfermedad>Alergia estacional</enfermedad>
+                    <fecha>2018-02-03</fecha>
+                </vacuna>
+                <vacuna>
+                    <enfermedad>Varicela</enfermedad>
+                    <fecha>2019-03-03</fecha>
+                </vacuna>
+            </vacunas>
+        </menor>
+
+    </paciente>
+    <paciente>
+        <adulto dni="K94094" estadoLaboral="paro">
+            <nombre>Kolo</nombre>
+            <apellidos>Muani F</apellidos>
+            <fechaNacimiento>2003-03-04</fechaNacimiento>
+            <patologias>
+                <patologia>
+                    <tipo>Diabetes Tipo 2</tipo>
+                    <fecha>2013-03-04</fecha>
+                    <tratamiento>Metformina</tratamiento>
+                </patologia>
+                <patologia>
+                    <tipo>Hígado graso</tipo>
+                    <fecha>2022-08-01</fecha>
+                    <tratamiento>HIIT 2/semana, dieta</tratamiento>
+                </patologia>
+            </patologias>
+        </adulto>
+    </paciente>
+</pacientes>

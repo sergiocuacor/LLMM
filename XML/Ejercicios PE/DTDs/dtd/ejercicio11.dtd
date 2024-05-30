@@ -1,0 +1,26 @@
+<!ELEMENT pacientes (paciente+)>
+<!ELEMENT paciente (menor | adulto)>
+
+<!ELEMENT menor (nombre,apellidos,nombreTutor,fechaNacimiento,vacunas*)>
+<!ATTLIST menor dniTutor ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT nombreTutor (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT vacunas (vacuna*)>
+<!ELEMENT vacuna (enfermedad, fecha)>
+<!ELEMENT enfermedad (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+
+
+<!ELEMENT adulto (nombre,apellidos,fechaNacimiento,patologias*)>
+<!ATTLIST adulto 
+    dni ID #REQUIRED
+    estadoLaboral (paro|activo|jubilado) #REQUIRED>
+
+
+
+<!ELEMENT patologias (patologia*)>
+<!ELEMENT patologia (tipo, fecha, tratamiento?)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT tratamiento (#PCDATA)>
