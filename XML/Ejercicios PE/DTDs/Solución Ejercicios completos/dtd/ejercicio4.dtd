@@ -1,0 +1,11 @@
+<!ENTITY usal "Universidad de Salamanca">
+<!ENTITY uva "Universidad de Valladolid">
+<!ENTITY ucam "Universidad Católica San Antonio de Murcia">
+<!ENTITY upo "Universidad Pablo de Olavide de Sevilla">
+
+<!ELEMENT listadosUniversitarios (listado*)>
+<!ELEMENT listado (descripcion, (datos*))>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT datos (numMatriculados, universidad)>
+<!ELEMENT numMatriculados (#PCDATA)>
+<!ELEMENT universidad (#PCDATA)>

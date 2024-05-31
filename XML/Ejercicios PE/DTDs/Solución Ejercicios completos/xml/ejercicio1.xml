@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE series SYSTEM "../dtd/ejercicio1.dtd">
+<series>
+    <serie id="d56225">
+        <titulo>El cuento de la Criada</titulo>
+        <temporadas>5</temporadas>
+        <actorPrincipal>Elisabeth Moss</actorPrincipal>
+        <premios>9</premios>
+    </serie>
+    <serie id="s234t">
+        <titulo>Black Mirror</titulo>
+        <temporadas>5</temporadas>
+        <actorPrincipal>Bryce Dallas Howard</actorPrincipal>
+    </serie>
+</series>

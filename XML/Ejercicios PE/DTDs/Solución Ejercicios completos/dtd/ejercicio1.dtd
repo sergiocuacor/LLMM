@@ -1,0 +1,7 @@
+<!ELEMENT series (serie+) >
+<!ELEMENT serie (titulo,temporadas,actorPrincipal,premios?)>
+<!ATTLIST serie id ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT temporadas (#PCDATA) >
+<!ELEMENT actorPrincipal (#PCDATA)>
+<!ELEMENT premios (#PCDATA)>

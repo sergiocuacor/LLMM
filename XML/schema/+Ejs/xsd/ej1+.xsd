@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- TIPOS COMPLEJOS -->
+
+    <xsd:complexType name="tipoAlumno">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"></xsd:element>
+            <xsd:element name="direccion" minOccurs="1" maxOccurs="2"
+                type="tipoDireccion">
+
+            </xsd:element>
+            <xsd:element name="telefono" type="xsd:integer" minOccurs="0"
+                maxOccurs="5"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="dni" type="tipoDni">
+
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoDireccion">
+        <xsd:sequence>
+            <xsd:element name="calle" type="xsd:string"></xsd:element>
+            <xsd:element name="numero" type="tipoNumero"></xsd:element>
+            <xsd:element name="ciudad" type="xsd:string"></xsd:element>
+            <xsd:element name="provincia" type="tipoProvincia">
+
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- TIPOS SIMPLES-->
+
+    <xsd:simpleType name="tipoDni">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{8}[A-Za-z]"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoNumero">
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="0"></xsd:minInclusive>
+            <xsd:maxInclusive value="500"></xsd:maxInclusive>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoProvincia">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Badajoz"></xsd:enumeration>
+            <xsd:enumeration value="Cáceres"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+
+    
+
+    <xsd:element name="alumnos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="alumno" maxOccurs="unbounded" type="tipoAlumno">
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

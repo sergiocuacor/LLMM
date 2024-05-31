@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ligaAsobal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio4.xsd">
+    <temporada numJornada="T2019-2020">
+        <jornada numJornada="J1">
+            <partido numPartido="P11">
+                <fecha>2019-09-20</fecha>
+                <hora>17:00:00</hora>
+                <campo>Centro Norte</campo>
+                <equipoLocal>Salamanca</equipoLocal>
+                <equipoVisitante>Valladolid</equipoVisitante>
+                <aplazado />
+            </partido>
+        </jornada>
+        <jornada numJornada="J2">
+            <partido numPartido="P21">
+                <fecha>2019-09-27</fecha>
+                <hora>16:00:00</hora>
+                <campo>Naciones</campo>
+                <equipoLocal>Soria</equipoLocal>
+                <equipoVisitante>Salamanca</equipoVisitante>
+                <jugado local="19" visitante="25"/>
+            </partido>
+        </jornada>
+    </temporada>
+</ligaAsobal>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio2.xsd">
+    <persona dni="34798123r">
+        <nombre>Rosana</nombre>
+        <apellido>Bilbao</apellido>
+        <!-- el elemento estadoCivil podemos dejarlo sin valor porque tomará el que se ha establecido por defecto.
+        Si no hubiese un valor por defeceto declarado, el xml no sería válido porque habría que indicar
+        expresamente e¡uno de los cuatro valores que puede tomar el contenido del elemento-->
+        <estadoCivil/>
+        <edad>35</edad>
+        <enActivo/>
+    </persona>
+</personas>

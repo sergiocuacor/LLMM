@@ -1,0 +1,15 @@
+<!ELEMENT webinars (categorias,webinar*)>
+<!ELEMENT categorias (categoria)+>
+<!ELEMENT categoria (#PCDATA)>
+<!ATTLIST categoria 
+            id ID #REQUIRED 
+            abreviatura CDATA #IMPLIED>
+<!ELEMENT webinar (titulo, tema, (profesor|ponente))>
+<!ATTLIST webinar codigo ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT tema EMPTY>
+<!ATTLIST tema categoria IDREF #REQUIRED subcategoria IDREF #IMPLIED>
+<!ELEMENT profesor (nombre, apellidos)>
+<!ELEMENT ponente (nombre, apellidos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>

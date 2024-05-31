@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pacientes SYSTEM "../dtd/ejercicio11.dtd">
+<pacientes>
+    <paciente>
+        <menores>
+            <menor>
+                <nombre>Pepito</nombre>
+                <apellidos>Perez</apellidos>
+                <nombretutor>Juan</nombretutor>
+                <dnitutor>47612398u</dnitutor>
+                <fechaNac>21/03/2019</fechaNac>
+            </menor>
+        </menores>
+        <adultos>
+            <adulto estadoLab="jubilado">
+                <dni>38912480f</dni>
+                <nombre>Ana</nombre>
+                <apellidos>Gomez</apellidos>
+                <fechaNac>31/12/1945</fechaNac>
+                <patologias>
+                    <patologia>
+                        <tipo>Cardiopatía</tipo>
+                        <fechaDiagnostico>13/02/2012</fechaDiagnostico>
+                    </patologia>
+                </patologias>
+            </adulto>
+        </adultos>
+    </paciente>
+</pacientes>

@@ -1,0 +1,16 @@
+<!ENTITY % cap "(capitulo, descripcion)*">
+<!ENTITY jkr "J.K. Rowling">
+<!ENTITY jrrt "J.R.R. Tolkien">
+<!ENTITY crz "Carlos Ruiz Zafón">
+
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (autor+, imagen*, contenido+, nuevaEdicion*)>
+<!ATTLIST libro libroId ID #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT contenido %cap;>
+<!ELEMENT nuevaEdicion %cap;>
+<!ATTLIST nuevaEdicion capAñadido (si|no) "no">
+<!ELEMENT capitulo (#PCDATA)>
+<!ATTLIST capitulo numero CDATA #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>

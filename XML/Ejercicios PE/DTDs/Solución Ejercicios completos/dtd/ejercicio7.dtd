@@ -1,0 +1,12 @@
+<!ELEMENT cliente (#PCDATA)>
+<!ATTLIST cliente
+        dni ID #REQUIRED
+        seccion (ropa|alimentación|deportes|calzado|tecnología) #IMPLIED
+        habitual (Sí|No) "No">
+
+<!-- el contenido del elemento cliente será de tipo texto-->
+<!-- el cliente tendrá los atributos:
+    ** dni: atributo obligatorio cuyo valor será único en el documento.
+    ** seccion: atributo opcional que podrá tomar uno de esos 5 valores.
+    ** habitual: atributo que podrá tomar los valores si o no, y su valor por defecto es No.
+-->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio3.xsd">
+    <ticket codigo="C0001">
+        <fechaHora>2020-05-02T16:30:00</fechaHora>
+        <precioTotal moneda="euro">
+            <precioSinIva>23.45</precioSinIva>
+            <porcentajeIVA>21</porcentajeIVA>
+            <precioConIva>28.37</precioConIva>
+        </precioTotal>
+        <formaPago>
+            <efectivo/>
+        </formaPago>
+        <datosTienda>
+            <nombre>Zara</nombre>
+            <CIF>E45697213</CIF>
+            <telefono>654890123</telefono>
+        </datosTienda>
+    </ticket>
+    <ticket codigo="C0002">
+        <fechaHora>2020-01-23T20:00:00</fechaHora>
+        <precioTotal moneda="euro">
+            <precioSinIva>45</precioSinIva>
+            <porcentajeIVA>10</porcentajeIVA>
+            <precioConIva>49.5</precioConIva>
+        </precioTotal>
+        <formaPago>
+            <tarjeta numTarjeta="************2489" tipo="visa">
+                <nombreCliente>Ester Perez</nombreCliente>
+            </tarjeta>
+        </formaPago>
+        <datosTienda>
+            <nombre>Zara</nombre>
+            <CIF>E45697213</CIF>
+            <telefono>654890123</telefono>
+        </datosTienda>
+    </ticket>
+</tickets>

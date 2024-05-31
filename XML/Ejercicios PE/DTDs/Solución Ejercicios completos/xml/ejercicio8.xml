@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fabrica SYSTEM "../dtd/ejercicio8.dtd">
+<fabrica>
+    <pabellon id="p1">
+        <nombre>Piezas de mas de 1 tonelada</nombre>
+        <responsable>
+            <nombre>Juan</nombre>
+            <apellidos>Perez</apellidos>
+            <email>jp@ddd.es</email>
+        </responsable>
+        <trabajadores>
+            <trabajador dni="_34567893e">
+                <nombre>Elena</nombre>
+                <apellidos>Ramos</apellidos>
+                <email>er@ddd.es</email>
+            </trabajador>
+            <trabajador dni="_56732145t">
+                <nombre>Ana</nombre>
+                <apellidos>Rodriguez</apellidos>
+                <email>ar@ddd.es</email>
+            </trabajador>
+        </trabajadores>
+    </pabellon>
+    <pabellon id="p2">
+        <nombre>Piezas de menos de 1 tonelada</nombre>
+        <responsable>
+            <nombre>Sara</nombre>
+            <apellidos>de Dios</apellidos>
+            <email>sdd@ddd.es</email>
+        </responsable>
+        <trabajadores>
+            <trabajador dni="_78941234r">
+                <nombre>Tomás</nombre>
+                <apellidos>Ramos</apellidos>
+                <email>tr@ddd.es</email>
+            </trabajador>
+        </trabajadores>
+    </pabellon>
+</fabrica>

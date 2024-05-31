@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio1.xsd">
+    <libro isbn="1234567890123">
+        <titulo>Libro1</titulo>
+        <autor>Pepe Perez</autor>
+        <personaje>
+            <nombre>Mujer1</nombre>
+            <amigoDe>Señora1</amigoDe>
+            <desde>2000-01-01</desde>
+            <calificacion>5.5</calificacion>
+        </personaje>
+    </libro>
+</libros>

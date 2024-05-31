@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Tipos simples-->
+    <xsd:simpleType name="tipoNumJornada">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="T\d{4}\-\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoCapacidad">
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="16000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Tipos complejos-->
+    <xsd:complexType name="tipoCampo" mixed="true">
+        <xsd:attribute name="capacidad" type="tipoCapacidad"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoJugado">
+                <xsd:attribute name="local" type="xsd:int" use="required"/>
+                <xsd:attribute name="visitante" type="xsd:int" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPartido">
+        <xsd:sequence>
+            <xsd:element name="fecha" type="xsd:date"/>
+            <xsd:element name="hora" type="xsd:time"/>
+            <xsd:element name="campo" type="tipoCampo"/>
+            <xsd:element name="equipoLocal" type="xsd:string"/>
+            <xsd:element name="equipoVisitante" type="xsd:string"/>
+            <xsd:choice>
+                <xsd:element name="jugado" type="tipoJugado"/>
+                <xsd:element name="aplazado">
+                    <xsd:complexType />
+                </xsd:element>
+            </xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute name="numPartido" type="xsd:ID"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoJornada">
+        <xsd:sequence>
+            <xsd:element name="partido" type="tipoPartido" maxOccurs="9"/>
+        </xsd:sequence>
+        <xsd:attribute name="numJornada" type="xsd:ID"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoTemporada">
+        <xsd:sequence>
+            <xsd:element name="jornada" type="tipoJornada" maxOccurs="25"/>
+        </xsd:sequence>
+        <xsd:attribute name="numJornada" type="tipoNumJornada"/>
+    </xsd:complexType>
+
+    <!-- Elemento raiz del XML-->
+    <xsd:element name="ligaAsobal">
+        <xsd:complexType>
+            <xsd:sequence maxOccurs="unbounded">
+                <xsd:element name="temporada" type="tipoTemporada"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

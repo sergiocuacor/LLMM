@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Declaración de tipos simples-->
+    <xsd:simpleType name="tipoEstadoCivil">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Soltero"/>
+            <xsd:enumeration value="Casado"/>
+            <xsd:enumeration value="Viudo"/>
+            <xsd:enumeration value="Divorciado"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoEdad">
+        <xsd:restriction base="xsd:nonNegativeInteger">
+            <xsd:minInclusive value="16"/>
+            <xsd:maxInclusive value="70"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoDNI">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{8}[A-Z]"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <!-- Declaración de tipos complejos-->
+    <xsd:complexType name="tipoPersona">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="apellido" type="xsd:string"/>
+            <xsd:element name="estadoCivil" type="tipoEstadoCivil" default="Soltero"/>
+            <xsd:element name="edad" type="tipoEdad"/>
+            <xsd:element name="enActivo" minOccurs="0">
+                <xsd:complexType />
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="dni" type="tipoDNI" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPersonas">
+        <xsd:sequence>
+            <xsd:element name="persona" type="tipoPersona" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Elemento raíz del XML-->
+    <xsd:element name="personas" type="tipoPersonas"/>
+
+</xsd:schema>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- Tipos simples-->
+<xsd:simpleType name="tipoCIF">
+    <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[A-Z]\d{8}"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="tipoTelefono">
+    <xsd:restriction base="xsd:int">
+        <xsd:totalDigits value="9"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="tipoDosDecimales">
+    <xsd:restriction base="xsd:decimal">
+        <xsd:fractionDigits value="2"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="tipoNumTarjeta">
+    <xsd:restriction base="xsd:string">
+        <xsd:pattern value="\*{12}\d{4}"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<!-- Declaración de tipos compejos-->
+<xsd:complexType name="tipoPrecioTotal">
+    <xsd:sequence>
+        <xsd:element name="precioSinIva" type="tipoDosDecimales"/>
+        <xsd:element name="porcentajeIVA" type="xsd:int"/>
+        <xsd:element name="precioConIva" type="tipoDosDecimales"></xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="moneda" type="xsd:token" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoTarjeta">
+    <xsd:sequence>
+        <xsd:element name="nombreCliente" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="tipo" type="xsd:string"/>
+    <xsd:attribute name="numTarjeta" type="tipoNumTarjeta" use="required"/>
+
+</xsd:complexType>
+
+<xsd:complexType name="tipoFormaPago">
+    <xsd:choice>
+        <xsd:element name="efectivo">
+            <xsd:complexType />
+        </xsd:element>
+        <xsd:element name="tarjeta" type="tipoTarjeta"/>
+    </xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="tipoDatosTienda">
+<xsd:sequence>
+    <xsd:element name="nombre" type="xsd:string"/>
+    <xsd:element name="CIF" type="tipoCIF"/>
+    <xsd:element name="telefono" type="tipoTelefono"/>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="tipoTicket">
+    <xsd:sequence>
+        <xsd:element name="fechaHora" type="xsd:dateTime"/>
+        <xsd:element name="precioTotal" type="tipoPrecioTotal"/>
+        <xsd:element name="formaPago" type="tipoFormaPago"/>
+        <xsd:element name="datosTienda" type="tipoDatosTienda"/>
+    </xsd:sequence>
+    <xsd:attribute name="codigo" type="xsd:ID" use="required"/>
+</xsd:complexType>
+
+<!-- Elemento raíz del XML-->
+<xsd:element name="tickets">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="ticket" type="tipoTicket" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+</xsd:schema>

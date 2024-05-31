@@ -1,0 +1,20 @@
+<!ENTITY eur "euros">
+<!ENTITY lib "libras">
+<!ENTITY dol "dólar">
+
+<!ELEMENT operaciones (operacion+)>
+<!ELEMENT operacion (venta*|compra*)+>
+<!ELEMENT venta (producto+,cantidadtotal,entregado?,importe)>
+<!ELEMENT compra (producto+,proveedor,fechacompra)>
+<!ELEMENT producto (#PCDATA)>
+    <!ATTLIST producto refModelo NMTOKEN #REQUIRED>
+<!ELEMENT cantidadtotal (#PCDATA)>
+<!ELEMENT entregado (#PCDATA)>
+    <!ATTLIST entregado valor (si|no) #REQUIRED>
+<!ELEMENT importe (#PCDATA)>
+<!ATTLIST importe moneda CDATA #REQUIRED>
+<!ELEMENT proveedor (#PCDATA)>
+<!ELEMENT fechacompra (dia,mes,anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
