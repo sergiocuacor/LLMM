@@ -4,3 +4,4 @@ T seguido de un año, - y otro año (T2018-2019, T2021-T2024):  T\d{4}-\d{4}
 
 c00001, c00002, c00003.. c\d{5}
 ca00001, cc00001.. c[ac]\d{5}   ->>Podemos meter a o c
+
