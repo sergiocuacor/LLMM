@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ejercicio3.xsd">
+
+    
+        <casas>
+            <casa codigo="ca001">
+                <metrosUtiles metrosTotales="175">125</metrosUtiles>
+                <numHabitaciones>4</numHabitaciones>
+                <garaje tiene="si"/>
+                <casaIndividual/>
+                <ventaDesde>2020-01-15</ventaDesde>
+            </casa>
+            <casa codigo="ca002">
+                <metrosUtiles metrosTotales="105">90</metrosUtiles>
+                <garaje tiene="no"/>
+                <piso/>
+                <ventaDesde>2020-01-15</ventaDesde>
+            </casa>
+            <casa codigo="ca003">
+                <metrosUtiles metrosTotales="250">185</metrosUtiles>
+                <numHabitaciones>5</numHabitaciones>
+                <garaje tiene="si"/>
+                <casaIndividual/>
+                <ventaDesde>2018-09-05</ventaDesde>
+            </casa>
+        </casas>
+        <garajes>
+            <garaje codigo="ga001">
+                <metrosCuadrados>5</metrosCuadrados>
+                <propiedades cerrado="si" doblePlaza="no" comunitario="si"/>
+                <ventaDesde>2017-03-02</ventaDesde>
+            </garaje>
+        </garajes>
+    
+</stock>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- TIPOS COMPLEJOS -->
+
+    <xsd:complexType name="tipoGarajes">
+        <xsd:sequence>
+            <xsd:element name="garaje" maxOccurs="unbounded" type="tipoGaraje"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoGaraje">
+        <xsd:sequence>
+            <xsd:element name="metrosCuadrados" type="xsd:int"></xsd:element>
+            <xsd:element name="propiedades" type="tipoPropiedades"></xsd:element>
+            <xsd:element name="ventaDesde" type="xsd:date"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="codigo" type="tipoCodigoGaraje"></xsd:attribute>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="tipoPropiedades">
+        <xsd:attribute name="cerrado" type="tipoOpcion"></xsd:attribute>
+        <xsd:attribute name="doblePlaza" type="tipoOpcion"></xsd:attribute>
+        <xsd:attribute name="comunitario" type="tipoOpcion"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCasas">
+        <xsd:sequence>
+            <xsd:element name="casa" maxOccurs="unbounded" type="tipoCasa"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCasa">
+        <xsd:sequence>
+            <xsd:element name="metrosUtiles" maxOccurs="1" type="tipoMetrosUtiles">
+
+            </xsd:element>
+            <xsd:element name="numHabitaciones" minOccurs="0"
+                maxOccurs="1" type="xsd:int"></xsd:element>
+            <xsd:element name="garaje" maxOccurs="1" type="tipoGarajeCasa">
+
+            </xsd:element>
+            <xsd:choice>
+                <xsd:element name="piso"></xsd:element>
+                <xsd:element name="casaIndividual"></xsd:element>
+            </xsd:choice>
+            <xsd:element name="ventaDesde" maxOccurs="1" type="xsd:date"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="codigo" use="required" type="tipoCodigoCasa">
+
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoMetrosUtiles">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:int">
+                <xsd:attribute name="metrosTotales"
+                    type="xsd:int" use="required"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoGarajeCasa">
+        <xsd:attribute name="tiene" type="tipoOpcion">
+
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <!-- TIPOS SIMPLES-->
+    <xsd:simpleType name="tipoCodigoCasa">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="ca\d{3}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoOpcion">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="si"></xsd:enumeration>
+            <xsd:enumeration value="no"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:simpleType name="tipoCodigoGaraje">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value="ga\d{3}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!--
+    *********************************************************************************************************-->
+    <xsd:element name="stock">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="casas" type="tipoCasas"></xsd:element>
+                <xsd:element name="garajes" type="tipoGarajes">
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,14 @@
+<xsd: simpleType name="tipoCurso">
+    <xsd:restriction base="xsd:ID">
+        <xsd:pattern value="T\d{4}\-\d{4}"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+
+
+- Nos encontramos ante una declaración de tipo simple con una restriccion de tipo
+ID, eso significa que el valor de tipoCurso será único en todo el documento XML.
+- La restricción tiene un patrón que define cómo tendrá que ser tipoCurso:
+    -Empezará con la letra T mayúscula, a continuación tendrá que tener 4 digitos,
+    seguidos de un guión y otros 4 dígitos. Cualquier otra combinación no será válida 
+    para este tipo simple.

@@ -1,0 +1,7 @@
+ {
+    "colores":["rojo","azul"],
+    "energia1": {"voltaje":250,"actual":12},
+    "energia2": {"voltaje":"250","actual":"12"}
+ }
+
+ 

@@ -1,0 +1,20 @@
+{
+    "libros": [
+      {
+        "titulo": "La comunidad del anillo",
+        "paginas": 423,
+        "autor": "J.R.R.Tolkien"
+      },
+      {
+        "titulo": "El jinete de bronce",
+        "paginas": 754,
+        "autor": "Paullina Simons"
+      },
+      {
+        "titulo": "Africanus: El hijo del cónsul",
+        "paginas": 720,
+        "autor": "Santiago Posteguillo"
+      }
+    ]
+}
+  

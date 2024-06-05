@@ -1,0 +1,18 @@
+<!ELEMENT ligaAsobal (temporada+)>
+<!ELEMENT temporada (jornada+)>
+<!ATTLIST temporada curso ID #REQUIRED>
+<!ELEMENT jornada (partido+)>
+<!ATTLIST jornada numJornada ID #REQUIRED>
+
+<!ELEMENT partido (fecha,hora,campo,equipoLocal,equipoVisitante,(jugado|aplazado))>
+<!ATTLIST partido numPartido ID #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT campo (#PCDATA)>
+<!ELEMENT equipoLocal (#PCDATA)>
+<!ELEMENT equipoVisitante (#PCDATA)>
+<!ELEMENT jugado EMPTY>
+<!ATTLIST jugado visitante CDATA #REQUIRED
+                local CDATA #REQUIRED>
+<!ELEMENT aplazado EMPTY>

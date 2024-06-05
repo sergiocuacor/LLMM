@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaAsobal SYSTEM "../dtds/ejercicio1.dtd">
+<ligaAsobal>
+    <temporada curso="T2019-2020">
+        <jornada numJornada="J1">
+            <partido numPartido="P11">
+                <fecha>2019-09-20</fecha>
+                <hora>17:00:00</hora>
+                <campo>Palau Blaugrana</campo>
+                <equipoLocal>Barsa</equipoLocal>
+                <equipoVisitante>Valladolid</equipoVisitante>
+                <aplazado/>
+            </partido>
+            <partido numPartido="P12">
+                <fecha>2019-09-20</fecha>
+                <hora>19:00:00</hora>
+                <campo>Palacio de los Deportes</campo>
+                <equipoLocal>Ademar León</equipoLocal>
+                <equipoVisitante>Bidasoa</equipoVisitante>
+                <jugado visitante="18" local="21"/>
+            </partido>
+        </jornada>
+        <jornada numJornada="J2">
+            <partido numPartido="P21">
+                <fecha>2019-09-27</fecha>
+                <hora>16:00:00</hora>
+                <campo>Huerta del Rey</campo>
+                <equipoLocal>Valladolid</equipoLocal>
+                <equipoVisitante>Ademar León</equipoVisitante>
+                <jugado visitante="29" local="24"/>
+            </partido>
+            <partido numPartido="P22">
+                <fecha>2019-09-27</fecha>
+                <hora>18:00:00</hora>
+                <campo>Pabellón municipal</campo>
+                <equipoLocal>Cangas Morrazo</equipoLocal>
+                <equipoVisitante>Granollers</equipoVisitante>
+                <jugado visitante="33" local="36"/>
+            </partido>
+        </jornada>
+        <jornada numJornada="J3">
+            <partido numPartido="P31">
+                <fecha>2019-10-05</fecha>
+                <hora>17:00:00</hora>
+                <campo>Palacio de los Deportes</campo>
+                <equipoLocal>Benidorm</equipoLocal>
+                <equipoVisitante>Avia</equipoVisitante>
+                <aplazado/>
+            </partido>
+        </jornada>
+    </temporada>
+</ligaAsobal>

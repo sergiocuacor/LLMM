@@ -1,0 +1,16 @@
+ Indica el tipo o tipos de estructuras JavaScript que serían los siguientes datos:
+o [{"sensor": "sensor1", "temperatura": 22, "humedad": 80}]
+
+Array de objetos, el primero de tipo String y los otros dos de tipo Number
+
+
+
+
+o [{"sensor": "sensor1", "temperatura": 22, "humedad": 80},{"sensor": "sens
+or2", "temperatura": 22, "humedad": 65}]
+
+
+
+o [{"sensor": "sensor1","temperatura": 24, "humedad": 69},
+ {"sensor": sensor2, "temperatura": 22, "humedad": 65}]
+

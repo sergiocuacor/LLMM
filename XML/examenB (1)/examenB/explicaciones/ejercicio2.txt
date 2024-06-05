@@ -1,0 +1,11 @@
+<!ATTLIST informe seguridad (alta | media | baja ) "baja">
+<!ATTLIST codigo tipo CDATA #IMPLIED>
+
+
+
+-Con ATTLIST declaramos una lista de atributos para los elementos informe /codigo
+- informe y codigo son los nombres de los elementos para los que vamos a declarar atributos
+- seguridad es el nombre del primer atributo, y le vamos a poder dar uno y solo uno de los siguientes valores: alta, media o baja
+porque tienen el condicional OR (|). Además, el valor por defecto que se le asignará es "baja".
+- En el segundo attlist, tipo es el nombre del atributo que tendrá codigo, y se le podrá dar como valor cualquier cadena de caracteres, además no detectará elementos especiales de marcado.
+El #IMPLIED nos indica que es un atributo opcional.
