@@ -1,0 +1,25 @@
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = 1; j < nums.length; j++) {
+            if ((nums[i] + nums[j]) === target) {
+                return [i, j];
+            }
+        }
+    }
+    throw new Error("No two sum solution");
+}
+
+function testTwoSum() {
+
+    const nums = [2, 7, 11, 15];
+    const target = 9;
+
+    try {
+        const result = twoSum(nums, target);
+        console.log(`Índices: ${result[0]}, ${result[1]}`);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+testTwoSum();
