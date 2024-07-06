@@ -6,7 +6,7 @@ function twoSum(nums, target) {
             }
         }
     }
-    throw new Error("No two sum solution");
+    throw new Error("No hay solución");
 }
 
 function testTwoSum() {
