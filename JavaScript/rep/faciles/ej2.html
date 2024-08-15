@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<script src="./ejs.js"></script>
+<title>Conversor de Euros y Dólares
+</title>
+</head>
+<body>
+
+    <form id="formularioConversor">
+        <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese una cantidad" required>
+        <select id="conversion" >
+        <option value="EURaUSD">EUR a USD</option>
+        <option value="USDaEUR">USD a EUR</option>
+        </select>
+        <button type="button"  onclick="convertir()">Convertir</button>
+    </form>
+    <div id="resultadoDiv"></div>
+
+</body>
+
+
+</html>
