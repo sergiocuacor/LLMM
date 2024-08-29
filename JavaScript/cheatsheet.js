@@ -19,8 +19,10 @@ array1.push(4);
 console.log(array1); // Output: [1, 2, 3, 4]
 var deportes = ["futbol", "baloncesto", "balonmano", "tenis"];
 deportes.push("padel");
+console.log(deportes); // Output: ["futbol", "baloncesto","balonmano","tenis", "padel"]
 
-// pop: Utilizado para eliminar el último elemento de un arreglo y devolverlo.
+
+// pop: Utilizado para eliminar el último elemento de un arreglo.
 let array2 = [1, 2, 3, 4];
 let removedElement = array2.pop();
 console.log(removedElement); // Output: 4
